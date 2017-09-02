@@ -5,6 +5,7 @@
 	],
 	"ignoreFiles": [
 		"./src/scss/generic/_normalize.scss",
+		"./src/scss/generic/_reboot.scss",
 		"./src/scss/settings/*.scss",
 		"./src/scss/tools/**/*.scss"
 	],
@@ -139,7 +140,7 @@
 		"property-case": "lower",
 		"property-no-unknown": true,
 
-		"rule-empty-line-before": ["always", {
+		"rule-empty-line-before": ["always-multi-line", {
 			"ignore": ["after-comment"],
 			"except": ["first-nested"]
 		}],
