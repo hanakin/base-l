@@ -14,7 +14,7 @@
 //
 // 1. Fluid images for responsive purposes.
 // 2. Offset `alt` text from surrounding copy.
-// 4. If a `width` and/or `height` attribute have been explicitly defined, let’s
+// 3. If a `width` and/or `height` attribute have been explicitly defined, let’s
 //    not make the image fluid.
 //
 img {
@@ -23,7 +23,7 @@ img {
 
 	&[width],
 	&[height] {
-		max-width: none; // [4]
+		max-width: none; // [3]
 	}
 }
 
