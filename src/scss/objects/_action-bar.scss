@@ -1,0 +1,99 @@
+//------------------------------------------------------------------------------
+// @object: Action Bar
+//------------------------------------------------------------------------------
+// @description
+//
+//------------------------------------------------------------------------------
+
+//
+// @settings
+
+// Layout Variables
+$action-spacing: 16px !default;
+$action-size: 40px !default;
+
+
+// Theme Variables
+$action-bg-color: $gray-100 !default;
+$action-bg-hover-color: $default-action-bg-hover !default;
+$action-color: $black-54 !default;
+$action-hover-color: $default-action-color-hover !default;
+
+
+//
+// @scss
+.o-action-bar {
+	background-color: $action-bg-color;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+
+	&-avatar {
+		width: $action-size;
+		height: $action-size;
+		margin: ($action-spacing / 2) 0 ($action-spacing / 2) $action-spacing;
+		padding: 0;
+	}
+
+	&-title {
+		@include type(title);
+		line-height: 1;
+		float: left;
+		flex: 1;
+		margin-bottom: 0;
+		padding: $action-spacing;
+	}
+
+	&-list {
+		float: left;
+		flex: 1;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+
+	&-list-item {
+		display: flex;
+		float: left;
+		padding: $action-spacing;
+
+		&:first-of-type {
+			padding-right: 0;
+		}
+	}
+
+	&-actions {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+
+	&-action {
+		display: flex;
+		float: right;
+
+		&-item {
+			position: relative;
+		}
+
+		&-link {
+			color: $action-color;
+			display: inline-block;
+			padding: $action-spacing;
+
+			&:hover,
+			&:focus {
+				background-color: $action-bg-hover-color;
+				color: $action-hover-color;
+			}
+		}
+
+		&-icon {
+			margin-right: 0;
+
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+}
