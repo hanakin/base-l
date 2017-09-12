@@ -1,0 +1,79 @@
+{# forum.twig #}
+{% extends "./layout/layout.twig" %}
+
+{% block component %}
+				{% for item in forums %}
+					{% if item.cat === 1 %}
+						{% if loop.first %}
+							<div class="c-forum-cat t-forum-cat">
+								<h2 class="c-forum-cat-title t-forum-cat-title">
+									<a class="c-forum-cat-link t-forum-cat-link" href="#">{{ item.name }}</a>
+								</h2>
+								<div class="c-forum-deck t-forum-deck">
+						{% else %}
+								</div>
+							</div>
+							<div class="c-forum-cat t-forum-cat">
+								<h2 class="c-forum-cat-title t-forum-cat-title">
+									<a class="c-forum-cat-link t-forum-cat-link" href="#">{{ item.name }}</a>
+								</h2>
+								<div class="c-forum-deck t-forum-deck">
+						{% endif %}
+					{% else %}
+									<div class="c-forum t-forum">
+										<div class="c-forum-body t-block">
+											<div class="c-forum-media t-forum-media">
+												<svg class="o-icon c-forum-media-icon t-forum-media-icon{% if item.status === 1 %} c-forum-media-icon-read t-forum-media-icon-read{% endif %}"><use xlink:href="#{{ item.type }}"></use></svg>
+											</div>
+											<div class="c-forum-info t-forum-info">
+												<h4 class="c-forum-title t-forum-title">
+													<a class="c-forum-title-link t-forum-title-link" href="#">{{ item.name }}</a>
+												</h4>
+												{% if item.desc %}
+													<p class="c-forum-text t-forum-text">
+														{{ item.desc }}
+													</p>
+												{% endif %}
+											</div>
+										</div>
+										<div class="o-action-bar c-forum-footer t-forum-footer">
+											<ul class="o-action-bar-list">
+												<li class="o-action-bar-list-item c-forum-list-item t-forum-list-item"><svg class="o-icon c-forum-list-item-icon t-forum-list-item-icon"><use xlink:href="#topic"></use></svg> {{ item.topics }}</li>
+												<li class="o-action-bar-list-item c-forum-list-item t-forum-list-item"><svg class="o-icon c-forum-list-item-icon t-forum-list-item-icon"><use xlink:href="#replies"></use></svg> {{ item.posts }}</li>
+											</ul>
+											<ul class="o-action-bar-actions">
+												{% if item.subs %}
+													<li class="o-action-bar-action c-forum-action t-forum-action c-menu-toggle t-menu-toggle">
+														<a class="o-action-bar-action-link c-forum-action-link t-forum-action-link" href="" data-toggle="tooltip" data-placement="top" title="SubForums">
+															<svg class="o-icon o-action-bar-action-icon c-forum-action-icon t-forum-action-icon"><use xlink:href="#more-v"></use></svg>
+														</a>
+														<div class="c-menu-container t-menu-container">
+															<ul class="c-menu t-menu">
+																{% for sub in item.subs %}
+																	<li class="c-menu-item t-menu-item">
+																		<a class="c-menu-link t-menu-item" href="">
+																			<svg class="o-icon c-menu-link-icon t-menu-forum-icon"><use xlink:href="#forum-sub"></use></svg> <span class="c-menu-text t-forum-text">{{ sub.name }}</span>
+																		</a>
+																	</li>
+																{% endfor %}
+															</ul>
+														</div>
+													</li>
+												{% endif %}
+												{% if item.last_subject %}
+													<li class="o-action-bar-action c-forum-action t-forum-action">
+														<a class="o-action-bar-action-link c-forum-action-link t-forum-action-link" style="color: {{ item.last_color}}" href="" data-toggle="tooltip" data-placement="top" title="{{ item.last_subject }}, by {{ item.last_name }}, {{ item.last_time }}">
+															<svg class="o-icon o-action-bar-action-icon c-forum-action-icon t-forum-action-icon"><use xlink:href="#last-page"></use></svg>
+														</a>
+													</li>
+												{% endif %}
+											</ul>
+										</div>
+									</div>
+						{% if loop.last %}
+								</div>
+							</div>
+						{% endif %}
+					{% endif %}
+				{% endfor %}
+{% endblock %}

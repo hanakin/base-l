@@ -1,0 +1,49 @@
+<li class="c-topic-item">
+	<div class="c-topic-type">
+		<svg class="o-icon c-list-type-icon{% if topic.status === 1 %} c-list-type-icon-read{% endif %}"><use xlink:href="#{{topic.icon}}"></use></svg>
+	</div>
+	<dl class="c-topic-primary">
+		<dt class="c-topic-title">
+			<a class="c-topic-title-link" href="#">{{topic.name}}</a>
+			{% if topic.pages %}
+				<ul class="paging">
+					{% for page in topic.pages %}
+						{% if loop.last %}
+							<li class="paging-item"><a class="paging-link" href="page={{ page }}" data-tooltip="Last Page" title="Go to Last page"><svg class="o-icon paging-link-icon"><use xlink:href="#last-page"></use></svg></a></li>
+						{% else %}
+							<li class="paging-item"><a class="paging-link" href="?page={{ page }}" data-tooltip="Page {{ page }}" title="Go to page {{ page }}">{{ page }}</a></li>
+						{% endif %}
+					{% endfor %}
+				</ul>
+			{% endif %}
+		</dt>
+		<dd class="c-topic-title-sub">
+			<span class="c-topic-title-data c-topic-title-data-user">
+				<svg class="o-icon c-topic-title-data-icon"><use xlink:href="#user"></use></svg><a href="./memberlist.php?mode=viewprofile&amp;u=61815" style="color: #{{ topic.author_color }};" class="c-topic-list-data-link">{{ topic.author }}</a>
+			</span>
+			<span class="c-topic-title-data c-topic-title-data-time">
+				<svg class="o-icon c-topic-title-data-icon"><use xlink:href="#time"></use></svg>
+				<time datetime="{{ topic.time }}" title="{{ topic.time }}" data-short="{{ topic.time }}">{{ topic.time|moment("YYYYMMDD", true) }}</time>
+			</span>
+			<span class="c-topic-title-data c-topic-data-views">
+				<svg class="o-icon c-topic-title-data-icon"><use xlink:href="#views"></use></svg>{{ list.views }}
+			</span>
+			<span class="c-topic-title-data c-topic-title-data-replies">
+				<svg class="o-icon c-topic-title-data-icon"><use xlink:href="#replies"></use></svg>{{ topic.replies }}
+			</span>
+		</dd>
+	</dl>
+	<div class="c-topic-secondary">
+		<ul class="c-topic-secondary-body">
+			<li class="c-topic-secondary-body-item c-topic-secondary-time">
+				<a class="c-topic-secondary-link" href="#">
+					<time datetime="{{ topic.last_time }}" title="{{ topic.last_time }}" data-short="{{ topic.last_time }}">{{ topic.last_time|moment("YYYYMMDD", true) }}</time>
+				</a>
+			</li>
+			<li class="c-topic-secondary-body-item c-topic-secondary-user">
+				<a class="c-list-secondary-link" href="./memberlist.php?mode=viewprofile&amp;u=61815" style="color: #{{ topic.last_color }};">{{ topic.last_author }}</a>
+			</li>
+		</ul>
+		<a class="c-topic-secondary-avatar" href="./memberlist.php?mode=viewprofile&amp;u=61815"><img src="{{ topic.last_avatar }}" width="44" height="44" class="user-avatar" alt="User Gravatar" data-dropdown="#user-dropdown"></a>
+	</div>
+</li>
