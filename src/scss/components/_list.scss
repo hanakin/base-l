@@ -1,0 +1,271 @@
+
+// @component: List
+//------------------------------------------------------------------------------
+// @description
+//
+//------------------------------------------------------------------------------
+
+//
+// @settings
+
+// Layout Variables
+$list-spacing: 16px !default;
+$list-border-radius: $default-border-radius !default;
+$list-height: 72px !default;
+$list-icon-size: 40px !default;
+$list-margin-bottom: 24px !default;
+$list-heading-margin-bottom: -32px !default;
+$list-title-line-height: 20px !default;
+$list-subheader-line-height: 18px !default;
+$list-data-spacing: 16px !default;
+$list-data-icon-size: 18px !default;
+$list-data-icon-margin: ($list-data-icon-size / 2) !default;
+$list-action-icon-margin-left: 8px !default;
+$list-action-img-size: 34px !default;
+$list-action-img-margin-bottom: 8px !default;
+$list-border-style: solid !default;
+
+// Theme Variables
+$list-icon-color: $default-secondary-color !default;
+$list-icon-color-read: $default-primary-color !default;
+$list-hover-color: $gray-50 !default;
+$list-action-hover-color: $default-action-bg-hover !default;
+$list-action-icon-color: $default-action-color !default;
+$list-action-hover-icon-color: $default-action-color-hover !default;
+$list-header-color: $default-action-bg !default;
+$list-border-color: rgba(0, 0, 0, 0.125) !default;
+
+
+//
+// @scss
+.c-list {
+	border-radius: $list-border-radius;
+	margin: 0;
+	margin-bottom: $list-margin-bottom;
+	padding: 0;
+	list-style: none;
+
+	&-header {
+		background-color: $list-header-color;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+
+		&-title {
+			@include type(title);
+			line-height: unitless($list-title-line-height, map-get(map-get($type-styles, title), font-size));
+			float: left;
+			flex: 1;
+			margin-bottom: 0;
+			padding: $list-spacing;
+		}
+
+		&-actions {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+
+		&-action {
+			display: flex;
+			float: right;
+
+			&-item {
+				position: relative;
+			}
+
+			&-link {
+				color: $list-action-icon-color;
+				display: inline-block;
+				padding: $list-spacing;
+
+				&:hover,
+				&:focus {
+					background-color: $list-action-hover-color;
+					color: $list-action-hover-icon-color;
+				}
+
+				&-icon {
+					margin-right: 0;
+				}
+
+				&-icon:hover {
+					text-decoration: none;
+				}
+			}
+		}
+	}
+
+	&-item {
+		@include type(subhead2);
+		border-top: 1px solid $list-border-color;
+		display: flex;
+		flex: 1;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		min-height: $list-height;
+		padding: $list-spacing;
+
+		&:hover {
+			background-color: $list-hover-color;
+		}
+	}
+
+	&-type {
+		padding-right: $list-spacing;
+
+		&-icon {
+			color: $list-icon-color;
+			width: $list-icon-size;
+			height: $list-icon-size;
+			margin-right: 0;
+
+			&-read {
+				color: $list-icon-color-read;
+			}
+		}
+	}
+
+	&-primary {
+		flex: 1;
+		margin: 0;
+	}
+
+	&-title {
+		@include type(subhead2);
+		line-height: unitless($list-margin-bottom);
+		margin: 0;
+
+		&-link:hover {
+			text-decoration: underline;
+		}
+
+		&-sub {
+			@include type(body1);
+			line-height: unitless($list-margin-bottom);
+			flex: 1;
+			margin: 0;
+		}
+
+		&-data {
+			display: inline-block;
+			padding-right: $list-data-spacing;
+
+			&-time {
+				display: none;
+				@media (min-width: $bp-lg) {
+					display: inline-block;
+				}
+			}
+
+			&-views {
+				display: none;
+				@media (min-width: $bp-md) {
+					display: inline-block;
+				}
+			}
+
+			&-icon {
+				width: $list-data-icon-size;
+				height: $list-data-icon-size;
+				margin-right: $list-data-icon-margin;
+			}
+
+			&-link:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+
+	&-secondary {
+		display: inline-flex;
+		flex-wrap: nowrap;
+		margin-left: $list-action-icon-margin-left;
+
+		&-body {
+			display: flex;
+			flex: 1;
+			flex-direction: column;
+			flex-wrap: nowrap;
+			margin: 0;
+			padding: 0;
+			list-style: none;
+
+			&-item {
+				text-align: right;
+			}
+			@media (min-width: $bp-md) {
+				margin-right: $list-spacing;
+			}
+		}
+
+		&-avatar {
+			border-radius: 50%;
+			display: none;
+			width: $list-action-img-size;
+			height: $list-action-img-size;
+			margin-bottom: $list-action-img-margin-bottom;
+			@media (min-width: $bp-lg) {
+				display: block;
+			}
+		}
+
+
+		&-link:hover {
+			text-decoration: underline;
+		}
+
+		&-user {
+			display: none;
+			@media (min-width: $bp-md) {
+				display: inline-block;
+			}
+		}
+
+		&-time {
+			@include type(caption);
+			@media (min-width: $bp-md) {
+				@include type(body1);
+			}
+		}
+	}
+	@include shadow(2);
+}
+
+.paging {
+	display: inline-flex;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	align-content: center;
+
+	&-icon {
+		margin-right: 8px;
+	}
+
+	&-item {
+		margin: 0 2px;
+	}
+
+	&-link {
+		@include type(caption);
+		background: $gray-200;
+		border-radius: 2px;
+		margin: 0;
+		padding: 2px 4px;
+
+		&:hover {
+			text-decoration: none;
+			background: $gray-400;
+		}
+
+		&-icon {
+			width: 18px;
+			height: 18px;
+			margin: 0;
+		}
+	}
+	@media (min-width: $bp-md) {
+		margin-left: 8px;
+	}
+}

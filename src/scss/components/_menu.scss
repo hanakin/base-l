@@ -1,0 +1,101 @@
+//------------------------------------------------------------------------------
+// @component: Menu
+//------------------------------------------------------------------------------
+// @description
+//
+//------------------------------------------------------------------------------
+
+//
+// @settings
+
+// Layout Variables
+$menu-spacing-vertical: 8px !default;
+$menu-spacing-horizontal: 16px !default;
+$menu-icon-margin: 24px !default;
+$menu-icon-size: 32px !default;
+$menu-link-size: 48px !default;
+$menu-border-radius: $default-border-radius !default;
+$menu-divider-height: 1px !default;
+
+// Theme Variables
+$menu-background-color: $white !default;
+$menu-link-color: $default-text-color !default;
+$menu-icon-color: $default-action-icon-color !default;
+$menu-link-hover-color: $default-action-color-hover !default;
+$menu-link-hover-background-color: $default-action-bg-hover !default;
+$menu-divider-color: rgba(0, 0, 0, 0.125) !default;
+
+
+//
+// @scss
+.c-menu-container {
+	text-align: left;
+	background-color: $menu-background-color;
+	border-radius: $menu-border-radius;
+	position: absolute;
+	z-index: 999;
+	top: auto;
+	right: 0;
+	display: none;
+	overflow: auto;
+	@include shadow(1);
+}
+
+.c-menu {
+	margin: 0;
+	padding: $menu-spacing-vertical 0;
+	list-style: none;
+
+	&-item {
+		position: relative;
+	}
+
+	&-toggle {
+		cursor: pointer;
+
+		&:hover,
+		&:focus {
+			> .c-menu-container,
+			a > .c-menu-container {
+				display: block;
+			}
+		}
+	}
+
+	&-link {
+		@include type(menu);
+		white-space: nowrap;
+		text-decoration: none;
+		color: $menu-link-color;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		height: $menu-link-size;
+		padding: 0 $menu-spacing-horizontal 0 $menu-spacing-horizontal;
+		cursor: pointer;
+
+		&-icon {
+			color: $menu-icon-color;
+			width: $menu-icon-size;
+			height: $menu-icon-size;
+			margin-right: $menu-icon-margin;
+		}
+
+		&:hover {
+			text-decoration: none;
+			background-color: $menu-link-hover-background-color;
+			color: $menu-link-hover-color;
+
+			.c-menu-link-icon {
+				color: $menu-link-hover-color;
+			}
+		}
+	}
+
+	&-divider {
+		background-color: $menu-divider-color;
+		height: $menu-divider-height;
+		margin-top: $menu-spacing-vertical;
+		margin-bottom: $menu-spacing-vertical;
+	}
+}

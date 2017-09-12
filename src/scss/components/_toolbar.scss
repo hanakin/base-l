@@ -1,0 +1,90 @@
+//------------------------------------------------------------------------------
+// @component: Toolbar
+//------------------------------------------------------------------------------
+// @description
+//
+//------------------------------------------------------------------------------
+
+//
+// @settings
+
+// Layout Variables
+$toolbar-spacing: 16px !default;
+$toolbar-height: ($toolbar-spacing * 2.375) !default;
+$toolbar-border-radius: $default-border-radius !default;
+
+// Theme Variables
+$toolbar-background-color: $default-action-bg !default;
+$toolbar-action-color: $default-action-color !default;
+$toolbar-action-hover-bg: $default-action-bg-hover !default;
+$toolbar-action-hover-color: $default-action-color-hover !default;
+
+
+//
+// @scss
+
+//
+// 1. Allow us to style box model properties.
+// 2. Line different sized buttons up a little nicer.
+// 3. Make buttons inherit font styles (often necessary when styling `input`s as
+//    buttons).
+// 4. Reset/normalize some styles.
+// 5. Force all button-styled elements to appear clickable.
+// 6. Fixes odd inner spacing in IE7.
+// 7. Subtract the border size from the padding value so that buttons do not
+//    grow larger as we add borders.
+// 8. Prevent button text from being selectable.
+// 9. Prevent deafult browser outline halo
+//
+.c-toolbar {
+	background-color: $toolbar-background-color;
+	border-radius: $toolbar-border-radius;
+	position: relative;
+	display: inline-block;
+	margin: 0;
+	margin-bottom: $toolbar-spacing;
+	padding: 0;
+	list-style: none;
+
+	&-item {
+		position: relative;
+		display: inline-block;
+	}
+
+	&-action {
+		@include type(button);
+		line-height: unitless($toolbar-height, map-get(map-get($type-styles, button), font-size));
+		text-align: center; // [4]
+		vertical-align: middle; // [2]
+		white-space: nowrap; // bs only
+		text-decoration: none; // [4]
+		outline: none; // [9]
+		color: $toolbar-action-color;
+		position: relative;
+		display: inline-block; // [1]
+		overflow: hidden; // [6]
+		margin: 0; // [4]
+		padding: 0 $toolbar-spacing; // [7]
+		cursor: pointer;
+		user-select: none; // [8]
+		transition:
+			box-shadow 0.2s $animation-curve-fast-out-linear-in,
+			background-color 0.2s $default-animation-curve,
+			color 0.2s $default-animation-curve;
+
+		&:hover,
+		&:focus {
+			background-color: $toolbar-action-hover-bg;
+			color: $toolbar-action-hover-color;
+		}
+	}
+
+	&-icon {
+		margin-right: 0;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+	@include shadow(2);
+}

@@ -1,0 +1,68 @@
+//------------------------------------------------------------------------------
+// @component: Paging
+//------------------------------------------------------------------------------
+// @description
+//
+//------------------------------------------------------------------------------
+
+//
+// @settings
+
+// Layout Variables
+$paging-spacing: 8px !default;
+$paging-border-radius: $default-border-radius !default;
+$paging-icon-size: 24px !default;
+
+// Theme Variables
+$paging-link-background-color: $default-action-bg !default;
+$paging-link-background-hover-color: $default-action-bg-hover !default;
+
+
+//
+// @scss
+.c-paging {
+	display: flex;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	align-content: center;
+
+	&-item {
+		margin: 0;
+
+		&:first-of-type .c-paging-link {
+			border-top-left-radius: $paging-border-radius;
+			border-bottom-left-radius: $paging-border-radius;
+		}
+
+		&:last-of-type .c-paging-link {
+			border-top-right-radius: $paging-border-radius;
+			border-bottom-right-radius: $paging-border-radius;
+		}
+	}
+
+	&-link {
+		font-size: 18px;
+		line-height: (30 / 18);
+		background: $paging-link-background-color;
+		margin: 0;
+		padding: ($paging-spacing / 2) $paging-spacing;
+
+		&:hover {
+			text-decoration: none;
+			background: $paging-link-background-hover-color;
+			border-radius: $paging-border-radius;
+		}
+
+		&-icon {
+			width: $paging-icon-size;
+			height: $paging-icon-size;
+			margin: 0;
+		}
+	}
+
+	&-item:first-of-type .c-paging-link,
+	&-item:last-of-type .c-paging-link {
+		padding: ($paging-spacing / 2);
+	}
+}
