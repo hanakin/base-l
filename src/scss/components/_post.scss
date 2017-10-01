@@ -32,11 +32,6 @@ $post-border-color: rgba(0, 0, 0, 0.125) !default;
 	border-radius: $post-border-radius;
 	margin-bottom: ($post-spacing * 3);
 
-
-	&-wrap {
-		@include parent();
-	}
-
 	&-header {
 		border-bottom: $post-border-size $post-border-style $post-border-color;
 		@include child();
@@ -52,81 +47,10 @@ $post-border-color: rgba(0, 0, 0, 0.125) !default;
 		}
 	}
 
-	&-profile {
-		background-color: $post-sidebar-bg-color;
-		border-right: $post-border-size $post-border-style $post-border-color;
-		display: none;
-		flex: 0 1 256px;
-
-		&-avatar {
-			display: block;
-			padding: ($post-spacing * 2);
-		}
-
-		&-stats {
-			line-height: 0;
-			text-align: left;
-			margin: 0;
-			padding: 0;
-			list-style: none;
-		}
-
-		&-username {
-			@include type(subhead2);
-			line-height: unitless(14, map-get(map-get($type-styles, subhead2), font-size));
-			display: inline-block;
-
-			&:hover {
-				text-decoration: underline;
-			}
-		}
-
-		&-online {
-			background-color: $post-user-online-color;
-			border: ($post-spacing / 4) $post-border-style $post-sidebar-bg-color;
-			border-radius: 50%;
-			position: absolute;
-			left: ($post-spacing * 3);
-			display: block;
-			float: left;
-			width: ($post-spacing * 2);
-			height: ($post-spacing * 2);
-			margin-top: $post-spacing;
-
-			@media (min-width: $bp-lg) {
-				border-width: ($post-spacing / 2);
-				left: ($post-spacing * 4.5);
-				width: ($post-spacing * 5.5);
-				height: ($post-spacing * 5.5);
-				margin-top: $post-spacing;
-			}
-		}
-
-		&-group {
-			@include type(body1);
-			color: $post-group-color;
-
-			@media (min-width: $bp-lg) {
-				margin-left: -$post-spacing;
-			}
-		}
-
-		&-rating {
-			@include type(body1);
-			color: $post-group-color;
-			margin-left: -($post-spacing * 4);
-		}
-
-		@media (min-width: $bp-lg) {
-			display: block;
-		}
-	}
-
 	&-body {
 		min-height: $post-body-min-height;
 		padding: ($post-spacing * 2);
 		@include parent(column);
-		@include child();
 	}
 
 	&-meta {
@@ -137,8 +61,6 @@ $post-border-color: rgba(0, 0, 0, 0.125) !default;
 
 	&-title {
 		@include type(headline);
-		font-size: fluid(24, 36, 400, 1100);
-		line-height: fluid(36, 48, 400, 1100);
 		margin-bottom: 0;
 
 		@media (min-width: $bp-lg) {
@@ -154,32 +76,21 @@ $post-border-color: rgba(0, 0, 0, 0.125) !default;
 		&-item:not(:first-child) {
 			padding-left: $post-spacing;
 		}
-
-		// @media (min-width: $bp-lg) {
-		// 	@include child();
-		// }
 	}
 	@include parent(column);
 	@include shadow(2);
 }
 
 .c-copy {
-	font-size: 14px;
-	font-size: fluid(14, 21, 400, 1100);
+	@include type(body2);
 	font-weight: 300;
-	line-height: unitless(24, 14);
-	line-height: fluid(24, 36, 400, 1100);
-	letter-spacing: 0.04em;
 	margin: ($post-spacing * 2) 0 0;
 
 	> p {
-		font-size: 14px;
-		font-size: fluid(14, 21, 400, 1100);
-		font-weight: 300;
-		line-height: unitless(24, 14);
-		line-height: fluid(24, 36, 400, 1100);
+		font-size: inherit;
+		font-weight: inherit;
+		line-height: inherit;
 		margin-bottom: ($post-spacing * 2);
-		margin-bottom: fluid(16, 24, 400, 1100);
 	}
 
 	&-links {
@@ -215,11 +126,9 @@ $post-border-color: rgba(0, 0, 0, 0.125) !default;
 	}
 
 	&-list {
-		font-size: 14px;
-		font-size: fluid(14, 21, 400, 1100);
-		font-weight: 300;
-		line-height: unitless(24, 14);
-		line-height: fluid(24, 36, 400, 1100);
+		font-size: inherit;
+		font-weight: inherit;
+		line-height: inherit;
 		margin: ($post-spacing * 4);
 		margin-right: 0;
 		padding-left: ($post-spacing * 2);
@@ -242,4 +151,16 @@ $post-border-color: rgba(0, 0, 0, 0.125) !default;
 	}
 
 	@include child();
+}
+
+.c-post-fluid {
+	.c-post-title {
+		font-size: fluid(24, 36, 400, 1100);
+		line-height: fluid(36, 48, 400, 1100);
+	}
+
+	.c-copy {
+		font-size: fluid(14, 21, 400, 1100);
+		line-height: fluid(24, 36, 400, 1100);
+	}
 }
