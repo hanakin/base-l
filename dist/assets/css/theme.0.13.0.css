@@ -93,6 +93,8 @@
 	display: flex;
 	-webkit-flex-direction: column;
 	flex-direction: column;
+	-webkit-flex-wrap: nowrap;
+	flex-wrap: nowrap;
 	margin-bottom: 1rem;
 }
 
@@ -110,6 +112,10 @@
 	flex: 1;
 	-webkit-flex-direction: column;
 	flex-direction: column;
+	-webkit-flex-wrap: nowrap;
+	flex-wrap: nowrap;
+	-webkit-align-self: auto;
+	align-self: auto;
 	margin: 1rem 1rem 0;
 }
 
@@ -129,6 +135,8 @@
 	display: flex;
 	-webkit-flex-direction: column;
 	flex-direction: column;
+	-webkit-flex-wrap: nowrap;
+	flex-wrap: nowrap;
 	margin-right: 1rem;
 }
 
@@ -183,8 +191,12 @@
 	.c-forum-deck {
 		display: -webkit-flex;
 		display: flex;
-		-webkit-flex-flow: row wrap;
-		flex-flow: row wrap;
+		-webkit-flex-direction: row;
+		flex-direction: row;
+		-webkit-flex-wrap: wrap;
+		-webkit-flex-wrap: nowrap;
+		flex-wrap: wrap;
+		flex-wrap: nowrap;
 	}
 
 	.c-forum-deck .c-forum {
@@ -194,6 +206,8 @@
 		flex: 1 0 0%;
 		-webkit-flex-direction: column;
 		flex-direction: column;
+		-webkit-flex-wrap: nowrap;
+		flex-wrap: nowrap;
 		min-width: calc((100% / 2) - (12px));
 		max-width: calc((100% / 2) - (12px));
 		margin-bottom: 1.5rem;
@@ -234,8 +248,11 @@
 	float: left;
 	-webkit-flex: 1;
 	flex: 1;
+	align-self: auto;
+	-webkit-align-self: auto;
 	margin-bottom: 0;
 	padding: 1rem;
+	-ms-grid-row-align: auto;
 }
 
 .c-topic-header-actions {
@@ -280,14 +297,16 @@
 	line-height: 1.75;
 	letter-spacing: 0.04em;
 	border-top: 1px solid rgba(0, 0, 0, 0.125);
-	display: -webkit-flex;
 	display: flex;
+	display: -webkit-flex;
 	-webkit-flex: 1;
 	flex: 1;
 	-webkit-flex-direction: row;
 	flex-direction: row;
 	-webkit-flex-wrap: nowrap;
 	flex-wrap: nowrap;
+	-webkit-align-self: auto;
+	align-self: auto;
 	min-height: 72px;
 	padding: 1rem;
 }
@@ -314,7 +333,10 @@
 .c-topic-primary {
 	-webkit-flex: 1;
 	flex: 1;
+	-webkit-align-self: auto;
+	align-self: auto;
 	margin: 0;
+	-ms-grid-row-align: auto;
 }
 
 .c-topic-title {
@@ -338,7 +360,10 @@
 	letter-spacing: 0.04em;
 	-webkit-flex: 1;
 	flex: 1;
+	align-self: auto;
+	-webkit-align-self: auto;
 	margin: 0;
+	-ms-grid-row-align: auto;
 }
 
 .c-topic-title-data {
@@ -393,6 +418,8 @@
 	flex-direction: column;
 	-webkit-flex-wrap: nowrap;
 	flex-wrap: nowrap;
+	-webkit-align-self: auto;
+	align-self: auto;
 	margin: 0;
 	padding: 0;
 	list-style: none;
@@ -678,7 +705,6 @@
 	font-size: 0.75rem;
 	font-weight: 400;
 	line-height: 1.6666666667;
-	vertical-align: baseline;
 	letter-spacing: 0.08em;
 	display: block;
 }
@@ -793,10 +819,12 @@
 	text-decoration: none;
 	letter-spacing: normal;
 	color: #212121;
-	display: -webkit-flex;
 	display: flex;
+	display: -webkit-flex;
 	-webkit-flex-direction: row;
 	flex-direction: row;
+	-webkit-flex-wrap: nowrap;
+	flex-wrap: nowrap;
 	-webkit-align-items: center;
 	align-items: center;
 	height: 48px;
@@ -831,6 +859,10 @@
 .c-paging {
 	display: -webkit-flex;
 	display: flex;
+	-webkit-flex-direction: row;
+	flex-direction: row;
+	-webkit-flex-wrap: nowrap;
+	flex-wrap: nowrap;
 	margin: 0;
 	padding: 0;
 	list-style: none;

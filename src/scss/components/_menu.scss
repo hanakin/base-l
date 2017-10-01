@@ -67,8 +67,6 @@ $menu-divider-color: rgba(0, 0, 0, 0.125) !default;
 		white-space: nowrap;
 		text-decoration: none;
 		color: $menu-link-color;
-		display: flex;
-		flex-direction: row;
 		align-items: center;
 		height: $menu-link-size;
 		padding: 0 $menu-spacing-horizontal 0 $menu-spacing-horizontal;
@@ -90,6 +88,7 @@ $menu-divider-color: rgba(0, 0, 0, 0.125) !default;
 				color: $menu-link-hover-color;
 			}
 		}
+		@include parent();
 	}
 
 	&-divider {

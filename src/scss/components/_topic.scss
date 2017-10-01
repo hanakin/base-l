@@ -47,17 +47,14 @@ $topic-border-color: rgba(0, 0, 0, 0.125) !default;
 
 	&-header {
 		background-color: $topic-header-color;
-		display: flex;
-		flex-direction: row;
-		flex-wrap: nowrap;
 
 		&-title {
 			@include type(title);
 			line-height: unitless($topic-title-line-height, map-get(map-get($type-styles, title), font-size));
 			float: left;
-			flex: 1;
 			margin-bottom: 0;
 			padding: $topic-spacing;
+			@include child();
 		}
 
 		&-actions {
@@ -94,21 +91,20 @@ $topic-border-color: rgba(0, 0, 0, 0.125) !default;
 				}
 			}
 		}
+		@include parent();
 	}
 
 	&-item {
 		@include type(subhead2);
 		border-top: 1px solid $topic-border-color;
-		display: flex;
-		flex: 1;
-		flex-direction: row;
-		flex-wrap: nowrap;
 		min-height: $topic-height;
 		padding: $topic-spacing;
 
 		&:hover {
 			background-color: $topic-hover-color;
 		}
+		@include parent();
+		@include child();
 	}
 
 	&-type {
@@ -127,8 +123,8 @@ $topic-border-color: rgba(0, 0, 0, 0.125) !default;
 	}
 
 	&-primary {
-		flex: 1;
 		margin: 0;
+		@include child();
 	}
 
 	&-title {
@@ -143,8 +139,8 @@ $topic-border-color: rgba(0, 0, 0, 0.125) !default;
 		&-sub {
 			@include type(body1);
 			line-height: unitless($topic-margin-bottom);
-			flex: 1;
 			margin: 0;
+			@include child();
 		}
 
 		&-data {
@@ -183,10 +179,6 @@ $topic-border-color: rgba(0, 0, 0, 0.125) !default;
 		margin-left: $topic-action-icon-margin-left;
 
 		&-body {
-			display: flex;
-			flex: 1;
-			flex-direction: column;
-			flex-wrap: nowrap;
 			margin: 0;
 			padding: 0;
 			list-style: none;
@@ -197,6 +189,8 @@ $topic-border-color: rgba(0, 0, 0, 0.125) !default;
 			@media (min-width: $bp-md) {
 				margin-right: $topic-spacing;
 			}
+			@include parent(column);
+			@include child();
 		}
 
 		&-avatar {

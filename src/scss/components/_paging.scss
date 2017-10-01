@@ -21,7 +21,6 @@ $paging-link-background-hover-color: $default-action-bg-hover !default;
 //
 // @scss
 .c-paging {
-	display: flex;
 	margin: 0;
 	padding: 0;
 	list-style: none;
@@ -65,4 +64,5 @@ $paging-link-background-hover-color: $default-action-bg-hover !default;
 	&-item:last-of-type .c-paging-link {
 		padding: ($paging-spacing / 2);
 	}
+	@include parent();
 }

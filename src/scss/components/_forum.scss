@@ -32,8 +32,6 @@ $forum-media-read-color: $default-primary-color !default;
 	background-color: $forum-background-color;
 	border-radius: $forum-border-radius;
 	position: relative;
-	display: flex;
-	flex-direction: column;
 	margin-bottom: $forum-spacing;
 
 	&-body {
@@ -42,11 +40,10 @@ $forum-media-read-color: $default-primary-color !default;
 	}
 
 	&-media {
-		display: flex;
 		float: left;
-		flex: 1;
-		flex-direction: column;
 		margin: $forum-spacing $forum-spacing 0;
+		@include parent(column);
+		@include child();
 	}
 
 	&-media-icon {
@@ -61,9 +58,8 @@ $forum-media-read-color: $default-primary-color !default;
 	}
 
 	&-info {
-		display: flex;
-		flex-direction: column;
 		margin-right: $forum-spacing;
+		@include parent(column);
 	}
 
 	&-title {
@@ -106,14 +102,12 @@ $forum-media-read-color: $default-primary-color !default;
 
 	@media (min-width: $bp-lg) {
 		&-deck {
-			display: flex;
-			flex-flow: row wrap;
+			flex-wrap: wrap;
+			@include parent();
 		}
 
 		&-deck .c-forum {
-			display: flex;
 			flex: 1 0 0%;
-			flex-direction: column;
 			min-width: calc((100% / 2) - (12px));
 			max-width: calc((100% / 2) - (12px));
 			margin-bottom: $forum-spacing-lg;
@@ -123,7 +117,9 @@ $forum-media-read-color: $default-primary-color !default;
 			&:nth-child(2n+1) {
 				margin-left: 0;
 			}
+			@include parent(column);
 		}
 	}
+	@include parent(column);
 	@include shadow(2);
 }
