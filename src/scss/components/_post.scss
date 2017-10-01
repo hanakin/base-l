@@ -82,7 +82,7 @@ $post-border-color: rgba(0, 0, 0, 0.125) !default;
 }
 
 .c-copy {
-	@include type(body2);
+	@include type(subhead2);
 	font-weight: 300;
 	margin: ($post-spacing * 2) 0 0;
 

@@ -671,10 +671,10 @@
 }
 
 .c-copy {
-	font-size: 0.875rem;
+	font-size: 1rem;
 	font-weight: 300;
-	font-weight: 500;
-	line-height: 1.7142857143;
+	font-weight: 400;
+	line-height: 1.75;
 	letter-spacing: 0.04em;
 	-webkit-flex: 1;
 	flex: 1;
