@@ -80,13 +80,15 @@
 }
 
 .o-action-bar-user {
-	line-height: 1.75;
+	line-height: 1.35;
 	vertical-align: middle;
 	display: inline-block;
 	padding: 0 1rem 0 0;
 }
 
 .o-action-bar-user-title {
+	color: #000000;
+	opacity: 0.54;
 	display: block;
 }
 
