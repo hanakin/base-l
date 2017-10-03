@@ -4,7 +4,7 @@
 }
 
 .o-avatar-wrap {
-	display: inline-block;
+	position: relative;
 	width: 60%;
 	margin: 0 auto;
 }
