@@ -4,7 +4,6 @@
 }
 
 .o-avatar-wrap {
-	position: relative;
 	display: inline-block;
 	width: 60%;
 	margin: 0 auto;
@@ -70,6 +69,7 @@
 }
 
 .o-action-bar-avatar {
+	display: inline-block;
 	width: 40px;
 	height: 40px;
 	margin: 0.5rem;
