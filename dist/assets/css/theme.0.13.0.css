@@ -1,5 +1,6 @@
 .o-avatar {
 	vertical-align: middle;
+	border-radius: 50%;
 }
 
 .o-avatar-wrap {
