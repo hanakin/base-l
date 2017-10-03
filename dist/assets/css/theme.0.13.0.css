@@ -80,13 +80,21 @@
 }
 
 .o-action-bar-user {
+	font-size: 0.875rem;
+	font-weight: 500;
+	line-height: 1.7142857143;
 	line-height: 1.35;
 	vertical-align: middle;
+	letter-spacing: 0.04em;
 	display: inline-block;
 	padding: 0 1rem 0 0;
 }
 
 .o-action-bar-user-title {
+	font-size: 0.75rem;
+	font-weight: 400;
+	line-height: 1.6666666667;
+	letter-spacing: 0.08em;
 	color: #000000;
 	opacity: 0.54;
 	display: block;
@@ -168,6 +176,7 @@
 }
 
 .o-action-bar-profile {
+	max-width: 296px;
 	padding: 0;
 }
 
