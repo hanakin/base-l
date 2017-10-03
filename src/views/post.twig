@@ -7,13 +7,16 @@
 			<div class="o-action-bar c-post-header">
 				<ul class="o-action-bar-list">
 					<li class="o-action-bar-list-item o-action-bar-profile">
-						<div class="o-avatar-wrap o-action-bar-avatar">
-							<a class="" href="./memberlist.php?mode=viewprofile&amp;u=61815">
+						<a class="o-action-bar-profile-link" href="">
+							<span class="o-avatar-wrap o-action-bar-avatar">
 								<img class="o-avatar" src="https://avatars2.githubusercontent.com/u/73081?v=4&amp;s=460" alt="User Avatar">
-							</a>
-							<span class="o-avatar-online o-action-bar-avatar-online"></span>
-						</div>
-						<a class="o-action-bar-username" href="{{ post.url }}" style="color: {{ post.color }};">{{ post.author }}</a>
+								<span class="o-avatar-online o-action-bar-avatar-online"></span>
+							</span>
+							<span class="o-action-bar-user" style="color: {{ post.color }};">
+								{{ post.author }}
+								<small class="o-action-bar-user-title">{{ post.group }}</small>
+							</span>
+						</a>
 					</li>
 				</ul>
 				<ul class="o-action-bar-actions">
