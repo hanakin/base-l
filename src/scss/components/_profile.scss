@@ -21,8 +21,8 @@ $profile-user-title-color: $default-text-color !default;
 $profile-group-color: $white !default;
 $profile-action-color: $default-action-color !default;
 $profile-action-color-hover: $default-action-color-hover !default;
-$profile-bad-color: $default-success-color !default;
-$profile-good-color: $default-important-color !default;
+$profile-good-color: $default-success-color !default;
+$profile-bad-color: $default-important-color !default;
 
 
 //
@@ -109,12 +109,12 @@ $profile-good-color: $default-important-color !default;
 	&-rating {
 		&-good {
 			font-weight: 600;
-			color: $default-success-color;
+			color: $profile-good-color;
 		}
 
 		&-bad {
 			font-weight: 600;
-			color: $default-important-color;
+			color: $profile-bad-color;
 		}
 	}
 	@include shadow(2);
