@@ -14,7 +14,6 @@ $forum-spacing-sm: 12px !default;
 $forum-spacing-lg: 24px !default;
 $forum-border-radius: $default-border-radius !default;
 $forum-media-size: 40px !default;
-$forum-media-margin: 0 !default;
 $forum-border-style: solid !default;
 $forum-border-size: 1px !default;
 
@@ -50,7 +49,6 @@ $forum-media-read-color: $default-primary-color !default;
 		color: $forum-media-color;
 		width: $forum-media-size;
 		height: $forum-media-size;
-		margin-right: $forum-media-margin;
 
 		&-read {
 			color: $forum-media-read-color;

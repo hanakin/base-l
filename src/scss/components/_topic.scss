@@ -82,10 +82,6 @@ $topic-border-color: rgba(0, 0, 0, 0.125) !default;
 					color: $topic-action-hover-icon-color;
 				}
 
-				&-icon {
-					margin-right: 0;
-				}
-
 				&-icon:hover {
 					text-decoration: none;
 				}
@@ -114,7 +110,6 @@ $topic-border-color: rgba(0, 0, 0, 0.125) !default;
 			color: $topic-icon-color;
 			width: $topic-icon-size;
 			height: $topic-icon-size;
-			margin-right: 0;
 
 			&-read {
 				color: $topic-icon-color-read;
