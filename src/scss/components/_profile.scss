@@ -9,35 +9,33 @@
 // @settings
 
 // Layout Variables
-$forum-spacing: 16px !default;
-$forum-spacing-sm: 12px !default;
-$forum-spacing-lg: 24px !default;
-$forum-border-radius: $default-border-radius !default;
-$forum-media-size: 40px !default;
-$forum-media-margin: 0 !default;
-$forum-border-style: solid !default;
-$forum-border-size: 1px !default;
+$profile-spacing: 16px !default;
+$profile-width: 336px !default;
+$profile-group-height: 36px !default;
+$profile-border-radius: $default-border-radius !default;
 
 
 // Theme Variables
-$forum-background-color: $white !default;
-$forum-border-color: rgba(0, 0, 0, 0.125) !default;
-$forum-media-color: $default-secondary-color !default;
-$forum-media-read-color: $default-primary-color !default;
+$profile-background-color: $default-action-bg !default;
+$profile-user-title-color: $default-text-color !default;
+$profile-group-color: $white !default;
+$profile-action-color: $default-action-color !default;
+$profile-action-color-hover: $default-action-color-hover !default;
+$profile-bad-color: $default-success-color !default;
+$profile-good-color: $default-important-color !default;
 
 
 //
 // @scss
 .c-profile {
-	background-color: $gray-100;
-	border-radius: 2px;
-	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
-	width: 336px;
-	padding: 0 0 16px 0;
+	background-color: $profile-background-color;
+	border-radius: $profile-border-radius;
+	width: $profile-width;
+	padding: 0 0 $profile-spacing 0;
 
 	&-user {
 		&-title {
-			color: $black-87;
+			color: $profile-user-title-color;
 			opacity: 0.38;
 		}
 
@@ -47,62 +45,53 @@ $forum-media-read-color: $default-primary-color !default;
 	}
 
 	&-group {
-		font-size: 14px;
-		font-weight: 400;
-		line-height: 1.42857;
+		@include type(body1);
 		text-align: center;
-		letter-spacing: 0.04em;
-		color: $white;
-		height: 36px;
-		margin: 4px 0 -8px;
+		color: $profile-group-color;
+		height: $profile-group-height;
+		margin: ($profile-spacing / 4) 0 -($profile-spacing / 2);
 	}
 
 	&-menu {
-		color: $black-54;
+		color: $profile-action-color;
 		display: inline-block;
-		padding: 1rem;
+		padding: $profile-spacing;
 
 		&:hover,
 		&:focus {
-			color: $default-action-color-hover;
+			color: $profile-action-color-hover;
 		}
 	}
 
 	&-close {
-		color: $black-54;
-		display: inline-block;
+		color: $profile-action-color;
 		float: right;
-		padding: 1rem;
+		padding: $profile-spacing;
 
 		&:hover,
 		&:focus {
-			color: $default-action-color-hover;
-		}
-
-		&-icon {
-			margin-right: 0;
+			color: $profile-action-color-hover;
 		}
 	}
 
 	&-meta {
 		text-align: center;
 		margin: 0;
-		padding: 16px;
+		padding: $profile-spacing;
 	}
 
 	&-stats {
-		display: flex;
 		flex-wrap: wrap;
 		margin: 0;
 		padding: 0;
 		list-style: none;
+		@include parent();
 	}
 
 	&-stat {
 		text-align: center;
-		flex: 1;
 		min-width: calc((100% / 3));
-		padding: 8px 16px;
+		padding: ($profile-spacing / 2) $profile-spacing;
 
 		&-wrap {
 			font-size: 14px;
@@ -111,12 +100,10 @@ $forum-media-read-color: $default-primary-color !default;
 		}
 
 		&-value {
-			font-size: 12px;
-			font-weight: 400;
-			line-height: calc(20/12);
-			letter-spacing: 0.08em;
-			padding-top: 8px;
+			@include type(caption);
+			padding-top: ($profile-spacing / 2);
 		}
+		@include child();
 	}
 
 	&-rating {
@@ -130,6 +117,7 @@ $forum-media-read-color: $default-primary-color !default;
 			color: $default-important-color;
 		}
 	}
+	@include shadow(2);
 }
 
 
@@ -229,5 +217,4 @@ $forum-media-read-color: $default-primary-color !default;
 		}
 	}
 	@include parent(column);
-	@include shadow(2);
 }

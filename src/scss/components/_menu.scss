@@ -9,8 +9,9 @@
 // @settings
 
 // Layout Variables
-$menu-spacing-vertical: 8px !default;
-$menu-spacing-horizontal: 16px !default;
+$menu-spacing: 16px !default;
+$menu-spacing-horizontal: $menu-spacing !default;
+$menu-spacing-vertical: ($menu-spacing / 2) !default;
 $menu-icon-margin: 24px !default;
 $menu-icon-size: 32px !default;
 $menu-link-size: 48px !default;
@@ -20,9 +21,9 @@ $menu-divider-height: 1px !default;
 // Theme Variables
 $menu-background-color: $white !default;
 $menu-link-color: $default-text-color !default;
-$menu-icon-color: $default-action-icon-color !default;
-$menu-link-hover-color: $default-action-color-hover !default;
-$menu-link-hover-background-color: $default-action-bg-hover !default;
+$menu-action-icon-color: $default-action-icon-color !default;
+$menu-action-color-hover: $default-action-color-hover !default;
+$menu-action-bg: $default-action-bg-hover !default;
 $menu-divider-color: rgba(0, 0, 0, 0.125) !default;
 
 
@@ -73,7 +74,7 @@ $menu-divider-color: rgba(0, 0, 0, 0.125) !default;
 		cursor: pointer;
 
 		&-icon {
-			color: $menu-icon-color;
+			color: $menu-action-icon-color;
 			width: $menu-icon-size;
 			height: $menu-icon-size;
 			margin-right: $menu-icon-margin;
@@ -81,11 +82,11 @@ $menu-divider-color: rgba(0, 0, 0, 0.125) !default;
 
 		&:hover {
 			text-decoration: none;
-			background-color: $menu-link-hover-background-color;
-			color: $menu-link-hover-color;
+			background-color: $menu-action-bg;
+			color: $menu-action-color-hover;
 
 			.c-menu-link-icon {
-				color: $menu-link-hover-color;
+				color: $menu-action-color-hover;
 			}
 		}
 		@include parent();
