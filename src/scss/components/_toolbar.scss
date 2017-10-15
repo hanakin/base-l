@@ -52,8 +52,7 @@ $toolbar-action-hover-color: $default-action-color-hover !default;
 	}
 
 	&-action {
-		@include type(button);
-		line-height: unitless($toolbar-height, map-get(map-get($type-styles, button), font-size));
+		@include type(button, $lh: unitless($toolbar-height, map-get(map-get($type-styles, button), font-size)));
 		text-align: center; // [4]
 		vertical-align: middle; // [2]
 		white-space: nowrap; // bs only

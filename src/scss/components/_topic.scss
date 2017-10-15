@@ -44,8 +44,7 @@ $topic-border-color: rgba(0, 0, 0, 0.125) !default;
 		background-color: $topic-header-color;
 
 		&-title {
-			@include type(title);
-			line-height: unitless($topic-title-line-height, map-get(map-get($type-styles, title), font-size));
+			@include type(title, $lh: unitless($topic-title-line-height, map-get(map-get($type-styles, title), font-size)));
 			float: left;
 			margin-bottom: 0;
 			padding: $topic-spacing;
@@ -118,8 +117,7 @@ $topic-border-color: rgba(0, 0, 0, 0.125) !default;
 	}
 
 	&-title {
-		@include type(subhead2);
-		line-height: unitless($topic-margin-bottom);
+		@include type(subhead2, $lh: unitless($topic-margin-bottom));
 		margin: 0;
 
 		&-link:hover {
@@ -127,8 +125,7 @@ $topic-border-color: rgba(0, 0, 0, 0.125) !default;
 		}
 
 		&-sub {
-			@include type(body1);
-			line-height: unitless($topic-margin-bottom);
+			@include type(body1, $lh: unitless($topic-margin-bottom));
 			margin: 0;
 			@include child();
 		}
@@ -169,8 +166,7 @@ $topic-border-color: rgba(0, 0, 0, 0.125) !default;
 		margin-left: ($topic-spacing / 2);
 
 		&-user {
-			@include type(body2);
-			line-height: unitless($topic-subheader-line-height, map-get(map-get($type-styles, title), font-size));
+			@include type(body2, $lh: unitless($topic-subheader-line-height, map-get(map-get($type-styles, title), font-size)));
 			text-align: right;
 			vertical-align: middle;
 			display: inline-block;
