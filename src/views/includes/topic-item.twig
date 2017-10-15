@@ -34,16 +34,19 @@
 		</dd>
 	</dl>
 	<div class="c-topic-secondary">
-		<ul class="c-topic-secondary-body">
-			<li class="c-topic-secondary-body-item c-topic-secondary-time">
-				<a class="c-topic-secondary-link" href="#">
-					<time datetime="{{ topic.last_time }}" title="{{ topic.last_time }}" data-short="{{ topic.last_time }}">{{ topic.last_time|moment("YYYYMMDD", true) }}</time>
-				</a>
-			</li>
-			<li class="c-topic-secondary-body-item c-topic-secondary-user">
-				<a class="c-list-secondary-link" href="./memberlist.php?mode=viewprofile&amp;u=61815" style="color: #{{ topic.last_color }};">{{ topic.last_author }}</a>
-			</li>
-		</ul>
-		<a class="c-topic-secondary-avatar" href="./memberlist.php?mode=viewprofile&amp;u=61815"><img src="{{ topic.last_avatar }}" width="44" height="44" class="user-avatar" alt="User Gravatar" data-dropdown="#user-dropdown"></a>
+		<span class="c-topic-secondary-user">
+			<a class="c-topic-secondary-link" href="./memberlist.php?mode=viewprofile&amp;u=61815" style="color: #{{ topic.last_color }};">{{ topic.last_author }}</a>
+				<small class="c-topic-secondary-date">
+					<a class="c-topic-secondary-link" href="">
+						<time datetime="{{ topic.last_time }}" title="{{ topic.last_time }}" data-short="{{ topic.last_time }}">{{ topic.last_time|moment("YYYYMMDD", true) }}</time>
+					</a>
+				</small>
+		</span>
+		<a class="c-topic-secondary-avatar-link" href="./memberlist.php?mode=viewprofile&amp;u=61815">
+			<span class="o-avatar-wrap c-topic-secondary-avatar">
+				<img class="o-avatar" src="{{ topic.last_avatar }}" alt="User Avatar">
+				<span class="o-avatar-online o-action-bar-avatar-online"></span>
+			</span>
+		</a>
 	</div>
 </li>

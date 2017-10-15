@@ -13,16 +13,11 @@ $topic-spacing: 16px !default;
 $topic-border-radius: $default-border-radius !default;
 $topic-height: 72px !default;
 $topic-icon-size: 40px !default;
+$topic-avatar-size: 44px !default;
 $topic-margin-bottom: 24px !default;
-$topic-heading-margin-bottom: -32px !default;
 $topic-title-line-height: 20px !default;
 $topic-subheader-line-height: 18px !default;
-$topic-data-spacing: 16px !default;
 $topic-data-icon-size: 18px !default;
-$topic-data-icon-margin: ($topic-data-icon-size / 2) !default;
-$topic-action-icon-margin-left: 8px !default;
-$topic-action-img-size: 34px !default;
-$topic-action-img-margin-bottom: 8px !default;
 $topic-border-style: solid !default;
 
 // Theme Variables
@@ -140,7 +135,7 @@ $topic-border-color: rgba(0, 0, 0, 0.125) !default;
 
 		&-data {
 			display: inline-block;
-			padding-right: $topic-data-spacing;
+			padding-right: $topic-spacing;
 
 			&-time {
 				display: none;
@@ -159,7 +154,7 @@ $topic-border-color: rgba(0, 0, 0, 0.125) !default;
 			&-icon {
 				width: $topic-data-icon-size;
 				height: $topic-data-icon-size;
-				margin-right: $topic-data-icon-margin;
+				margin-right: ($topic-spacing / 2);
 			}
 
 			&-link:hover {
@@ -171,51 +166,35 @@ $topic-border-color: rgba(0, 0, 0, 0.125) !default;
 	&-secondary {
 		display: inline-flex;
 		flex-wrap: nowrap;
-		margin-left: $topic-action-icon-margin-left;
+		margin-left: ($topic-spacing / 2);
 
-		&-body {
-			margin: 0;
-			padding: 0;
-			list-style: none;
+		&-user {
+			@include type(body2);
+			line-height: unitless($topic-subheader-line-height, map-get(map-get($type-styles, title), font-size));
+			text-align: right;
+			vertical-align: middle;
+			display: inline-block;
+			align-self: center;
+			padding: 0 0 0 $topic-spacing;
+		}
 
-			&-item {
-				text-align: right;
-			}
-			@media (min-width: $bp-md) {
-				margin-right: $topic-spacing;
-			}
-			@include parent(column);
-			@include child();
+		&-date {
+			@include type(caption);
+			text-align: right;
+			display: block;
 		}
 
 		&-avatar {
-			border-radius: 50%;
-			display: none;
-			width: $topic-action-img-size;
-			height: $topic-action-img-size;
-			margin-bottom: $topic-action-img-margin-bottom;
-			@media (min-width: $bp-lg) {
-				display: block;
-			}
+			align-self: center;
+			width: $topic-avatar-size;
+			height: $topic-avatar-size;
+			margin: 0;
+			margin-left: ($topic-spacing / 2);
+			padding: 0;
 		}
-
 
 		&-link:hover {
 			text-decoration: underline;
-		}
-
-		&-user {
-			display: none;
-			@media (min-width: $bp-md) {
-				display: inline-block;
-			}
-		}
-
-		&-time {
-			@include type(caption);
-			@media (min-width: $bp-md) {
-				@include type(body1);
-			}
 		}
 	}
 	@include shadow(2);
