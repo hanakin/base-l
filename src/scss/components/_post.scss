@@ -20,7 +20,6 @@ $post-emoji-size-min: 18px !default;
 
 // Theme Variables
 $post-header-bg-color: $default-action-bg !default;
-$post-sidebar-bg-color: $default-action-bg !default;
 $post-group-color: $white !default;
 $post-border-color: rgba(0, 0, 0, 0.125) !default;
 
@@ -37,7 +36,7 @@ $post-border-color: rgba(0, 0, 0, 0.125) !default;
 	}
 
 	&-user {
-		background-color: $action-bg-color;
+		background-color: $post-header-bg-color;
 		border-bottom: $post-border-size $post-border-style $post-border-color;
 		display: none;
 		padding: ($post-spacing * 2);

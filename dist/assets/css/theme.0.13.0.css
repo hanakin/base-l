@@ -59,7 +59,7 @@
 	color: #ffffff;
 }
 
-.o-action-bar {
+.o-bar {
 	background-color: #f5f5f5;
 	display: -webkit-flex;
 	display: flex;
@@ -69,8 +69,8 @@
 	flex-wrap: nowrap;
 }
 
-.o-action-bar-left,
-.o-action-bar-right {
+.o-bar-left,
+.o-bar-right {
 	-webkit-flex: 1;
 	flex: 1;
 	margin: 0;
@@ -78,41 +78,41 @@
 	list-style: none;
 }
 
-.o-action-bar-left {
+.o-bar-left {
 	float: left;
 }
 
-.o-action-bar-right {
+.o-bar-right {
 	float: right;
 }
 
-.o-action-bar-left .o-action-bar-item {
+.o-bar-left .o-bar-item {
 	float: left;
 }
 
-.o-action-bar-info {
+.o-bar-info {
 	display: -webkit-inline-flex;
 	display: inline-flex;
 	padding: 1rem;
 	padding-right: 0;
 }
 
-.o-action-bar-info-icon {
+.o-bar-info-icon {
 	margin-right: 0.5rem;
 }
 
-.o-action-bar-action {
+.o-bar-action {
 	color: #757575;
 	padding: 1rem;
 }
 
-.o-action-bar-action:hover,
-.o-action-bar-action:focus {
+.o-bar-action:hover,
+.o-bar-action:focus {
 	background-color: #eeeeee;
 	color: #258cf4;
 }
 
-.o-action-bar-avatar {
+.o-bar-avatar {
 	display: inline-block;
 	width: 40px;
 	height: 40px;
@@ -120,7 +120,7 @@
 	padding: 0;
 }
 
-.o-action-bar-title {
+.o-bar-title {
 	font-size: 1.25rem;
 	font-weight: 500;
 	line-height: 1;
@@ -135,12 +135,12 @@
 	-ms-grid-row-align: auto;
 }
 
-.o-action-bar-profile {
+.o-bar-profile {
 	max-width: 296px;
 	padding: 0.5rem 1rem;
 }
 
-.o-action-bar-user {
+.o-bar-user {
 	font-size: 0.875rem;
 	font-weight: 500;
 	line-height: 1.35;
@@ -150,7 +150,7 @@
 	padding: 0 1rem 0 0;
 }
 
-.o-action-bar-user-title {
+.o-bar-user-title {
 	font-size: 0.75rem;
 	font-weight: 400;
 	line-height: 1.6666666667;
