@@ -78,16 +78,14 @@
 	list-style: none;
 }
 
-.o-bar-left {
-	float: left;
-}
-
-.o-bar-right {
-	float: right;
-}
-
+.o-bar-left,
 .o-bar-left .o-bar-item {
 	float: left;
+}
+
+.o-bar-right,
+.o-bar-right .o-bar-item {
+	float: right;
 }
 
 .o-bar-info {
@@ -103,6 +101,8 @@
 
 .o-bar-action {
 	color: #757575;
+	display: -webkit-inline-flex;
+	display: inline-flex;
 	padding: 1rem;
 }
 
