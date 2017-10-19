@@ -40,50 +40,6 @@ $topic-border-color: rgba(0, 0, 0, 0.125) !default;
 	padding: 0;
 	list-style: none;
 
-	&-header {
-		background-color: $topic-header-color;
-
-		&-title {
-			@include type(title, $lh: unitless($topic-title-line-height, map-get(map-get($type-styles, title), font-size)));
-			float: left;
-			margin-bottom: 0;
-			padding: $topic-spacing;
-			@include child();
-		}
-
-		&-actions {
-			margin: 0;
-			padding: 0;
-			list-style: none;
-		}
-
-		&-action {
-			display: flex;
-			float: right;
-
-			&-item {
-				position: relative;
-			}
-
-			&-link {
-				color: $topic-action-icon-color;
-				display: inline-block;
-				padding: $topic-spacing;
-
-				&:hover,
-				&:focus {
-					background-color: $topic-action-hover-color;
-					color: $topic-action-hover-icon-color;
-				}
-
-				&-icon:hover {
-					text-decoration: none;
-				}
-			}
-		}
-		@include parent();
-	}
-
 	&-item {
 		@include type(subhead2);
 		border-top: 1px solid $topic-border-color;
@@ -181,11 +137,11 @@ $topic-border-color: rgba(0, 0, 0, 0.125) !default;
 		}
 
 		&-avatar {
+			display: inline-block;
 			align-self: center;
 			width: $topic-avatar-size;
 			height: $topic-avatar-size;
-			margin: 0;
-			margin-left: ($topic-spacing / 2);
+			margin: 0 ($bar-spacing / 2) 0 0;
 			padding: 0;
 		}
 
