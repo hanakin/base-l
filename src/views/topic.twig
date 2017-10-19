@@ -4,14 +4,20 @@
 {% block component %}
 				<ul class="c-topic">
 					<li class="c-topic-header">
-						<h2 class="c-topic-header-title">Announcments</h2>
-						<ul class="c-topic-header-actions">
-							<li class="c-topic-header-action">
-								<a class="c-topic-header-action-link" href="" data-toggle="tooltip" data-placement="top" title="SubForums">
-									<svg class="o-icon c-topic-header-action-link-icon"><use xlink:href="#more-v"></use></svg>
-								</a>
-							</li>
-						</ul>
+						<div class="o-bar">
+							<ul class="o-bar-left">
+								<li class="o-bar-item">
+									<h2 class="o-bar-title">Announcments</h2>
+								</li>
+							</ul>
+							<ul class="o-bar-right">
+								<li class="o-bar-item">
+									<a class="o-bar-action" href="" data-toggle="tooltip" data-placement="top" title="SubForums">
+										<svg class="o-icon o-bar-action-icon"><use xlink:href="#more-v"></use></svg>
+									</a>
+								</li>
+							</ul>
+						</div>
 					</li>
 				{% for topic in topics %}
 				{% if topic.type === "announce" %}
@@ -21,14 +27,20 @@
 				</ul>
 				<ul class="c-topic">
 					<li class="c-topic-header">
-						<h2 class="c-topic-header-title">Forum</h2>
-						<ul class="c-topic-header-actions">
-							<li class="c-topic-header-action">
-								<a class="c-topic-header-action-link" href="" data-toggle="tooltip" data-placement="top" title="SubForums">
-									<svg class="o-icon c-topic-header-action-link-icon"><use xlink:href="#more-v"></use></svg>
-								</a>
-							</li>
-						</ul>
+						<div class="o-bar">
+							<ul class="o-bar-left">
+								<li class="o-bar-item">
+									<h2 class="o-bar-title">Forum</h2>
+								</li>
+							</ul>
+							<ul class="o-bar-right">
+								<li class="o-bar-item">
+									<a class="o-bar-action" href="" data-toggle="tooltip" data-placement="top" title="SubForums">
+										<svg class="o-icon o-bar-action-icon"><use xlink:href="#more-v"></use></svg>
+									</a>
+								</li>
+							</ul>
+						</div>
 					</li>
 					{% for topic in topics %}
 					{% if topic.type === "sticky" %}
