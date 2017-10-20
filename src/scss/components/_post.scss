@@ -42,16 +42,6 @@ $post-border-color: rgba(0, 0, 0, 0.125) !default;
 		@include child();
 	}
 
-	&-user {
-		background-color: $post-header-bg-color;
-		border-bottom: $post-border-size $post-border-style $post-border-color;
-		display: none;
-		padding: ($post-spacing * 2);
-		@media (min-width: $bp-lg) {
-			display: block;
-		}
-	}
-
 	&-body {
 		min-height: $post-body-min-height;
 		padding: ($post-spacing * 2);
