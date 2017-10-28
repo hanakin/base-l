@@ -29,6 +29,7 @@ $menu-divider-color: rgba(0, 0, 0, 0.125) !default;
 
 //
 // @scss
+<<<<<<< HEAD
 .c-menu-container {
 	text-align: left;
 	background-color: $menu-background-color;
@@ -42,10 +43,25 @@ $menu-divider-color: rgba(0, 0, 0, 0.125) !default;
 	@include shadow(1);
 }
 
+=======
+>>>>>>> fix menu for js
 .c-menu {
 	margin: 0;
 	padding: $menu-spacing-vertical 0;
 	list-style: none;
+
+	&-container {
+		text-align: left;
+		background-color: $menu-background-color;
+		border-radius: $menu-border-radius;
+		position: absolute;
+		z-index: 999;
+		top: 0;
+		overflow: auto;
+		transition: all 0.2s ease;
+		transform: scale(0);
+		@include shadow(1);
+	}
 
 	&-item {
 		position: relative;
@@ -53,6 +69,7 @@ $menu-divider-color: rgba(0, 0, 0, 0.125) !default;
 
 	&-toggle {
 		cursor: pointer;
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 		&:hover,
@@ -74,6 +91,8 @@ $menu-divider-color: rgba(0, 0, 0, 0.125) !default;
 	&-active {
 		transform: scale(1);
 >>>>>>> test menu
+=======
+>>>>>>> fix menu for js
 	}
 
 	&-link {
