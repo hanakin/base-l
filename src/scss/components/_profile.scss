@@ -109,6 +109,10 @@ $profile-bad-color: $default-important-color !default;
 			padding: 0;
 		}
 
+		&-title {
+			margin-left: $profile-spacing;
+		}
+
 		&-value {
 			@include type(caption);
 			padding-top: ($profile-spacing / 2);
