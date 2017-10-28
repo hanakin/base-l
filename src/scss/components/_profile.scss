@@ -110,7 +110,7 @@ $profile-bad-color: $default-important-color !default;
 		}
 
 		&-title {
-			margin-left: $profile-spacing;
+			margin-left: ($profile-spacing / 2);
 		}
 
 		&-value {
