@@ -30,8 +30,18 @@ $profile-bad-color: $default-important-color !default;
 .c-profile {
 	background-color: $profile-background-color;
 	border-radius: $profile-border-radius;
+	position: absolute;
+	z-index: 999;
+	top: 0;
 	width: $profile-width;
 	padding: 0 0 $profile-spacing 0;
+	transition: all 0.2s ease;
+	transform: scale(0);
+
+	&-toggle {
+		position: relative;
+		cursor: pointer;
+	}
 
 	&-user {
 		&-title {
