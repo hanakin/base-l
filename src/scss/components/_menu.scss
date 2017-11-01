@@ -17,6 +17,11 @@ $menu-icon-size: 32px !default;
 $menu-link-size: 48px !default;
 $menu-border-radius: $default-border-radius !default;
 $menu-divider-height: 1px !default;
+$menu-opacity-1: $default-opacity !default;
+$menu-opacity-87: $default-opacity-87 !default;
+$menu-opacity-54: $default-opacity-54 !default;
+$menu-opacity-38: $default-opacity-38 !default;
+$menu-opacity-12: $default-opacity-12 !default;
 
 // Theme Variables
 $menu-background-color: $white !default;
@@ -107,6 +112,7 @@ $menu-divider-color: rgba(0, 0, 0, 0.125) !default;
 
 		&-icon {
 			color: $menu-action-icon-color;
+			opacity: $menu-opacity-54;
 			width: $menu-icon-size;
 			height: $menu-icon-size;
 			margin-right: $menu-icon-margin;
@@ -120,6 +126,7 @@ $menu-divider-color: rgba(0, 0, 0, 0.125) !default;
 
 			.c-menu-link-icon {
 				color: $menu-action-color-hover;
+				opacity: $menu-opacity-1;
 				transition: 0.5s;
 			}
 		}
