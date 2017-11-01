@@ -1,0 +1,143 @@
+//------------------------------------------------------------------------------
+// @object: Drawer
+//------------------------------------------------------------------------------
+// @description
+//
+//------------------------------------------------------------------------------
+
+//
+// @settings
+
+// Layout Variables
+$drawer-spacing: 16px !default;
+$drawer-width: 248px !default;
+$drawer-border-height: 1px !default;
+$drawer-opacity-1: $default-opacity !default;
+$drawer-opacity-87: $default-opacity-87 !default;
+$drawer-opacity-54: $default-opacity-54 !default;
+$drawer-opacity-38: $default-opacity-38 !default;
+$drawer-opacity-12: $default-opacity-12 !default;
+
+
+// Theme Variables
+$drawer-bg-color: $default-action-bg !default;
+$drawer-bg-hover-color: $default-action-bg-hover !default;
+$drawer-text-color: $default-action-color !default;
+$drawer-icon-color: $default-action-color !default;
+$drawer-icon-hover-color: $default-action-color-hover !default;
+$drawer-border-type: solid !default;
+$drawer-border-color: rgba(0, 0, 0, 0.125) !default;
+$drawer-border: $drawer-border-height $drawer-border-type $drawer-border-color !default;
+
+
+//
+// @scss
+.c-drawer {
+	background-color: $drawer-bg-color;
+	border-left: $drawer-border;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	flex-shrink: 1;
+	align-self: auto;
+	height: 100%;
+	padding: $drawer-spacing 0;
+
+	&:hover,
+	&_toggled {
+		display: block;
+
+		.c-drawer-link-text {
+			display: inline-block;
+			min-width: $drawer-width;
+			transition: 0.5s;
+		}
+
+		.c-drawer-user-name {
+			display: inline-block;
+		}
+	}
+
+	&-user {
+		@include type(menu);
+		border-bottom: $drawer-border;
+		color: $drawer-text-color;
+		margin-bottom: 0;
+		padding: $drawer-spacing;
+
+		&-name {
+			@include type(body2);
+			vertical-align: middle;
+			display: none;
+			margin-left: ($drawer-spacing / 2);
+			padding: 0 $drawer-spacing 0 0;
+		}
+
+		&-title {
+			@include type(caption);
+			color: $drawer-text-color;
+			opacity: $drawer-opacity-54;
+			display: block;
+		}
+	}
+
+	&-menu {
+		display: none;
+		margin: 0;
+		padding: 0;
+
+		&:hover > .c-drawer-menu,
+		&:focus > .c-drawer-menu {
+			display: block;
+			transition: 0.5s;
+		}
+	}
+
+	&-item:hover,
+	&-item:focus {
+		> .c-drawer-menu,
+		> .c-drawer-menu {
+			display: block;
+			transition: 0.5s;
+		}
+	}
+
+	&-divider {
+		background-color: $drawer-border-color;
+		height: $drawer-border-height;
+	}
+
+	&-link {
+		color: $drawer-text-color;
+		opacity: $drawer-opacity-87;
+		display: block;
+		padding: $drawer-spacing $drawer-spacing $drawer-spacing ($drawer-spacing * 1.5);
+		cursor: pointer;
+		transition: 0.5s;
+
+		&-icon {
+			color: $drawer-icon-color;
+			opacity: $drawer-opacity-54;
+			margin: 0;
+			transition: 0.5s;
+		}
+
+		&-text {
+			display: none;
+			padding-left: ($drawer-spacing / 2);
+		}
+
+		&:hover {
+			background-color: $drawer-bg-hover-color;
+			color: $drawer-text-color;
+			transition: 0.5s;
+
+			.c-drawer-link-icon {
+				color: $drawer-icon-hover-color;
+				opacity: $drawer-opacity-1;
+				transition: 0.5s;
+			}
+		}
+	}
+}
