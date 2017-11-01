@@ -116,9 +116,11 @@ $menu-divider-color: rgba(0, 0, 0, 0.125) !default;
 			text-decoration: none;
 			background-color: $menu-action-bg;
 			color: $menu-action-color-hover;
+			transition: 0.5s;
 
 			.c-menu-link-icon {
 				color: $menu-action-color-hover;
+				transition: 0.5s;
 			}
 		}
 		@include parent();

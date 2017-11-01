@@ -51,6 +51,7 @@ $paging-link-background-hover-color: $default-action-bg-hover !default;
 			text-decoration: none;
 			background: $paging-link-background-hover-color;
 			border-radius: $paging-border-radius;
+			transition: 0.5s;
 		}
 
 		&-icon {

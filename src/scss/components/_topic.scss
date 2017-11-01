@@ -48,6 +48,7 @@ $topic-border-color: rgba(0, 0, 0, 0.125) !default;
 
 		&:hover {
 			background-color: $topic-hover-color;
+			transition: 0.5s;
 		}
 		@include parent();
 		@include child();
@@ -78,6 +79,7 @@ $topic-border-color: rgba(0, 0, 0, 0.125) !default;
 
 		&-link:hover {
 			text-decoration: underline;
+			transition: 0.5s;
 		}
 
 		&-sub {
@@ -112,6 +114,7 @@ $topic-border-color: rgba(0, 0, 0, 0.125) !default;
 
 			&-link:hover {
 				text-decoration: underline;
+				transition: 0.5s;
 			}
 		}
 	}
@@ -147,6 +150,7 @@ $topic-border-color: rgba(0, 0, 0, 0.125) !default;
 
 		&-link:hover {
 			text-decoration: underline;
+			transition: 0.5s;
 		}
 	}
 	@include shadow(2);
@@ -177,6 +181,7 @@ $topic-border-color: rgba(0, 0, 0, 0.125) !default;
 		&:hover {
 			text-decoration: none;
 			background: $gray-400;
+			transition: 0.5s;
 		}
 
 		&-icon {
