@@ -65,6 +65,10 @@ $menu-divider-color: rgba(0, 0, 0, 0.125) !default;
 		overflow: auto;
 		transition: all 0.2s ease;
 		transform: scale(0);
+
+		&.is-active {
+			transform: scale(1);
+		}
 		@include shadow(1);
 	}
 
