@@ -91,6 +91,7 @@ $drawer-border: $drawer-border-height $drawer-border-type $drawer-border-color !
 	}
 
 	&-menu {
+		display: none;
 		margin: 0;
 		padding: 0;
 		transform: scaleY(0);
@@ -98,9 +99,10 @@ $drawer-border: $drawer-border-height $drawer-border-type $drawer-border-color !
 
 	&-item {
 		&.is-active > .c-drawer-menu {
+			display: block;
 			transition: 0.35s ease;
 			transform: scaleY(1);
-			transform-origin: center top;
+			transform-origin: top;
 		}
 	}
 
