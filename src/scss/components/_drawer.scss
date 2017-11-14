@@ -48,8 +48,8 @@ $drawer-border: $drawer-border-height $drawer-border-type $drawer-border-color !
 	transform: scaleX(0);
 
 	&:hover,
-	.is-active {
-		transition: 0.5s;
+	&.is-active {
+		transition: 0.35s ease-in-out;
 		transform: scaleX(1);
 
 		.c-drawer-link-text {
@@ -60,6 +60,10 @@ $drawer-border: $drawer-border-height $drawer-border-type $drawer-border-color !
 
 		.c-drawer-user-name {
 			display: inline-block;
+		}
+
+		@media (min-width: $bp-lg) {
+			transition: 0.5s;
 		}
 	}
 
