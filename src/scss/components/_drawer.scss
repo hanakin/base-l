@@ -10,6 +10,7 @@
 
 // Layout Variables
 $drawer-spacing: 16px !default;
+$drawer-bar-offset: 54px !default;
 $drawer-width: 248px !default;
 $drawer-border-height: 1px !default;
 $drawer-opacity-1: $default-opacity !default;
@@ -34,19 +35,22 @@ $drawer-border: $drawer-border-height $drawer-border-type $drawer-border-color !
 // @scss
 .c-drawer {
 	background-color: $drawer-bg-color;
+	border-top: $drawer-border;
 	border-left: $drawer-border;
 	position: absolute;
-	top: 0;
+	top: $drawer-bar-offset;
 	right: 0;
 	bottom: 0;
 	flex-shrink: 1;
 	align-self: auto;
 	height: 100%;
 	padding: $drawer-spacing 0;
+	transform: scaleX(0);
 
 	&:hover,
-	&_toggled {
-		display: block;
+	.is-active {
+		transition: 0.5s;
+		transform: scaleX(1);
 
 		.c-drawer-link-text {
 			display: inline-block;
@@ -139,5 +143,9 @@ $drawer-border: $drawer-border-height $drawer-border-type $drawer-border-color !
 				transition: 0.5s;
 			}
 		}
+	}
+
+	@media (min-width: $bp-lg) {
+		transform: scaleX(1);
 	}
 }
