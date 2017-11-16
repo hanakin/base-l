@@ -94,15 +94,13 @@ $drawer-border: $drawer-border-height $drawer-border-type $drawer-border-color !
 		display: none;
 		margin: 0;
 		padding: 0;
+		transition: 0.35s ease;
 		transform: scaleY(0);
-	}
+		transform-origin: top;
 
-	&-item {
-		&.is-active > .c-drawer-menu {
+		&.is-active {
 			display: block;
-			transition: 0.35s ease;
 			transform: scaleY(1);
-			transform-origin: top;
 		}
 	}
 
