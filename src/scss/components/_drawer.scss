@@ -12,6 +12,7 @@
 $drawer-spacing: 16px !default;
 $drawer-bar-offset: 58px !default;
 $drawer-width: 248px !default;
+$drawer-border-height: $default-border-size;
 $drawer-opacity-1: $default-opacity !default;
 $drawer-opacity-87: $default-opacity-87 !default;
 $drawer-opacity-54: $default-opacity-54 !default;
@@ -25,6 +26,8 @@ $drawer-bg-hover-color: $default-action-bg-hover !default;
 $drawer-text-color: $default-action-color !default;
 $drawer-icon-color: $default-action-color !default;
 $drawer-icon-hover-color: $default-action-color-hover !default;
+$drawer-border-color: rgba(0, 0, 0, 0.125) !default;
+$drawer-border: $drawer-border-height solid $drawer-border-color !default;
 
 
 //
