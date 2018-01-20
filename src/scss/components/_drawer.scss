@@ -1,5 +1,5 @@
 //------------------------------------------------------------------------------
-// @object: Drawer
+// @component: stat
 //------------------------------------------------------------------------------
 // @description
 //
@@ -10,9 +10,8 @@
 
 // Layout Variables
 $drawer-spacing: 16px !default;
-$drawer-bar-offset: 54px !default;
+$drawer-bar-offset: 58px !default;
 $drawer-width: 248px !default;
-$drawer-border-height: 1px !default;
 $drawer-opacity-1: $default-opacity !default;
 $drawer-opacity-87: $default-opacity-87 !default;
 $drawer-opacity-54: $default-opacity-54 !default;
@@ -26,17 +25,14 @@ $drawer-bg-hover-color: $default-action-bg-hover !default;
 $drawer-text-color: $default-action-color !default;
 $drawer-icon-color: $default-action-color !default;
 $drawer-icon-hover-color: $default-action-color-hover !default;
-$drawer-border-type: solid !default;
-$drawer-border-color: rgba(0, 0, 0, 0.125) !default;
-$drawer-border: $drawer-border-height $drawer-border-type $drawer-border-color !default;
 
 
 //
 // @scss
 .c-drawer {
+	@include shadow(2);
 	background-color: $drawer-bg-color;
-	border-top: $drawer-border;
-	border-left: $drawer-border;
+	border: none;
 	position: absolute;
 	top: $drawer-bar-offset;
 	right: 0;
@@ -46,6 +42,7 @@ $drawer-border: $drawer-border-height $drawer-border-type $drawer-border-color !
 	height: 100%;
 	padding: $drawer-spacing 0;
 	transform: scaleX(0);
+	transform-origin: center right;
 
 	&:hover,
 	&.is-active {
@@ -112,10 +109,13 @@ $drawer-border: $drawer-border-height $drawer-border-type $drawer-border-color !
 	&-link {
 		color: $drawer-text-color;
 		opacity: $drawer-opacity-87;
+		position: relative;
 		display: block;
+		overflow: hidden;
 		padding: $drawer-spacing $drawer-spacing $drawer-spacing ($drawer-spacing * 1.5);
 		cursor: pointer;
 		transition: 0.5s;
+		transform: translate3d(0, 0, 0);
 
 		&-icon {
 			color: $drawer-icon-color;
@@ -127,6 +127,29 @@ $drawer-border: $drawer-border-height $drawer-border-type $drawer-border-color !
 		&-text {
 			display: none;
 			padding-left: ($drawer-spacing / 2);
+		}
+
+		&:after {
+			background-image: radial-gradient(circle, $black 10%, transparent 10.01%);
+			background-repeat: no-repeat;
+			background-position: 50%;
+			opacity: 0;
+			position: absolute;
+			top: 0;
+			left: 0;
+			display: block;
+			width: 100%;
+			height: 100%;
+			content: "";
+			transition: transform 0.5s, opacity 1s;
+			transform: scale(10, 10);
+			pointer-events: none;
+		}
+
+		&:active:after {
+			opacity: 0.2;
+			transition: 0s;
+			transform: scale(0, 0);
 		}
 
 		&:hover {
