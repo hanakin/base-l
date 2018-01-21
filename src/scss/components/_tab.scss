@@ -46,7 +46,7 @@ $tab-border: $tab-border-height $tab-border-type $tab-border-color !default;
 	min-width: $tab-width;
 	height: $tab-height;
 	margin: 0 $tab-border-height;
-	padding: 0 ($tab-spacing * 1.5);;
+	padding: 0 ($tab-spacing * 1.5);
 	transition: color 0.25s;
 
 	&:after {
