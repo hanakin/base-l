@@ -10,14 +10,14 @@
 
 // Layout Variables
 $toolbar-spacing: 16px !default;
-$toolbar-height: ($toolbar-spacing * 2.375) !default;
+$toolbar-height: 36px !default;
 $toolbar-border-radius: $default-border-radius !default;
 
 // Theme Variables
 $toolbar-background-color: $default-action-bg !default;
-$toolbar-action-color: $default-action-color !default;
-$toolbar-action-hover-bg: $default-action-bg-hover !default;
-$toolbar-action-hover-color: $default-action-color-hover !default;
+$toolbar-text-color: $default-action-color !default;
+$toolbar-hover-color: $default-action-bg-hover !default;
+$toolbar-text-hover-color: $default-action-color-hover !default;
 
 
 //
@@ -37,44 +37,73 @@ $toolbar-action-hover-color: $default-action-color-hover !default;
 // 9. Prevent deafult browser outline halo
 //
 .c-toolbar {
-	background-color: $toolbar-background-color;
-	border-radius: $toolbar-border-radius;
+	@include shadow(2); // google material design
 	position: relative;
 	display: inline-block;
 	margin: 0;
-	margin-bottom: $toolbar-spacing;
 	padding: 0;
 	list-style: none;
 
 	&-item {
 		position: relative;
 		display: inline-block;
+		margin: 0;
+		padding: 0;
 	}
 
 	&-action {
-		@include type(button, $lh: unitless($toolbar-height, map-get(map-get($type-styles, button), font-size)));
+		@include type(button); // google material design
+		-webkit-font-smoothing: antialiased; // google material design
 		text-align: center; // [4]
 		vertical-align: middle; // [2]
-		white-space: nowrap; // bs only
 		text-decoration: none; // [4]
+		background-color: $toolbar-background-color;
+		border: none; // google material design
 		outline: none; // [9]
-		color: $toolbar-action-color;
-		position: relative;
+		-webkit-tap-highlight-color: rgba(0, 0, 0, 0); // google material design
+		color: $toolbar-text-color;
+		position: relative; // google material design
 		display: inline-block; // [1]
 		overflow: hidden; // [6]
+		box-sizing: border-box;
+		height: 36px; // google material design
 		margin: 0; // [4]
 		padding: 0 $toolbar-spacing; // [7]
-		cursor: pointer;
 		user-select: none; // [8]
 		transition:
 			box-shadow 0.2s $animation-curve-fast-out-linear-in,
 			background-color 0.2s $default-animation-curve,
 			color 0.2s $default-animation-curve;
+		-webkit-appearence: none; // google material design
+		will-change: transform, opacity; // google material design
+
+		&:first-of-type {
+			border-top-left-radius: $toolbar-border-radius;
+			border-bottom-left-radius: $toolbar-border-radius;
+		}
+
+		&:last-of-type {
+			border-top-right-radius: $toolbar-border-radius;
+			border-bottom-right-radius: $toolbar-border-radius;
+		}
+
+		&:active,
+		&:focus {
+			outline: none;
+		}
 
 		&:hover,
 		&:focus {
-			background-color: $toolbar-action-hover-bg;
-			color: $toolbar-action-hover-color;
+			text-decoration: none;  // [4]
+			background-color: $toolbar-hover-color;
+			color: $toolbar-text-hover-color;
+			cursor: pointer;
+		}
+
+		// Remove excess padding and border in Firefox 4+
+		&::-moz-focus-inner {
+			border: 0;
+			padding: 0;
 		}
 	}
 
@@ -83,5 +112,4 @@ $toolbar-action-hover-color: $default-action-color-hover !default;
 			text-decoration: none;
 		}
 	}
-	@include shadow(2);
 }
