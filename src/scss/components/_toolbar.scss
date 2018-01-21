@@ -38,6 +38,8 @@ $toolbar-text-hover-color: $default-action-color-hover !default;
 //
 .c-toolbar {
 	@include shadow(2); // google material design
+	background-color: $toolbar-background-color;
+	border-radius: $toolbar-border-radius;
 	position: relative;
 	display: inline-block;
 	margin: 0;
@@ -57,7 +59,6 @@ $toolbar-text-hover-color: $default-action-color-hover !default;
 		text-align: center; // [4]
 		vertical-align: middle; // [2]
 		text-decoration: none; // [4]
-		background-color: $toolbar-background-color;
 		border: none; // google material design
 		outline: none; // [9]
 		-webkit-tap-highlight-color: rgba(0, 0, 0, 0); // google material design
@@ -76,16 +77,6 @@ $toolbar-text-hover-color: $default-action-color-hover !default;
 			color 0.2s $default-animation-curve;
 		-webkit-appearence: none; // google material design
 		will-change: transform, opacity; // google material design
-
-		&:first-of-type {
-			border-top-left-radius: $toolbar-border-radius;
-			border-bottom-left-radius: $toolbar-border-radius;
-		}
-
-		&:last-of-type {
-			border-top-right-radius: $toolbar-border-radius;
-			border-bottom-right-radius: $toolbar-border-radius;
-		}
 
 		&:active,
 		&:focus {
