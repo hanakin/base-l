@@ -34,6 +34,7 @@ $topic-border-color: rgba(0, 0, 0, 0.125) !default;
 //
 // @scss
 .c-topic {
+	@include shadow(2);
 	border-radius: $topic-border-radius;
 	margin: 0;
 	margin-bottom: $topic-margin-bottom;
@@ -42,6 +43,8 @@ $topic-border-color: rgba(0, 0, 0, 0.125) !default;
 
 	&-item {
 		@include type(subhead2);
+		@include parent();
+		@include child();
 		border-top: 1px solid $topic-border-color;
 		min-height: $topic-height;
 		padding: $topic-spacing;
@@ -50,8 +53,6 @@ $topic-border-color: rgba(0, 0, 0, 0.125) !default;
 			background-color: $topic-hover-color;
 			transition: 0.5s;
 		}
-		@include parent();
-		@include child();
 	}
 
 	&-type {
@@ -69,8 +70,8 @@ $topic-border-color: rgba(0, 0, 0, 0.125) !default;
 	}
 
 	&-primary {
-		margin: 0;
 		@include child();
+		margin: 0;
 	}
 
 	&-title {
@@ -84,8 +85,8 @@ $topic-border-color: rgba(0, 0, 0, 0.125) !default;
 
 		&-sub {
 			@include type(body1, $lh: unitless($topic-margin-bottom));
-			margin: 0;
 			@include child();
+			margin: 0;
 		}
 
 		&-data {
@@ -130,7 +131,7 @@ $topic-border-color: rgba(0, 0, 0, 0.125) !default;
 			vertical-align: middle;
 			display: inline-block;
 			align-self: center;
-			padding: 0 0 0 $topic-spacing;
+			padding: 0 $topic-spacing;
 		}
 
 		&-date {
@@ -144,7 +145,7 @@ $topic-border-color: rgba(0, 0, 0, 0.125) !default;
 			align-self: center;
 			width: $topic-avatar-size;
 			height: $topic-avatar-size;
-			margin: 0 ($bar-spacing / 2) 0 0;
+			margin: 0;
 			padding: 0;
 		}
 
@@ -153,7 +154,6 @@ $topic-border-color: rgba(0, 0, 0, 0.125) !default;
 			transition: 0.5s;
 		}
 	}
-	@include shadow(2);
 }
 
 .paging {
