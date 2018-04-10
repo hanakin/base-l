@@ -23,11 +23,14 @@ $forum-background-color: $white !default;
 $forum-border-color: rgba(0, 0, 0, 0.125) !default;
 $forum-media-color: $default-secondary-color !default;
 $forum-media-read-color: $default-primary-color !default;
+$forum-title-icon-color: $default-info-color !default;
 
 
 //
 // @scss
 .c-forum {
+	@include parent(column);
+	@include shadow(2);
 	background-color: $forum-background-color;
 	border-radius: $forum-border-radius;
 	position: relative;
@@ -39,10 +42,10 @@ $forum-media-read-color: $default-primary-color !default;
 	}
 
 	&-media {
-		float: left;
-		margin: $forum-spacing $forum-spacing 0;
 		@include parent(column);
 		@include child();
+		float: left;
+		margin: $forum-spacing $forum-spacing 0;
 	}
 
 	&-media-icon {
@@ -56,8 +59,8 @@ $forum-media-read-color: $default-primary-color !default;
 	}
 
 	&-info {
-		margin-right: $forum-spacing;
 		@include parent(column);
+		margin-right: $forum-spacing;
 	}
 
 	&-title {
@@ -68,6 +71,11 @@ $forum-media-read-color: $default-primary-color !default;
 		&-link {
 			line-height: 1;
 		}
+
+		&-icon {
+			color: $forum-title-icon-color;
+		}
+
 		@media (min-width: $bp-lg) {
 			margin-bottom: 0;
 		}
@@ -100,11 +108,12 @@ $forum-media-read-color: $default-primary-color !default;
 
 	@media (min-width: $bp-lg) {
 		&-deck {
-			flex-wrap: wrap;
 			@include parent();
+			flex-wrap: wrap;
 		}
 
 		&-deck .c-forum {
+			@include parent(column);
 			flex: 1 0 0%;
 			min-width: calc((100% / 2) - (12px));
 			max-width: calc((100% / 2) - (12px));
@@ -115,9 +124,6 @@ $forum-media-read-color: $default-primary-color !default;
 			&:nth-child(2n+1) {
 				margin-left: 0;
 			}
-			@include parent(column);
 		}
 	}
-	@include parent(column);
-	@include shadow(2);
 }
