@@ -27,7 +27,12 @@
 											</div>
 											<div class="c-forum-info t-forum-info">
 												<h4 class="c-forum-title t-forum-title">
-													<a class="c-forum-title-link t-forum-title-link" href="#">{{ item.name }}</a>
+													<a class="c-forum-title-link t-forum-title-link" href="#">
+														{% if item.icon %}
+														<svg class="o-icon c-forum-title-icon t-forum-title-icon"><use xlink:href="#topic-{{ item.icon }}"></use></svg>
+														{% endif %}
+														{{ item.name }}
+													</a>
 												</h4>
 												{% if item.desc %}
 													<p class="c-forum-text t-forum-text">
