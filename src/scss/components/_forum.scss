@@ -12,6 +12,7 @@
 $forum-spacing: 16px !default;
 $forum-spacing-sm: 12px !default;
 $forum-spacing-lg: 24px !default;
+$forum-title-icon-alignment: -5px !default;
 $forum-border-radius: $default-border-radius !default;
 $forum-media-size: 40px !default;
 $forum-border-style: solid !default;
@@ -74,6 +75,7 @@ $forum-title-icon-color: $default-info-color !default;
 
 		&-icon {
 			color: $forum-title-icon-color;
+			margin-top: $forum-title-icon-alignment;
 		}
 
 		@media (min-width: $bp-lg) {
