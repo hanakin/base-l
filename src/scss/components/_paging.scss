@@ -21,6 +21,8 @@ $paging-link-background-hover-color: $default-action-bg-hover !default;
 //
 // @scss
 .c-paging {
+
+	@include parent();
 	margin: 0;
 	padding: 0;
 	list-style: none;
@@ -57,12 +59,7 @@ $paging-link-background-hover-color: $default-action-bg-hover !default;
 		&-icon {
 			width: $paging-icon-size;
 			height: $paging-icon-size;
+			margin: 0 -$paging-spacing;
 		}
 	}
-
-	&-item:first-of-type .c-paging-link,
-	&-item:last-of-type .c-paging-link {
-		padding: ($paging-spacing / 2);
-	}
-	@include parent();
 }
