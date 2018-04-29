@@ -6,12 +6,12 @@
 		<dt class="c-topic-title">
 			<a class="c-topic-title-link" href="#">{{topic.name}}</a>
 			{% if topic.pages %}
-				<ul class="paging">
+				<ul class="c-paging c-topic-paging">
 					{% for page in topic.pages %}
 						{% if loop.last %}
-							<li class="paging-item"><a class="paging-link" href="page={{ page }}" data-tooltip="Last Page" title="Go to Last page"><svg class="o-icon paging-link-icon"><use xlink:href="#last-page"></use></svg></a></li>
+							<li class="c-paging-item"><a class="c-paging-link c-topic-paging-link" href="page={{ page }}" data-tooltip="Last Page" title="Go to Last page"><svg class="o-icon paging-link-icon c-topic-paging-link-icon"><use xlink:href="#last-page"></use></svg></a></li>
 						{% else %}
-							<li class="paging-item"><a class="paging-link" href="?page={{ page }}" data-tooltip="Page {{ page }}" title="Go to page {{ page }}">{{ page }}</a></li>
+							<li class="c-paging-item"><a class="paging-link c-topic-paging-link" href="?page={{ page }}" data-tooltip="Page {{ page }}" title="Go to page {{ page }}">{{ page }}</a></li>
 						{% endif %}
 					{% endfor %}
 				</ul>
