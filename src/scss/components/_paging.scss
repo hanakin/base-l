@@ -59,7 +59,7 @@ $paging-link-background-hover-color: $default-action-bg-hover !default;
 		&-icon {
 			width: $paging-icon-size;
 			height: $paging-icon-size;
-			margin: 0 -$paging-spacing;
+			margin: (-$paging-spacing / 4) -$paging-spacing 0;
 		}
 	}
 }
