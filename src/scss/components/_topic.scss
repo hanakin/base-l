@@ -125,6 +125,7 @@ $topic-border-color: rgba(0, 0, 0, 0.125) !default;
 		}
 	}
 
+<<<<<<< HEAD
 	&-secondary {
 		display: inline-flex;
 		flex-wrap: nowrap;
@@ -161,6 +162,28 @@ $topic-border-color: rgba(0, 0, 0, 0.125) !default;
 		&-link:hover {
 			text-decoration: underline;
 			transition: 0.5s;
+=======
+	&-meta {
+		@include parent();
+		text-align: right;
+		position: relative;
+		justify-content: flex-start;
+		align-items: center;
+	}
+
+	&-unapproved {
+		color: $topic-icon-color;
+		padding: 0;
+	}
+
+	&-meta-primary,
+	&-time,
+	&-date {
+		display: none;
+
+		@media (min-width: 960px) {
+			display: inline-block;
+>>>>>>> fix topic errors
 		}
 	}
 
