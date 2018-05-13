@@ -2,6 +2,7 @@
 	<div class="c-topic-type">
 		<svg class="o-icon c-list-type-icon{% if topic.status === 1 %} c-list-type-icon-read{% endif %}"><use xlink:href="#{{topic.icon}}"></use></svg>
 	</div>
+<<<<<<< HEAD
 	<dl class="c-topic-primary">
 		<dt class="c-topic-title">
 			<a class="c-topic-title-link" href="#">{{topic.name}}</a>
@@ -15,6 +16,24 @@
 						{% endif %}
 					{% endfor %}
 				</ul>
+=======
+	<span class="o-list-primary">
+		<a class="o-list-title" href="#">{{topic.name}}</a>
+		{% if topic.pages %}
+			<ul class="c-paging c-topic-paging">
+				{% for page in topic.pages %}
+					{% if loop.last %}
+						<li class="c-paging-item"><a class="c-paging-link c-topic-paging-link" href="page={{ page }}" data-tooltip="Last Page" title="Go to Last page"><svg class="o-icon c-paging-link-icon c-topic-paging-link-icon"><use xlink:href="#last-page"></use></svg></a></li>
+					{% else %}
+						<li class="c-paging-item"><a class="c-paging-link c-topic-paging-link" href="?page={{ page }}" data-tooltip="Page {{ page }}" title="Go to page {{ page }}">{{ page }}</a></li>
+					{% endif %}
+				{% endfor %}
+			</ul>
+		{% endif %}
+		<span class="o-list-secondary">
+			{% if topic.approved === false %}
+			<a class="o-list-secondary-item c-topic-unapproved" href="#"><svg class="o-icon o-list-secondary-item-icon"><use xlink:href="#unapproved"></use></svg></a>
+>>>>>>> fix topic view
 			{% endif %}
 		</dt>
 		<dd class="c-topic-title-sub">
