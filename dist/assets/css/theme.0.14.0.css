@@ -150,6 +150,14 @@
 	align-items: center;
 }
 
+.c-topic-unread {
+	color: #e8306e;
+}
+
+.c-topic-read {
+	color: #258cf4;
+}
+
 .c-topic-unapproved {
 	color: #e8306e;
 	padding: 0;
