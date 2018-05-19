@@ -34,20 +34,8 @@ $topic-border-color: rgba(0, 0, 0, 0.125) !default;
 //
 // @scss
 .c-topic {
-	@include shadow(2);
-	border-radius: $topic-border-radius;
-	margin: 0;
-	margin-bottom: $topic-margin-bottom;
-	padding: 0;
-	list-style: none;
-
 	&-item {
-		@include type(subhead2);
-		@include parent();
-		@include child();
 		border-top: 1px solid $topic-border-color;
-		min-height: $topic-height;
-		padding: $topic-spacing;
 
 		&:hover {
 			background-color: $topic-hover-color;
@@ -55,114 +43,6 @@ $topic-border-color: rgba(0, 0, 0, 0.125) !default;
 		}
 	}
 
-	&-type {
-		padding-right: $topic-spacing;
-
-		&-icon {
-			color: $topic-icon-color;
-			width: $topic-icon-size;
-			height: $topic-icon-size;
-
-			&-read {
-				color: $topic-icon-color-read;
-			}
-		}
-	}
-
-	&-primary {
-		@include child();
-		margin: 0;
-	}
-
-	&-title {
-		@include type(subhead2, $lh: unitless($topic-margin-bottom));
-		margin: 0;
-
-		&-link:hover {
-			text-decoration: underline;
-			transition: 0.5s;
-		}
-
-		&-sub {
-			@include type(body1, $lh: unitless($topic-margin-bottom));
-			@include child();
-			margin: 0;
-		}
-
-		&-data {
-			display: inline-block;
-			padding-right: $topic-spacing;
-
-			&-time {
-				display: none;
-				@media (min-width: $bp-lg) {
-					display: inline-block;
-				}
-			}
-
-			&-views {
-				display: none;
-				@media (min-width: $bp-md) {
-					display: inline-block;
-				}
-			}
-
-			&-icon {
-				width: $topic-data-icon-size;
-				height: $topic-data-icon-size;
-				margin-right: ($topic-spacing / 2);
-			}
-
-			&-link:hover {
-				text-decoration: underline;
-				transition: 0.5s;
-			}
-
-			&-unapproved {
-				color: $default-secondary-color;
-				padding: 0;
-			}
-		}
-	}
-
-<<<<<<< HEAD
-	&-secondary {
-		display: inline-flex;
-		flex-wrap: nowrap;
-		margin-left: ($topic-spacing / 2);
-
-		&-user {
-			@include type(body2, $lh: unitless($topic-subheader-line-height, map-get(map-get($type-styles, title), font-size)));
-			text-align: right;
-			vertical-align: middle;
-			display: none;
-			align-self: center;
-			padding: 0 $topic-spacing;
-
-			@media (min-width: $bp-md) {
-				display: inline-block;
-			}
-		}
-
-		&-date {
-			@include type(caption);
-			text-align: right;
-			display: block;
-		}
-
-		&-avatar {
-			display: inline-block;
-			align-self: center;
-			width: $topic-avatar-size;
-			height: $topic-avatar-size;
-			margin: 0;
-			padding: 0;
-		}
-
-		&-link:hover {
-			text-decoration: underline;
-			transition: 0.5s;
-=======
 	&-meta {
 		@include parent();
 		text-align: right;
@@ -183,7 +63,6 @@ $topic-border-color: rgba(0, 0, 0, 0.125) !default;
 
 		@media (min-width: 960px) {
 			display: inline-block;
->>>>>>> fix topic errors
 		}
 	}
 
