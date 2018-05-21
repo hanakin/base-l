@@ -1038,13 +1038,12 @@
 	-webkit-flex-direction: row;
 	flex-direction: row;
 	margin: 0;
-	padding: 1rem;
 	list-style: none;
 }
 
 .c-crumbs-item {
 	margin: 0;
-	padding: 0;
+	padding: 1rem;
 }
 
 .c-crumbs-item:not(:first-of-type) {
@@ -1086,8 +1085,8 @@
 	display: inline-flex;
 	-webkit-align-self: center;
 	align-self: center;
-	padding: 0;
-	padding-left: 1rem;
+	padding: 1rem;
+	padding-right: 0;
 }
 
 .c-crumbs-link:hover {
