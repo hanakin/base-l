@@ -1043,7 +1043,7 @@
 
 .c-crumbs-item {
 	margin: 0;
-	padding: 1rem;
+	padding: 0;
 }
 
 .c-crumbs-item:not(:first-of-type) {

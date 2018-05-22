@@ -28,7 +28,7 @@ $crumbs-icon-hover-color: $default-action-color-hover !default;
 
 	&-item {
 		margin: 0;
-		padding: $crumbs-spacing;
+		padding: 0;
 
 		&:not(:first-of-type) {
 			display: none;
