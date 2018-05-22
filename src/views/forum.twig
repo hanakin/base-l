@@ -23,7 +23,7 @@
 									<div class="c-forum t-forum">
 										<div class="c-forum-body t-forum-body">
 											<div class="c-forum-media t-forum-media">
-												<svg class="o-icon c-forum-media-icon t-forum-media-icon{% if item.status === 1 %} c-forum-media-icon-read t-forum-media-icon-read{% endif %}"><use xlink:href="#{{ item.type }}"></use></svg>
+												<svg class="o-icon {% if item.status === 0 %}c-forum-media-icon t-forum-media-icon{% else %}c-forum-media-icon-read t-forum-media-icon-read{% endif %}"><use xlink:href="#{{ item.type }}"></use></svg>
 											</div>
 											<div class="c-forum-info t-forum-info">
 												<h4 class="c-forum-title t-forum-title">
