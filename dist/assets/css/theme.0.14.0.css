@@ -13,7 +13,7 @@
 .c-forum-body {
 	-webkit-flex: 1 1 auto;
 	flex: 1 1 auto;
-	margin-bottom: 1rem;
+	padding-bottom: 1rem;
 }
 
 .c-forum-media {

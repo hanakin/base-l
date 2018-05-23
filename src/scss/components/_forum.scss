@@ -39,7 +39,7 @@ $forum-title-icon-color: $default-info-color !default;
 
 	&-body {
 		flex: 1 1 auto;
-		margin-bottom: $forum-spacing;
+		padding-bottom: $forum-spacing;
 	}
 
 	&-media {
