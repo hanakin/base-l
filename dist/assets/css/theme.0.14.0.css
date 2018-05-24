@@ -1,13 +1,15 @@
 .c-forum {
 	background-color: #ffffff;
 	border-radius: 2px;
-	box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+	box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
 	position: relative;
 	display: -webkit-flex;
 	display: flex;
 	-webkit-flex-direction: column;
 	flex-direction: column;
 	margin-bottom: 1rem;
+	transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+	will-change: box-shadow;
 }
 
 .c-forum-body {
@@ -208,12 +210,14 @@
 
 .c-post {
 	border-radius: 2px;
-	box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+	box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
 	display: -webkit-flex;
 	display: flex;
 	-webkit-flex-direction: column;
 	flex-direction: column;
 	margin-bottom: 1.5rem;
+	transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+	will-change: box-shadow;
 }
 
 .c-post-header {
@@ -345,15 +349,17 @@
 .c-profile {
 	background-color: #f5f5f5;
 	border-radius: 2px;
-	box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+	box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
 	position: absolute;
 	z-index: 999;
 	top: 0;
 	width: 336px;
 	padding: 0 0 1rem;
 	transition: all 0.2s ease;
+	transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
 	-webkit-transform: scale(0);
 	transform: scale(0);
+	will-change: box-shadow;
 }
 
 .c-profile-toggle {
@@ -473,14 +479,16 @@
 	text-align: left;
 	background-color: #ffffff;
 	border-radius: 2px;
-	box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+	box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 	position: absolute;
 	z-index: 999;
 	top: 0;
 	overflow: auto;
 	transition: all 0.2s ease;
+	transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
 	-webkit-transform: scale(0);
 	transform: scale(0);
+	will-change: box-shadow;
 }
 
 .c-menu-container.is-active {
@@ -627,15 +635,17 @@
 
 .c-notification-container {
 	border-radius: 2px;
-	box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+	box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
 	position: absolute;
 	z-index: 999;
 	top: 0;
 	overflow: auto;
 	width: 300px;
+	transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
 	transition: all 0.2s ease;
 	-webkit-transform: scale(0);
 	transform: scale(0);
+	will-change: box-shadow;
 }
 
 .c-notification-container.is-active {
@@ -652,22 +662,24 @@
 .c-drawer {
 	background-color: #f5f5f5;
 	border: none;
-	box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+	box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
 	position: absolute;
 	top: 58px;
 	right: 0;
 	bottom: 0;
-	-webkit-flex-shrink: 1;
 	flex-shrink: 1;
+	-webkit-flex-shrink: 1;
 	-webkit-align-self: auto;
 	align-self: auto;
 	height: 100%;
 	padding: 1rem 0;
+	transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
 	-webkit-transform: scaleX(0);
 	transform: scaleX(0);
 	-webkit-transform-origin: center right;
 	transform-origin: center right;
 	-ms-grid-row-align: auto;
+	will-change: box-shadow;
 }
 
 .c-drawer:hover,
@@ -881,7 +893,9 @@
 .c-tab-card {
 	background-color: #ffffff;
 	border-radius: 2px;
-	box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+	box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+	transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+	will-change: box-shadow;
 }
 
 .c-tab-bar {
@@ -1154,12 +1168,14 @@
 .c-toolbar {
 	background-color: #f5f5f5;
 	border-radius: 2px;
-	box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+	box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
 	position: relative;
 	display: inline-block;
 	margin: 0;
 	padding: 0;
 	list-style: none;
+	transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+	will-change: box-shadow;
 }
 
 .c-toolbar-item {
@@ -1177,7 +1193,7 @@
 	text-align: center;
 	vertical-align: middle;
 	text-decoration: none;
-	letter-spacing: 0.04em;
+	letter-spacing: 0.08929em;
 	text-transform: uppercase;
 	border: none;
 	outline: none;
