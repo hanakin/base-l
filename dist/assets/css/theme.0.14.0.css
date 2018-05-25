@@ -1398,4 +1398,28 @@
 	}
 }
 
+.c-footer {
+	text-align: center;
+	margin: 4rem 0 3rem;
+}
+
+.c-footer-nav-link {
+	display: -webkit-inline-flex;
+	display: inline-flex;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-align-items: center;
+	align-items: center;
+	height: 36px;
+	padding: 0 1rem;
+}
+
+.c-footer-nav-link-icon + .c-footer-nav-link-text {
+	margin-left: 0.5rem;
+}
+
+.c-footer-copyright {
+	margin-top: 1rem;
+}
+
 /*# sourceMappingURL=theme.0.14.0.css.map */
