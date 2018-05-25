@@ -19,6 +19,7 @@ $forum-border-size: $default-border-size !default;
 
 // Theme Variables
 $forum-background-color: $white !default;
+$forum-text-color: $default-text-color !default;
 $forum-border-color: rgba(0, 0, 0, 0.125) !default;
 $forum-media-color: $default-secondary-color !default;
 $forum-media-read-color: $default-primary-color !default;
@@ -65,7 +66,7 @@ $forum-title-icon-color: $default-info-color !default;
 	}
 
 	&-title {
-		@include type(headline);
+		@include type(headline, $lh: 1);
 		margin-top: ($forum-spacing * 3);
 		margin-bottom: ($forum-spacing * 1.5);
 
@@ -85,7 +86,8 @@ $forum-title-icon-color: $default-info-color !default;
 
 	&-text {
 		@include type(body1);
-		margin: ($forum-spacing * 2) 0 0;
+		color: $forum-text-color;
+		margin: $forum-spacing 0 0;
 
 	}
 
