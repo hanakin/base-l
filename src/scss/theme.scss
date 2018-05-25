@@ -91,6 +91,7 @@
 
 // 6. Components
 //-------------------------
+@import "components/paging";
 @import "components/forum";
 @import "components/topic";
 @import "components/post";
@@ -101,7 +102,6 @@
 @import "components/tab";
 @import "components/stat";
 @import "components/crumbs";
-@import "components/paging";
 @import "components/toolbar";
 @import "components/tooltip";
 

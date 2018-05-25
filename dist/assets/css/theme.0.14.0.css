@@ -1,3 +1,59 @@
+.c-paging {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: row;
+	flex-direction: row;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	-webkit-align-content: center;
+	align-content: center;
+}
+
+.c-paging-item {
+	margin: 0;
+}
+
+.c-paging-item:first-of-type .c-paging-link {
+	border-top-left-radius: 2px;
+	border-bottom-left-radius: 2px;
+}
+
+.c-paging-item:last-of-type .c-paging-link {
+	border-top-right-radius: 2px;
+	border-bottom-right-radius: 2px;
+}
+
+.c-paging-link {
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.75;
+	letter-spacing: 0.04em;
+	background: #f5f5f5;
+	display: -webkit-inline-flex;
+	display: inline-flex;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-align-items: center;
+	align-items: center;
+	height: 36px;
+	margin: 0;
+	padding: 0.5rem 1rem;
+}
+
+.c-paging-link:hover {
+	text-decoration: none;
+	background: #eeeeee;
+	border-radius: 2px;
+	transition: 0.5s;
+}
+
+.c-paging-link-icon {
+	width: 24px;
+	height: 24px;
+	margin: -1.25rem 0;
+}
+
 .c-forum {
 	background-color: #ffffff;
 	border-radius: 2px;
@@ -1116,62 +1172,6 @@
 	align-self: center;
 	padding-left: 0.25rem;
 	-ms-grid-row-align: center;
-}
-
-.c-paging {
-	display: -webkit-flex;
-	display: flex;
-	-webkit-flex-direction: row;
-	flex-direction: row;
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	-webkit-align-content: center;
-	align-content: center;
-}
-
-.c-paging-item {
-	margin: 0;
-}
-
-.c-paging-item:first-of-type .c-paging-link {
-	border-top-left-radius: 2px;
-	border-bottom-left-radius: 2px;
-}
-
-.c-paging-item:last-of-type .c-paging-link {
-	border-top-right-radius: 2px;
-	border-bottom-right-radius: 2px;
-}
-
-.c-paging-link {
-	font-size: 1rem;
-	font-weight: 400;
-	line-height: 1.75;
-	letter-spacing: 0.04em;
-	background: #f5f5f5;
-	display: -webkit-inline-flex;
-	display: inline-flex;
-	-webkit-justify-content: center;
-	justify-content: center;
-	-webkit-align-items: center;
-	align-items: center;
-	height: 36px;
-	margin: 0;
-	padding: 0.5rem 1rem;
-}
-
-.c-paging-link:hover {
-	text-decoration: none;
-	background: #eeeeee;
-	border-radius: 2px;
-	transition: 0.5s;
-}
-
-.c-paging-link-icon {
-	width: 24px;
-	height: 24px;
-	margin: -1.25rem 0;
 }
 
 .c-toolbar {
