@@ -107,12 +107,10 @@ $toolbar-text-hover-color: $default-action-color-hover !default;
 	}
 
 	&-text + &-icon {
-		margin-right: -($toolbar-spacing / 2);
 		margin-left: $toolbar-spacing;
 	}
 
 	&-icon + &-text {
 		margin-right: $toolbar-spacing;
-		margin-left: -($toolbar-spacing / 2);
 	}
 }

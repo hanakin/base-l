@@ -1260,13 +1260,11 @@
 }
 
 .c-toolbar-text + .c-toolbar-icon {
-	margin-right: -0.25rem;
 	margin-left: 0.5rem;
 }
 
 .c-toolbar-icon + .c-toolbar-text {
 	margin-right: 0.5rem;
-	margin-left: -0.25rem;
 }
 
 @-webkit-keyframes pulse {
