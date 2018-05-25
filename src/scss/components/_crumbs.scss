@@ -10,6 +10,7 @@
 
 // Layout Variables
 $crumbs-spacing: $default-spacing !default;
+$crumbs-height: $default-height !default;
 
 
 // Theme Variables
@@ -69,6 +70,7 @@ $crumbs-icon-hover-color: $default-action-color-hover !default;
 		position: relative;
 		display: inline-flex;
 		align-self: center;
+		height: $crumbs-height;
 		padding: $crumbs-spacing;
 		padding-right: 0;
 
@@ -81,5 +83,10 @@ $crumbs-icon-hover-color: $default-action-color-hover !default;
 	&-text {
 		align-self: center;
 		padding-left: ($crumbs-spacing / 2);
+	}
+
+	&-icon + &-text {
+		margin-right: -($crumbs-spacing / 2);
+		margin-left: $crumbs-spacing;
 	}
 }

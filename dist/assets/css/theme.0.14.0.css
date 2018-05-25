@@ -1157,6 +1157,7 @@
 	display: inline-flex;
 	-webkit-align-self: center;
 	align-self: center;
+	height: 56px;
 	padding: 0.5rem;
 	padding-right: 0;
 }
@@ -1171,6 +1172,11 @@
 	align-self: center;
 	padding-left: 0.25rem;
 	-ms-grid-row-align: center;
+}
+
+.c-crumbs-icon + .c-crumbs-text {
+	margin-right: -0.25rem;
+	margin-left: 0.5rem;
 }
 
 .c-toolbar {
