@@ -51,7 +51,6 @@ $hero-background: url("https://i.imgur.com/DnPCBsG.jpg") !default;
 
 	&-lead {
 		@include type(headline, $lh: 1, $fw: 200);
-		text-transform: uppercase;
 		color: $white;
 
 		@media (min-width: $bp-md) {
