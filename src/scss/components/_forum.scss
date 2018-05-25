@@ -9,14 +9,12 @@
 // @settings
 
 // Layout Variables
-$forum-spacing: 16px !default;
-$forum-spacing-sm: 12px !default;
-$forum-spacing-lg: 24px !default;
+$forum-spacing: $default-spacing !default;
 $forum-title-icon-alignment: -5px !default;
 $forum-border-radius: $default-border-radius !default;
-$forum-media-size: 40px !default;
+$forum-media-size: $default-icon-lg !default;
 $forum-border-style: solid !default;
-$forum-border-size: 1px !default;
+$forum-border-size: $default-border-size !default;
 
 
 // Theme Variables
@@ -35,18 +33,18 @@ $forum-title-icon-color: $default-info-color !default;
 	background-color: $forum-background-color;
 	border-radius: $forum-border-radius;
 	position: relative;
-	margin-bottom: $forum-spacing;
+	margin-bottom: ($forum-spacing * 2);
 
 	&-body {
 		flex: 1 1 auto;
-		padding-bottom: $forum-spacing;
+		padding-bottom: ($forum-spacing * 2);
 	}
 
 	&-media {
 		@include parent(column);
 		@include child();
 		float: left;
-		margin: $forum-spacing $forum-spacing 0;
+		margin: ($forum-spacing * 2) ($forum-spacing * 2) 0;
 	}
 
 	&-media-icon {
@@ -63,13 +61,13 @@ $forum-title-icon-color: $default-info-color !default;
 
 	&-info {
 		@include parent(column);
-		margin-right: $forum-spacing;
+		margin-right: ($forum-spacing * 2);
 	}
 
 	&-title {
 		@include type(headline);
-		margin-top: $forum-spacing-lg;
-		margin-bottom: $forum-spacing-sm;
+		margin-top: ($forum-spacing * 3);
+		margin-bottom: ($forum-spacing * 1.5);
 
 		&-link {
 			line-height: 1;
@@ -87,7 +85,7 @@ $forum-title-icon-color: $default-info-color !default;
 
 	&-text {
 		@include type(body1);
-		margin: $forum-spacing 0 0;
+		margin: ($forum-spacing * 2) 0 0;
 
 	}
 
@@ -100,9 +98,9 @@ $forum-title-icon-color: $default-info-color !default;
 		&-title {
 			@include type(headline);
 			border-bottom: $forum-border-size $forum-border-style $forum-border-color;
-			margin-top: $forum-spacing;
-			margin-bottom: $forum-spacing-lg;
-			padding-bottom: ($forum-spacing / 4);
+			margin-top: ($forum-spacing * 2);
+			margin-bottom: ($forum-spacing * 3);
+			padding-bottom: ($forum-spacing / 2);
 
 			&-link {
 				line-height: 1;
@@ -121,8 +119,8 @@ $forum-title-icon-color: $default-info-color !default;
 			flex: 1 0 0%;
 			min-width: calc((100% / 2) - (12px));
 			max-width: calc((100% / 2) - (12px));
-			margin-bottom: $forum-spacing-lg;
-			margin-left: $forum-spacing-lg;
+			margin-bottom: ($forum-spacing * 3);
+			margin-left: ($forum-spacing * 3);
 
 			&:first-child,
 			&:nth-child(2n+1) {

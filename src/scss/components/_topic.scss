@@ -9,9 +9,9 @@
 // @settings
 
 // Layout Variables
-$topic-spacing: 16px !default;
-$topic-data-icon-size: 18px !default;
-$topic-margin-bottom: 24px !default;
+$topic-spacing: $default-spacing !default;
+$topic-data-icon-size: $default-icon-sm !default;
+$topic-border-size: $default-border-size !default;
 
 // Theme Variables
 $topic-icon-color: $default-secondary-color !default;
@@ -24,7 +24,7 @@ $topic-border-color: rgba(0, 0, 0, 0.125) !default;
 // @scss
 .c-topic {
 	&-item {
-		border-top: 1px solid $topic-border-color;
+		border-top: $topic-border-size solid $topic-border-color;
 
 		&:hover {
 			background-color: $topic-hover-color;
@@ -58,7 +58,7 @@ $topic-border-color: rgba(0, 0, 0, 0.125) !default;
 	&-date {
 		display: none;
 
-		@media (min-width: 960px) {
+		@media (min-width: $bp-lg) {
 			display: inline-block;
 		}
 	}
@@ -68,12 +68,12 @@ $topic-border-color: rgba(0, 0, 0, 0.125) !default;
 
 		&-link {
 			font-size: inherit;
-			padding: ($topic-spacing / 8) ($topic-spacing / 4);
+			padding: ($topic-spacing / 4) ($topic-spacing / 2);
 
 			&-icon {
 				width: $topic-data-icon-size;
 				height: $topic-data-icon-size;
-				margin-top: -($topic-margin-bottom / 2);
+				margin-top: -($topic-spacing * 1.5);
 			}
 		}
 

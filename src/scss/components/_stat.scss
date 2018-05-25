@@ -9,7 +9,7 @@
 // @settings
 
 // Layout Variables
-$stat-spacing: 16px !default;
+$stat-spacing: $default-spacing !default;
 
 
 // Theme Variables
@@ -22,7 +22,7 @@ $stat-spacing: 16px !default;
 		@include parent(column);
 		justify-content: center;
 		margin: 0 auto;
-		padding-bottom: $stat-spacing;
+		padding-bottom: ($stat-spacing * 2);
 	}
 
 	&-list {
@@ -30,15 +30,15 @@ $stat-spacing: 16px !default;
 		flex-wrap: wrap;
 		justify-content: center;
 		margin: 0 auto;
-		padding: $stat-spacing;
+		padding: ($stat-spacing * 2);
 	}
 
 	&-item {
 		flex-shrink: 1;
-		padding: ($stat-spacing / 2);
+		padding: $stat-spacing;
 		list-style: none;
 		@media (min-width: $bp-lg) {
-			padding: 0 ($stat-spacing / 2);
+			padding: 0 $stat-spacing;
 		}
 	}
 

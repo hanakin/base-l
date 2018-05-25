@@ -9,8 +9,8 @@
 // @settings
 
 // Layout Variables
-$toolbar-spacing: 16px !default;
-$toolbar-height: 36px !default;
+$toolbar-spacing: $default-spacing !default;
+$toolbar-height: $default-height-dense !default;
 $toolbar-border-radius: $default-border-radius !default;
 
 // Theme Variables
@@ -69,7 +69,7 @@ $toolbar-text-hover-color: $default-action-color-hover !default;
 		box-sizing: border-box;
 		height: 36px; // google material design
 		margin: 0; // [4]
-		padding: 0 $toolbar-spacing; // [7]
+		padding: 0 ($toolbar-spacing * 2); // [7]
 		user-select: none; // [8]
 		transition:
 			box-shadow 0.2s $animation-curve-fast-out-linear-in,

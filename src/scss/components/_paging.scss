@@ -9,9 +9,10 @@
 // @settings
 
 // Layout Variables
-$paging-spacing: 8px !default;
+$paging-spacing: $default-spacing !default;
 $paging-border-radius: $default-border-radius !default;
-$paging-icon-size: 24px !default;
+$paging-icon-size: $default-icon-md !default;
+$paging-height: $default-height-dense;
 
 // Theme Variables
 $paging-link-background-color: $default-action-bg !default;
@@ -21,7 +22,6 @@ $paging-link-background-hover-color: $default-action-bg-hover !default;
 //
 // @scss
 .c-paging {
-
 	@include parent();
 	margin: 0;
 	padding: 0;
@@ -43,11 +43,14 @@ $paging-link-background-hover-color: $default-action-bg-hover !default;
 	}
 
 	&-link {
-		font-size: 18px;
-		line-height: (30 / 18);
+		@include type(subhead2);
 		background: $paging-link-background-color;
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		height: $paging-height;
 		margin: 0;
-		padding: ($paging-spacing / 2) $paging-spacing;
+		padding: $paging-spacing ($paging-spacing * 2);
 
 		&:hover {
 			text-decoration: none;
@@ -59,7 +62,7 @@ $paging-link-background-hover-color: $default-action-bg-hover !default;
 		&-icon {
 			width: $paging-icon-size;
 			height: $paging-icon-size;
-			margin: (-$paging-spacing / 4) -$paging-spacing 0;
+			margin: (-$paging-spacing / 2) -($paging-spacing * 2) 0;
 		}
 	}
 }

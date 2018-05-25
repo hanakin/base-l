@@ -9,13 +9,12 @@
 // @settings
 
 // Layout Variables
-$tab-spacing: 16px !default;
+$tab-spacing: $default-spacing !default;
 $tab-height: 72px !default;
 $tab-width: 160px !default;
 $tab-border-radius: $default-border-radius !default;
-$tab-border-height: 1px !default;
-$tab-icon-size: 24px !default;
-$tab-icon-margin-top: 4px !default;
+$tab-border-height: $default-border-size !default;
+$tab-icon-size: $default-icon-md !default;
 
 
 // Theme Variables
@@ -55,7 +54,7 @@ $tab-border: $tab-border-height $tab-border-type $tab-border-color !default;
 		bottom: -$tab-border-height;
 		left: 0;
 		width: 0;
-		height: ($tab-spacing * 0.25);
+		height: ($tab-spacing / 2);
 		content: "";
 		transition:
 			background-color 0s ease-in 0.5s,
@@ -79,11 +78,11 @@ $tab-border: $tab-border-height $tab-border-type $tab-border-color !default;
 		width: $tab-icon-size;
 		height: $tab-icon-size;
 		margin: 0 auto;
-		margin-top: $tab-icon-margin-top;
+		margin-top: ($tab-spacing / 2);
 	}
 
 	&-icon + &-text {
-		padding-top: ($tab-spacing 0.375);
+		padding-top: ($tab-spacing * 0.75);
 	}
 
 	&-card {
@@ -131,15 +130,15 @@ $tab-border: $tab-border-height $tab-border-type $tab-border-color !default;
 			@include type(title, $lh: 1);
 			flex-shrink: 1;
 			margin-bottom: 0;
-			padding: $tab-spacing 0 0 $tab-spacing;
+			padding: ($tab-spacing * 2) 0 0 ($tab-spacing * 2);
 			@media (min-width: $bp-lg) {
-				padding-bottom: $tab-spacing;
+				padding-bottom: ($tab-spacing * 2);
 			}
 		}
 
 		&-text {
 			@include child();
-			padding: $tab-spacing;
+			padding: ($tab-spacing * 2);
 		}
 
 		&-link:hover {

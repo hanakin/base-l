@@ -9,9 +9,9 @@
 // @settings
 
 // Layout Variables
-$profile-spacing: 16px !default;
+$profile-spacing: $default-spacing !default;
 $profile-width: 336px !default;
-$profile-group-height: 36px !default;
+$profile-group-height: $default-height-dense !default;
 $profile-border-radius: $default-border-radius !default;
 $profile-opacity-38: $default-opacity-38 !default;
 
@@ -35,7 +35,7 @@ $profile-bad-color: $default-important-color !default;
 	z-index: 999;
 	top: 0;
 	width: $profile-width;
-	padding: 0 0 $profile-spacing 0;
+	padding: 0 0 ($profile-spacing * 2) 0;
 	transition: all 0.2s ease;
 	transform: scale(0);
 
@@ -61,7 +61,7 @@ $profile-bad-color: $default-important-color !default;
 		text-align: center;
 		color: $profile-group-color;
 		height: $profile-group-height;
-		margin: ($profile-spacing / 4) 0 -($profile-spacing / 2);
+		margin: ($profile-spacing / 2) 0 -$profile-spacing;
 	}
 
 	&-menu {
@@ -79,7 +79,7 @@ $profile-bad-color: $default-important-color !default;
 	&-close {
 		color: $profile-action-color;
 		float: right;
-		padding: $profile-spacing;
+		padding: ($profile-spacing * 2);
 
 		&:hover,
 		&:focus {
@@ -91,7 +91,7 @@ $profile-bad-color: $default-important-color !default;
 	&-meta {
 		text-align: center;
 		margin: 0;
-		padding: $profile-spacing;
+		padding: ($profile-spacing * 2);
 	}
 
 	&-stats {
@@ -105,7 +105,7 @@ $profile-bad-color: $default-important-color !default;
 	&-stat {
 		text-align: center;
 		min-width: calc((100% / 3));
-		padding: ($profile-spacing / 2) $profile-spacing;
+		padding: $profile-spacing ($profile-spacing * 2);
 
 		&-wrap {
 			font-size: 14px;
@@ -114,12 +114,12 @@ $profile-bad-color: $default-important-color !default;
 		}
 
 		&-title {
-			margin-left: ($profile-spacing / 2);
+			margin-left: $profile-spacing;
 		}
 
 		&-value {
 			@include type(caption);
-			padding-top: ($profile-spacing / 2);
+			padding-top: $profile-spacing;
 		}
 		@include child();
 	}

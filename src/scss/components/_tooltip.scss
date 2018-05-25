@@ -9,7 +9,7 @@
 // @settings
 
 // Layout Variables
-$tooltip-spacing: 8px !default;
+$tooltip-spacing: $default-spacing !default;
 $tooltip-max-width: 192px !default;
 $tooltip-max-height: 20px !default;
 $tooltip-border-radius: $default-border-radius !default;

@@ -9,13 +9,13 @@
 // @settings
 
 // Layout Variables
-$post-spacing: 8px !default;
+$post-spacing: $default-spacing !default;
 $post-border-radius: $default-border-radius !default;
 $post-border-style: solid !default;
-$post-border-size: 1px !default;
+$post-border-size: $default-border-size !default;
 $post-body-min-height: 192px !default;
 $post-emoji-size: 1em !default;
-$post-emoji-size-min: 18px !default;
+$post-emoji-size-min: $default-icon-sm !default;
 
 
 // Theme Variables
