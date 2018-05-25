@@ -14,6 +14,7 @@
 			"last_color":"009900",
 			"last_avatar":"https://avatars2.githubusercontent.com/u/73081?v=4&amp;s=460",
 			"replies":"0",
+			"approved":true,
 			"views":"5"
 		},
 		{
@@ -30,6 +31,7 @@
 			"last_color":"AA0000",
 			"last_avatar":"https://avatars2.githubusercontent.com/u/73081?v=4&amp;s=460",
 			"replies":"3",
+			"approved":true,
 			"views":"4"
 		},
 		{
@@ -46,6 +48,7 @@
 			"last_color":"009900",
 			"last_avatar":"https://avatars2.githubusercontent.com/u/73081?v=4&amp;s=460",
 			"replies":"2",
+			"approved":true,
 			"views":"6"
 		},
 		{
@@ -62,6 +65,7 @@
 			"last_color":"009900",
 			"last_avatar":"https://avatars2.githubusercontent.com/u/73081?v=4&amp;s=460",
 			"replies":"32",
+			"approved":true,
 			"views":"4213"
 		},
 		{
@@ -78,6 +82,7 @@
 			"last_color":"009900",
 			"last_avatar":"https://avatars2.githubusercontent.com/u/73081?v=4&amp;s=460",
 			"replies":"54",
+			"approved":true,
 			"views":"234"
 		},
 		{
@@ -94,6 +99,7 @@
 			"last_color":"009900",
 			"last_avatar":"https://avatars2.githubusercontent.com/u/73081?v=4&amp;s=460",
 			"replies":"5",
+			"approved":true,
 			"views":"24"
 		},
 		{
@@ -110,6 +116,7 @@
 			"last_color":"009900",
 			"last_avatar":"https://avatars2.githubusercontent.com/u/73081?v=4&amp;s=460",
 			"replies":"54",
+			"approved":true,
 			"views":"234"
 		},
 		{
@@ -126,6 +133,7 @@
 			"last_color":"009900",
 			"last_avatar":"https://avatars2.githubusercontent.com/u/73081?v=4&amp;s=460",
 			"replies":"0",
+			"approved":true,
 			"views":"5",
 			"pages": ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
 		},
@@ -143,6 +151,7 @@
 			"last_color":"AA0000",
 			"last_avatar":"https://avatars2.githubusercontent.com/u/73081?v=4&amp;s=460",
 			"replies":"3",
+			"approved":true,
 			"views":"269"
 		},
 		{
@@ -159,6 +168,7 @@
 			"last_color":"AA0000",
 			"last_avatar":"https://avatars2.githubusercontent.com/u/73081?v=4&amp;s=460",
 			"replies":"1",
+			"approved":true,
 			"views":"6"
 		},
 		{
@@ -175,6 +185,7 @@
 			"last_color":"009900",
 			"last_avatar":"https://avatars2.githubusercontent.com/u/73081?v=4&amp;s=460",
 			"replies":"10",
+			"approved":true,
 			"views":"15"
 		},
 		{
@@ -191,6 +202,7 @@
 			"last_color":"009900",
 			"last_avatar":"https://avatars2.githubusercontent.com/u/73081?v=4&amp;s=460",
 			"replies":"8",
+			"approved":true,
 			"views":"53"
 		},
 		{
@@ -207,6 +219,7 @@
 			"last_color":"009900",
 			"last_avatar":"https://avatars2.githubusercontent.com/u/73081?v=4&amp;s=460",
 			"replies":"20",
+			"approved":true,
 			"views":"151"
 		},
 		{
@@ -223,6 +236,7 @@
 			"last_color":"009900",
 			"last_avatar":"https://avatars2.githubusercontent.com/u/73081?v=4&amp;s=460",
 			"replies":"0",
+			"approved":false,
 			"views":"5",
 			"pages": ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
 		},
@@ -240,6 +254,7 @@
 			"last_color":"AA0000",
 			"last_avatar":"https://avatars2.githubusercontent.com/u/73081?v=4&amp;s=460",
 			"replies":"8",
+			"approved":true,
 			"views":"22"
 		},
 		{
@@ -256,6 +271,7 @@
 			"last_color":"009900",
 			"last_avatar":"https://avatars2.githubusercontent.com/u/73081?v=4&amp;s=460",
 			"replies":"0",
+			"approved":true,
 			"views":"5"
 		},
 		{
@@ -272,6 +288,7 @@
 			"last_color":"009900",
 			"last_avatar":"https://avatars2.githubusercontent.com/u/73081?v=4&amp;s=460",
 			"replies":"0",
+			"approved":true,
 			"views":"5",
 			"pages": ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
 		}

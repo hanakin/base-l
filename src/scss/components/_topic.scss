@@ -10,7 +10,7 @@
 
 // Layout Variables
 $topic-spacing: $default-spacing !default;
-$topic-data-icon-size: $default-icon-sm !default;
+$topic-data-icon-size: 20px !default;
 $topic-border-size: $default-border-size !default;
 
 // Theme Variables
@@ -73,7 +73,6 @@ $topic-border-color: rgba(0, 0, 0, 0.125) !default;
 			&-icon {
 				width: $topic-data-icon-size;
 				height: $topic-data-icon-size;
-				margin-top: -($topic-spacing * 1.5);
 			}
 		}
 
