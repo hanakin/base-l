@@ -43,7 +43,7 @@ $drawer-border: $drawer-border-height solid $drawer-border-color !default;
 	flex-shrink: 1;
 	align-self: auto;
 	height: 100%;
-	padding: ($drawer-spacing * 2) 0;
+	padding: 0;
 	transform: scaleX(0);
 	transform-origin: center right;
 
@@ -166,9 +166,5 @@ $drawer-border: $drawer-border-height solid $drawer-border-color !default;
 				transition: 0.5s;
 			}
 		}
-	}
-
-	@media (min-width: $bp-lg) {
-		transform: scaleX(1);
 	}
 }

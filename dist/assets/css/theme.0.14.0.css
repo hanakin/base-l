@@ -728,7 +728,7 @@
 	-webkit-align-self: auto;
 	align-self: auto;
 	height: 100%;
-	padding: 1rem 0;
+	padding: 0;
 	transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
 	-webkit-transform: scaleX(0);
 	transform: scaleX(0);
@@ -880,13 +880,6 @@
 	color: #258cf4;
 	opacity: 1;
 	transition: 0.5s;
-}
-
-@media (min-width: 992px) {
-	.c-drawer {
-		-webkit-transform: scaleX(1);
-		transform: scaleX(1);
-	}
 }
 
 .c-tab {
