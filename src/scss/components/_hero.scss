@@ -11,7 +11,8 @@
 // Layout Variables
 $hero-spacing: $default-spacing !default;
 $hero-border-size: $default-border-size !default;
-$hero-logo-height: 120px !default;
+$hero-logo-max-height: 120px !default;
+$hero-logo-width: 300px !default;
 $hero-height: 400px !default;
 $hero-lead-max-width: 448px !default;
 
@@ -40,7 +41,9 @@ $hero-background: url("https://i.imgur.com/DnPCBsG.jpg") !default;
 
 	&-logo {
 		color: $hero-logo-color;
-		height: $hero-logo-height;
+		width: $hero-logo-width;
+		height: auto;
+		max-height: $hero-logo-max-height;
 	}
 
 	&-heading {

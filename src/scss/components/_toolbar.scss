@@ -64,12 +64,9 @@ $toolbar-text-hover-color: $default-action-color-hover !default;
 		-webkit-tap-highlight-color: rgba(0, 0, 0, 0); // google material design
 		color: $toolbar-text-color;
 		position: relative; // google material design
-		display: inline-flex; // [1]
+		@include center($toolbar-height); // [1]
 		overflow: hidden; // [6]
-		justify-content: center; // [1]
-		align-items: center; // [1]
 		box-sizing: border-box;
-		height: 36px; // [1]
 		margin: 0; // [4]
 		padding: 0 ($toolbar-spacing * 2); // [7]
 		user-select: none; // [8]

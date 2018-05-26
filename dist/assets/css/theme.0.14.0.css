@@ -1362,7 +1362,9 @@
 
 .c-hero-logo {
 	color: #258cf4;
-	height: 120px;
+	width: 300px;
+	height: auto;
+	max-height: 120px;
 }
 
 .c-hero-heading {

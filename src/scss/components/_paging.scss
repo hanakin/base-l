@@ -45,10 +45,7 @@ $paging-link-background-hover-color: $default-action-bg-hover !default;
 	&-link {
 		@include type(subhead2);
 		background: $paging-link-background-color;
-		display: inline-flex;
-		justify-content: center;
-		align-items: center;
-		height: $paging-height;
+		@include center($paging-height);
 		margin: 0;
 		padding: $paging-spacing ($paging-spacing * 2);
 
