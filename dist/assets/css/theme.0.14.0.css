@@ -826,7 +826,7 @@
 	overflow: hidden;
 	padding: 1rem 1rem 1rem 1.5rem;
 	cursor: pointer;
-	transition: 0.5s;
+	transition: background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 	-webkit-transform: translate3d(0, 0, 0);
 	transform: translate3d(0, 0, 0);
 }
@@ -835,7 +835,6 @@
 	color: #757575;
 	opacity: 0.54;
 	margin: 0;
-	transition: 0.5s;
 }
 
 .c-drawer-link-text {
@@ -873,13 +872,11 @@
 .c-drawer-link:hover {
 	background-color: #eeeeee;
 	color: #757575;
-	transition: 0.5s;
 }
 
 .c-drawer-link:hover .c-drawer-link-icon {
 	color: #258cf4;
 	opacity: 1;
-	transition: 0.5s;
 }
 
 .c-tab {

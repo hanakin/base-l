@@ -117,14 +117,15 @@ $drawer-border: $drawer-border-height solid $drawer-border-color !default;
 		overflow: hidden;
 		padding: ($drawer-spacing * 2) ($drawer-spacing * 2) ($drawer-spacing * 2) ($drawer-spacing * 3);
 		cursor: pointer;
-		transition: 0.5s;
+		transition:
+			background-color 0.2s $default-animation-curve,
+			color 0.2s $default-animation-curve;
 		transform: translate3d(0, 0, 0);
 
 		&-icon {
 			color: $drawer-icon-color;
 			opacity: $drawer-opacity-54;
 			margin: 0;
-			transition: 0.5s;
 		}
 
 		&-text {
@@ -158,12 +159,10 @@ $drawer-border: $drawer-border-height solid $drawer-border-color !default;
 		&:hover {
 			background-color: $drawer-bg-hover-color;
 			color: $drawer-text-color;
-			transition: 0.5s;
 
 			.c-drawer-link-icon {
 				color: $drawer-icon-hover-color;
 				opacity: $drawer-opacity-1;
-				transition: 0.5s;
 			}
 		}
 	}
