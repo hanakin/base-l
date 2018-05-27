@@ -13,21 +13,18 @@ $drawer-spacing: $default-spacing !default;
 $drawer-bar-offset: 58px !default;
 $drawer-width: 248px !default;
 $drawer-border-height: $default-border-size;
-$drawer-opacity-1: $default-opacity !default;
 $drawer-opacity-87: $default-opacity-87 !default;
 $drawer-opacity-54: $default-opacity-54 !default;
-$drawer-opacity-38: $default-opacity-38 !default;
-$drawer-opacity-12: $default-opacity-12 !default;
 
 
 // Theme Variables
 $drawer-bg-color: $default-action-bg !default;
 $drawer-bg-hover-color: $default-action-bg-hover !default;
+$drawer-bg-sub-color: rgba($black, 0.01) !default;
 $drawer-text-color: $default-action-color !default;
 $drawer-icon-color: $default-action-color !default;
 $drawer-icon-hover-color: $default-action-color-hover !default;
-$drawer-border-color: rgba(0, 0, 0, 0.125) !default;
-$drawer-border: $drawer-border-height solid $drawer-border-color !default;
+$drawer-border-color: rgba($black, 0.125) !default;
 
 
 //
@@ -55,21 +52,20 @@ $drawer-border: $drawer-border-height solid $drawer-border-color !default;
 		.c-drawer-link-text {
 			display: inline-block;
 			min-width: $drawer-width;
-			transition: 0.5s;
 		}
 
 		.c-drawer-user-name {
 			display: inline-block;
 		}
-
-		@media (min-width: $bp-lg) {
-			transition: 0.5s;
-		}
+		//
+		// @media (min-width: $bp-lg) {
+		// 	transition: 0.5s;
+		// }
 	}
 
 	&-user {
 		@include type(menu);
-		border-bottom: $drawer-border;
+		border-bottom: $drawer-border-height solid $drawer-border-color;
 		color: $drawer-text-color;
 		margin-bottom: 0;
 		padding: ($drawer-spacing * 2);
@@ -104,14 +100,19 @@ $drawer-border: $drawer-border-height solid $drawer-border-color !default;
 		}
 	}
 
+	&-item > &-menu {
+		background-color: rgba(0, 0, 0, 0.01);
+		border-top: $drawer-border-height solid $drawer-border-color;
+		border-bottom: $drawer-border-height solid $drawer-border-color;
+	}
+
 	&-divider {
 		background-color: $drawer-border-color;
 		height: $drawer-border-height;
 	}
 
 	&-link {
-		color: $drawer-text-color;
-		opacity: $drawer-opacity-87;
+		color: rgba($drawer-text-color, $drawer-opacity-87);
 		position: relative;
 		display: block;
 		overflow: hidden;
@@ -123,8 +124,7 @@ $drawer-border: $drawer-border-height solid $drawer-border-color !default;
 		transform: translate3d(0, 0, 0);
 
 		&-icon {
-			color: $drawer-icon-color;
-			opacity: $drawer-opacity-54;
+			color: rgba($drawer-icon-color, $drawer-opacity-54);
 			margin: 0;
 		}
 
@@ -162,7 +162,6 @@ $drawer-border: $drawer-border-height solid $drawer-border-color !default;
 
 			.c-drawer-link-icon {
 				color: $drawer-icon-hover-color;
-				opacity: $drawer-opacity-1;
 			}
 		}
 	}

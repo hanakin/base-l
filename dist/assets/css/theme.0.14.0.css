@@ -749,19 +749,11 @@
 .c-drawer.is-active .c-drawer-link-text {
 	display: inline-block;
 	min-width: 248px;
-	transition: 0.5s;
 }
 
 .c-drawer:hover .c-drawer-user-name,
 .c-drawer.is-active .c-drawer-user-name {
 	display: inline-block;
-}
-
-@media (min-width: 992px) {
-	.c-drawer:hover,
-	.c-drawer.is-active {
-		transition: 0.5s;
-	}
 }
 
 .c-drawer-user {
@@ -813,14 +805,19 @@
 	transform: scaleY(1);
 }
 
+.c-drawer-item > .c-drawer-menu {
+	background-color: rgba(0, 0, 0, 0.01);
+	border-top: 1px solid rgba(0, 0, 0, 0.125);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
 .c-drawer-divider {
 	background-color: rgba(0, 0, 0, 0.125);
 	height: 1px;
 }
 
 .c-drawer-link {
-	color: #757575;
-	opacity: 0.87;
+	color: rgba(117, 117, 117, 0.87);
 	position: relative;
 	display: block;
 	overflow: hidden;
@@ -832,8 +829,7 @@
 }
 
 .c-drawer-link-icon {
-	color: #757575;
-	opacity: 0.54;
+	color: rgba(117, 117, 117, 0.54);
 	margin: 0;
 }
 
@@ -876,7 +872,6 @@
 
 .c-drawer-link:hover .c-drawer-link-icon {
 	color: #258cf4;
-	opacity: 1;
 }
 
 .c-tab {
