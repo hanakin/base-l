@@ -33,8 +33,6 @@ $notification-action-bg: $default-action-bg-hover !default;
 // @scss
 .c-notification {
 	&-list {
-		border-top: $notification-border-size solid $notification-border-color;
-		border-bottom: $notification-border-size solid $notification-border-color;
 		box-shadow: none;
 		overflow-y: scroll;
 		max-height: $notification-container-size-lg;
@@ -121,11 +119,13 @@ $notification-action-bg: $default-action-bg-hover !default;
 		border-radius: $notification-border-radius;
 		position: absolute;
 		z-index: 999;
-		top: 0;
+		top: 60px;
+		right: 150px;
 		overflow: auto;
 		width: $notification-container-width;
 		transition: all 0.2s ease;
 		transform: scale(0);
+		transform-origin: right top;
 
 		&.is-active {
 			transform: scale(1);
