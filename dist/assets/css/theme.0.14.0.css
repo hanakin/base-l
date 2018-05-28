@@ -608,6 +608,14 @@
 	margin-bottom: 0.5rem;
 }
 
+.c-notification-list {
+	border-top: 1px solid rgba(0, 0, 0, 0.125);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+	box-shadow: none;
+	overflow-y: scroll;
+	max-height: 420px;
+}
+
 .c-notification-item {
 	border-top: 1px solid rgba(0, 0, 0, 0.125);
 }

@@ -15,7 +15,7 @@ $notification-border-size: $default-border-size !default;
 $notification-icon-size: $default-icon-md !default;
 $notification-meta-border-radius: 50% !default;
 $notification-container-width: 300px !default;
-$notification-container-width-lg: 420px !default;
+$notification-container-size-lg: 420px !default;
 
 // Theme Variables
 $notification-hover-color: $gray-100 !default;
@@ -32,6 +32,14 @@ $notification-action-bg: $default-action-bg-hover !default;
 //
 // @scss
 .c-notification {
+	&-list {
+		border-top: $notification-border-size solid $notification-border-color;
+		border-bottom: $notification-border-size solid $notification-border-color;
+		box-shadow: none;
+		overflow-y: scroll;
+		max-height: $notification-container-size-lg;
+	}
+
 	&-item {
 		border-top: $notification-border-size solid $notification-border-color;
 
@@ -124,7 +132,7 @@ $notification-action-bg: $default-action-bg-hover !default;
 		}
 
 		@media (min-width: $bp-md) {
-			width: $notification-container-width-lg;
+			width: $notification-container-size-lg;
 		}
 	}
 }
