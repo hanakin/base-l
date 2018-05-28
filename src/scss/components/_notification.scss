@@ -45,6 +45,10 @@ $notification-action-bg: $default-action-bg-hover !default;
 			background-color: $notification-hover-color;
 			transition: 0.5s;
 		}
+
+		&:first-of-type {
+			border: none;
+		}
 	}
 
 	&-meta {
@@ -119,8 +123,6 @@ $notification-action-bg: $default-action-bg-hover !default;
 		border-radius: $notification-border-radius;
 		position: absolute;
 		z-index: 999;
-		top: 60px;
-		right: 150px;
 		overflow: auto;
 		width: $notification-container-width;
 		transition: all 0.2s ease;

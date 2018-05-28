@@ -623,6 +623,10 @@
 	transition: 0.5s;
 }
 
+.c-notification-item:first-of-type {
+	border: none;
+}
+
 .c-notification-meta {
 	border-radius: 50%;
 	color: #757575;
@@ -700,8 +704,6 @@
 	box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
 	position: absolute;
 	z-index: 999;
-	top: 60px;
-	right: 150px;
 	overflow: auto;
 	width: 300px;
 	transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
