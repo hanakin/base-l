@@ -39,6 +39,10 @@ $profile-bad-color: $default-important-color !default;
 	transition: all 0.2s ease;
 	transform: scale(0);
 
+	&.is-active {
+		transform: scale(1);
+	}
+
 	&-toggle {
 		position: relative;
 		cursor: pointer;
