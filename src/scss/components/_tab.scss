@@ -62,7 +62,7 @@ $tab-border: $tab-border-height $tab-border-type $tab-border-color !default;
 	}
 
 	&:hover,
-	&-active {
+	&.is-active {
 		color: $tab-icon-hover-color;
 		transition: 0.5s;
 
@@ -112,10 +112,11 @@ $tab-border: $tab-border-height $tab-border-type $tab-border-color !default;
 
 	&-pane {
 		@include parent(column);
+		display: none;
 		margin: 0;
 
-		&[aria-hidden="true"] {
-			display: none;
+		&.is-active {
+			display: block;
 		}
 
 		&-row {

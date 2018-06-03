@@ -923,13 +923,13 @@
 }
 
 .c-tab:hover,
-.c-tab-active {
+.c-tab.is-active {
 	color: #258cf4;
 	transition: 0.5s;
 }
 
 .c-tab:hover:after,
-.c-tab-active:after {
+.c-tab.is-active:after {
 	left: 0;
 	width: 100%;
 }
@@ -984,13 +984,14 @@
 .c-tab-pane {
 	display: -webkit-flex;
 	display: flex;
+	display: none;
 	-webkit-flex-direction: column;
 	flex-direction: column;
 	margin: 0;
 }
 
-.c-tab-pane[aria-hidden="true"] {
-	display: none;
+.c-tab-pane.is-active {
+	display: block;
 }
 
 .c-tab-pane-row {
