@@ -33,7 +33,7 @@ $menu-divider-color: rgba(0, 0, 0, 0.125) !default;
 // @scss
 .c-menu {
 	margin: 0;
-	padding: $default-spacing 0;
+	padding: $menu-spacing 0;
 	list-style: none;
 
 	&-container {
