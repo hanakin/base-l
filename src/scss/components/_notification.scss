@@ -18,6 +18,7 @@ $notification-container-width: 300px !default;
 $notification-container-size-lg: 420px !default;
 
 // Theme Variables
+$notification-color: $white !default;
 $notification-hover-color: $gray-100 !default;
 $notification-approved-color: $default-success-color !default;
 $notification-approved-hover-color: $default-success-dark-color !default;
@@ -39,6 +40,7 @@ $notification-action-bg: $default-action-bg-hover !default;
 	}
 
 	&-item {
+		background-color: $notification-color;
 		border-top: $notification-border-size solid $notification-border-color;
 
 		&:hover {
