@@ -1,0 +1,13 @@
+{# icons.twig #}
+{% extends "./layout/layout.twig" %}
+
+{% block component %}
+	<section>
+		<ul class="icon-display">
+		{% for item in icons %}
+		{{ icons }}
+			<li><a href=""><svg class="o-icon"><use xlink:href="#{{ item.icon }}"></use></svg> <span>{{ item.icon|capitalize }}</span></a></li>
+		{% endfor %}
+		</ul>
+	</section>
+{% endblock %}
