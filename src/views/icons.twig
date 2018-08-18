@@ -35,12 +35,29 @@
 	</head>
 	<body>
 		{% include './includes/defs.twig' %}
+		{% for item in icons %}
+			{% if loop.first %}
+		<section>
+			<h3>{{ item.cat|capitalize }}</h3>
+			<ul class="icon-display">
+			{% elseif item.cat !== cat %}
+			</ul>
+		</section>
 
 		<section>
+			<h3>{{ item.cat|capitalize }}</h3>
 			<ul class="icon-display">
-			{% for item in icons %}
+			{% endif %}
 				<li><a href=""><svg class="o-icon"><use xlink:href="#{{ item.icon }}"></use></svg> <span>{{ item.icon|capitalize }}</span></a></li>
-			{% endfor %}
+			{% set cat = item.cat %}
+			{% if loop.last %}
+			</ul>
+		</section>
+			{% endif %}
+		{% endfor %}
+		<section>
+			<h3>Logo</h3>
+			<ul class="icon-display">
 				<li><a href=""><svg class="o-icon"><use xlink:href="#logo"></use></svg> <span>Logo</span></a></li>
 				<li><a href=""><svg class="o-icon"><use xlink:href="#logo-dense"></use></svg> <span>Logo-Dense</span></a></li>
 			</ul>
