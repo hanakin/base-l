@@ -63,7 +63,7 @@ $menu-divider-color: rgba(0, 0, 0, 0.125) !default;
 	}
 
 	&-link {
-		@include type(menu);
+		@include type(body2);
 		white-space: nowrap;
 		text-decoration: none;
 		color: $menu-link-color;

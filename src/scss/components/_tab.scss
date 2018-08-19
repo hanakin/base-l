@@ -32,7 +32,7 @@ $tab-border: $tab-border-height $tab-border-type $tab-border-color !default;
 //
 // @scss
 .c-tab {
-	@include type(body2);
+	@include type(body1);
 	text-align: center;
 	vertical-align: middle;
 	white-space: nowrap;

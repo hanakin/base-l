@@ -43,7 +43,7 @@ $paging-link-background-hover-color: $default-action-bg-hover !default;
 	}
 
 	&-link {
-		@include type(subhead2);
+		@include type(subtitle1);
 		background: $paging-link-background-color;
 		@include center($paging-height);
 		margin: 0;

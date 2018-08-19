@@ -71,7 +71,7 @@ $drawer-border-color: rgba($black, 0.125) !default;
 		padding: ($drawer-spacing * 2);
 
 		&-name {
-			@include type(body2);
+			@include type(body1);
 			vertical-align: middle;
 			display: none;
 			margin-left: $drawer-spacing;

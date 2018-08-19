@@ -61,7 +61,7 @@ $profile-bad-color: $default-important-color !default;
 	}
 
 	&-group {
-		@include type(body1);
+		@include type(body2);
 		text-align: center;
 		color: $profile-group-color;
 		height: $profile-group-height;

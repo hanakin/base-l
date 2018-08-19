@@ -47,17 +47,17 @@ $hero-background: url("https://i.imgur.com/DnPCBsG.jpg") !default;
 	}
 
 	&-heading {
-		@include type(headline, $lh: 1.2, $fw: 700);
+		@include type(headline5, $lh: 1.2, $fw: 700);
 		text-transform: uppercase;
 		color: $white;
 	}
 
 	&-lead {
-		@include type(headline, $lh: 1, $fw: 200);
+		@include type(headline5, $lh: 1, $fw: 200);
 		color: $white;
 
 		@media (min-width: $bp-md) {
-			@include type(display1, $lh: 1, $fw: 200);
+			@include type(headline4, $lh: 1, $fw: 200);
 			max-width: $hero-lead-max-width;
 		}
 	}

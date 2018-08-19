@@ -48,7 +48,7 @@ $post-border-color: rgba(0, 0, 0, 0.125) !default;
 	}
 
 	&-title {
-		@include type(headline);
+		@include type(headline5);
 		margin-bottom: 0;
 
 		@media (min-width: $bp-lg) {
@@ -70,7 +70,7 @@ $post-border-color: rgba(0, 0, 0, 0.125) !default;
 }
 
 .c-copy {
-	@include type(subhead2);
+	@include type(subtitle1);
 	font-weight: 300;
 	margin: ($post-spacing * 2) 0 0;
 

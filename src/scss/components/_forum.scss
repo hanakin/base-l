@@ -66,7 +66,7 @@ $forum-title-icon-color: $default-info-color !default;
 	}
 
 	&-title {
-		@include type(headline, $lh: 1);
+		@include type(headline5, $lh: 1);
 		margin-top: ($forum-spacing * 3);
 		margin-bottom: ($forum-spacing * 1.5);
 
@@ -85,7 +85,7 @@ $forum-title-icon-color: $default-info-color !default;
 	}
 
 	&-text {
-		@include type(body1);
+		@include type(body2);
 		color: $forum-text-color;
 		margin: $forum-spacing 0 0;
 
@@ -98,7 +98,7 @@ $forum-title-icon-color: $default-info-color !default;
 
 	&-cat {
 		&-title {
-			@include type(headline);
+			@include type(headline5);
 			border-bottom: $forum-border-size $forum-border-style $forum-border-color;
 			margin-top: ($forum-spacing * 2);
 			margin-bottom: ($forum-spacing * 3);
