@@ -64,7 +64,7 @@ $drawer-border-color: rgba($black, 0.125) !default;
 	}
 
 	&-user {
-		@include type(menu);
+		@include type(body2);
 		border-bottom: $drawer-border-height solid $drawer-border-color;
 		color: $drawer-text-color;
 		margin-bottom: 0;
