@@ -8,7 +8,7 @@ Base-L is meant as a core layer to your workflow. Its a true CSS framework follo
 the ITCSS guidelines outlined by [Harry Roberts](http://www.csswizardry.com) in
 this [seminar](https://www.youtube.com/watch?v=1OKZOV-iLj4). Designed with
 applications in mind. Developed in conjunction with the popular open source
-forum application [phpBB](http://www.phpbb.org). It lends it self beautifully to
+forum application [phpBB](https://www.phpbb.com). It lends it self beautifully to
 the project improving its code base and simplifying the process of designing and
 creating rich, beautiful customizable themes.
 

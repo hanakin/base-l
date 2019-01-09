@@ -10,7 +10,7 @@
 - Based on [ITCSS](https://www.youtube.com/watch?v=1OKZOV-iLj4) by [Harry Roberts](http://www.csswizardry.com)
 - Simple layer based structure
 - Endless scalability
-- Web Application focused, with [phpBB](http://www.phpbb.org) in mind.
+- Web Application focused, with [phpBB](https://www.phpbb.com) in mind.
 
 [GitHub](https://github.com/hanakin/base-l/)
 [Get Started](#base-l)
