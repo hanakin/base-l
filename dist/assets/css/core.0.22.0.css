@@ -3052,7 +3052,11 @@ textarea + .o-form-floating-label {
 	align-items: center;
 	height: 56px;
 	padding: 1rem;
-	padding-right: 0;
+	padding-left: 0;
+}
+
+.o-bar-info:first-of-type {
+	padding-left: 1rem;
 }
 
 .o-bar-item-text {
