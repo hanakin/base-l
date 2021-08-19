@@ -132,59 +132,6 @@ $bar-badge-color: $default-error-item-color !default;
 		}
 	}
 
-	// &-action {
-	// 	@include type(subtitle1, $lh: 1.5, $fw: 700);
-	// 	@include center($bar-height);
-	// 	color: $bar-color;
-	// 	position: relative;
-	// 	overflow: hidden;
-	// 	padding: ($bar-spacing * 2);
-	// 	transform: translate3d(0, 0, 0);
-
-	// 	&:after {
-	// 		background-image: radial-gradient(circle, $black 10%, transparent 10.01%);
-	// 		background-repeat: no-repeat;
-	// 		background-position: 50%;
-	// 		opacity: 0;
-	// 		position: absolute;
-	// 		top: 0;
-	// 		left: 0;
-	// 		display: block;
-	// 		width: 100%;
-	// 		height: 100%;
-	// 		content: '';
-	// 		transition: transform 0.5s, opacity 1s;
-	// 		transform: scale(10, 10);
-	// 		pointer-events: none;
-	// 	}
-
-	// 	&:active:after {
-	// 		opacity: 0.2;
-	// 		transition: 0s;
-	// 		transform: scale(0, 0);
-	// 	}
-
-	// 	&:hover,
-	// 	&:focus {
-	// 		background-color: $bar-bg-hover-color;
-	// 		outline: 0;
-	// 		color: $bar-hover-color;
-	// 		transition: 0.5s;
-	// 	}
-
-	// 	&-text {
-	// 		display: none;
-	// 		@media (min-width: $bp-sm) {
-	// 			display: inline-flex;
-	// 		}
-	// 	}
-
-	// 	&-icon + &-text,
-	// 	&-text + &-icon {
-	// 		padding-left: $bar-spacing;
-	// 	}
-	// }
-
 	&-profile {
 		@include center($bar-height);
 		max-width: $bar-profile-max;
