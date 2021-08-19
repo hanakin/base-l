@@ -2,7 +2,7 @@
 // @object: Modal
 //------------------------------------------------------------------------------
 // @author: hanakin -- midaym
-// @version: 0.23.0
+// @version: 1.0.0
 // @description
 //
 //------------------------------------------------------------------------------
@@ -18,15 +18,18 @@ $modal-min-width-lg: 640px !default;
 $modal-max-width: 865px !default;
 
 // Theme Variables
-$modal-background-color: $default-action-bg !default;
+$modal-background-color: $default-background-color !default;
 $modal-text-color: $default-action-color !default;
+$modal-btn-color: $white !default;
+$modal-btn-hover-color: $white !default;
+$modal-btn-bg-color: $default-action-color !default;
+$modal-btn-bg-hover-color: $default-action-color-hover !default;
 
 
 //
 // @scss
 .o-modal {
 	@include shadow(4);
-	@include parent(column);
 	background-color: $modal-background-color;
 	border-radius: $modal-border-radius;
 	opacity: 0;
@@ -83,7 +86,6 @@ $modal-text-color: $default-action-color !default;
 	}
 
 	&-footer {
-		@include parent();
 		flex-wrap: wrap;
 		justify-content: flex-end;
 		align-items: center;
@@ -91,8 +93,14 @@ $modal-text-color: $default-action-color !default;
 	}
 
 	&-action {
-		box-shadow: none;
+		background-color: $modal-btn-bg-color;
+		color: $modal-btn-color;
 		margin-right: $modal-spacing;
+
+		&:hover {
+			background-color: $modal-btn-bg-hover-color;
+			color: $modal-btn-hover-color;
+		}
 	}
 
 	@media (min-width: $md) {

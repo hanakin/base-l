@@ -1695,11 +1695,11 @@ pre code {
 }
 
 .o-form-group {
-	background-color: var(--gray-1200);
+	background-color: var(--gray-1300);
 	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 97%, var(--blue-700) 3%);
 	background-repeat: no-repeat;
 	background-size: 0 100%;
-	border-bottom: 1px solid var(--gray-1200);
+	border-bottom: 1px solid var(--gray-1300);
 	border-radius: 2px;
 	color: var(--gray-900);
 	position: relative;
@@ -2368,11 +2368,9 @@ textarea + .o-form-floating-label {
 }
 
 .o-modal {
-	background-color: var(--gray-1200);
+	background-color: var(--gray-1300);
 	border-radius: 2px;
 	opacity: 0;
-	display: flex;
-	flex-direction: column;
 	width: calc(100% - (8px * 4));
 	min-width: 280px;
 	max-width: 865px;
@@ -2435,8 +2433,6 @@ textarea + .o-form-floating-label {
 }
 
 .o-modal-footer {
-	display: flex;
-	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: flex-end;
 	align-items: center;
@@ -2444,8 +2440,14 @@ textarea + .o-form-floating-label {
 }
 
 .o-modal-action {
-	box-shadow: none;
+	background-color: var(--gray-900);
+	color: #ffffff;
 	margin-right: 0.5rem;
+}
+
+.o-modal-action:hover {
+	background-color: var(--blue-700);
+	color: #ffffff;
 }
 
 @media (min-width: 770px) {
@@ -2454,4 +2456,4 @@ textarea + .o-form-floating-label {
 	}
 }
 
-/*# sourceMappingURL=core.0.22.0.css.map */
+/*# sourceMappingURL=core.1.0.0.css.map */
