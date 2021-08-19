@@ -2,7 +2,7 @@
 // @utilities: Visability
 //------------------------------------------------------------------------------
 // @author: hanakin -- midaym
-// @version: 0.22.0
+// @version: 0.23.0
 // @description:
 //
 // Responsive visability classes derived from bootstrap.
@@ -47,58 +47,72 @@
 
 // Responsive visibility utilities
 
-.u-hidden-xs-up {
-	display: none !important;
+// hide on xxs
+@media (max-width: ($xs - 1)) {
+	.u-hidden-xxs-down {
+		display: none !important;
+	}
 }
 
-@media (max-width: ($bp-sm - 1)) {
+// visible only & xxs
+@media (min-width: $xs) {
+	.u-hidden-xs-up {
+		display: none !important;
+	}
+}
+
+// hide on xs & down
+@media (max-width: ($sm - 1)) {
 	.u-hidden-xs-down {
 		display: none !important;
 	}
 }
 
-@media (min-width: $bp-sm) {
+// visible only xs & down
+@media (min-width: $sm) {
 	.u-hidden-sm-up {
 		display: none !important;
 	}
 }
 
-@media (max-width: ($bp-md - 1)) {
+// hide on sm & down
+@media (max-width: ($md - 1)) {
 	.u-hidden-sm-down {
 		display: none !important;
 	}
 }
 
-@media (min-width: $bp-md) {
+// visible only sm & down
+@media (min-width: $md) {
 	.u-hidden-md-up {
 		display: none !important;
 	}
 }
 
-@media (max-width: ($bp-lg - 1)) {
+// hide on md & down
+@media (max-width: ($lg - 1)) {
 	.u-hidden-md-down {
 		display: none !important;
 	}
 }
 
-@media (min-width: $bp-lg) {
+// visible only md & down
+@media (min-width: $lg) {
 	.u-hidden-lg-up {
 		display: none !important;
 	}
 }
 
-@media (max-width: ($bp-xl - 1)) {
-	.u-hidden-lg-down {
+// hide on lg & down
+@media (max-width: ($xl - 1)) {
+	.u-hidden-md-down {
 		display: none !important;
 	}
 }
 
-@media (min-width: $bp-xl) {
-	.u-hidden-xl-up {
+// visible only lg & down
+@media (min-width: $xl) {
+	.u-hidden-lg-up {
 		display: none !important;
 	}
-}
-
-.u-hidden-xl-down {
-	display: none !important;
 }

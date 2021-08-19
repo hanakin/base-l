@@ -2,7 +2,7 @@
  * Base-L: Utilities
  * -----------------------------------------------------------------------------
  * @author: hanakin -- midaym
- * @version: 0.22.0
+ * @version: 0.23.0
 
  * --------------------------------------------------------------------------- */
 :root {
@@ -328,60 +328,64 @@
 	display: none !important;
 }
 
-.u-hidden-xs-up {
-	display: none !important;
+@media (max-width: 410px) {
+	.u-hidden-xxs-down {
+		display: none !important;
+	}
 }
 
-@media (max-width: 575px) {
+@media (min-width: 411px) {
+	.u-hidden-xs-up {
+		display: none !important;
+	}
+}
+
+@media (max-width: 539px) {
 	.u-hidden-xs-down {
 		display: none !important;
 	}
 }
 
-@media (min-width: 576px) {
+@media (min-width: 540px) {
 	.u-hidden-sm-up {
 		display: none !important;
 	}
 }
 
-@media (max-width: 767px) {
+@media (max-width: 769px) {
 	.u-hidden-sm-down {
 		display: none !important;
 	}
 }
 
-@media (min-width: 768px) {
+@media (min-width: 770px) {
 	.u-hidden-md-up {
 		display: none !important;
 	}
 }
 
-@media (max-width: 991px) {
+@media (max-width: 959px) {
 	.u-hidden-md-down {
 		display: none !important;
 	}
 }
 
-@media (min-width: 992px) {
+@media (min-width: 960px) {
 	.u-hidden-lg-up {
 		display: none !important;
 	}
 }
 
-@media (max-width: 1199px) {
-	.u-hidden-lg-down {
+@media (max-width: 1139px) {
+	.u-hidden-md-down {
 		display: none !important;
 	}
 }
 
-@media (min-width: 1200px) {
-	.u-hidden-xl-up {
+@media (min-width: 1140px) {
+	.u-hidden-lg-up {
 		display: none !important;
 	}
-}
-
-.u-hidden-xl-down {
-	display: none !important;
 }
 
 @media print {

@@ -2,7 +2,7 @@
 // @setting: Default
 //------------------------------------------------------------------------------
 // @author: hanakin -- midaym
-// @version: 0.22.0
+// @version: 0.23.0
 // @description
 //
 //------------------------------------------------------------------------------
@@ -19,17 +19,15 @@ $default-border-size:           1px !default;
 $default-border-radius:         2px !default;
 
 $default-grid-gutter:           16px !default;
+$default-grid-gutter-sm:        12px !default;
 
-// Grid
+// Grid Breakpoints
+$xxs: 360px !default;
+$xs: 411px !default;
 $sm: 540px !default;
-$md: 720px !default;
+$md: 770px !default;
 $lg: 960px !default;
 $xl: 1140px !default;
-
-$bp-sm: 576px !default;
-$bp-md: 768px !default;
-$bp-lg: 992px !default;
-$bp-xl: 1200px !default;
 
 // Spacing
 $default-spacing: 8px !default;

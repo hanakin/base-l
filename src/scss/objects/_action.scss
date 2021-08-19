@@ -2,7 +2,7 @@
 // @object: Action
 //------------------------------------------------------------------------------
 // @author: hanakin -- midaym
-// @version: 0.22.0
+// @version: 0.23.0
 // @description
 //
 //------------------------------------------------------------------------------
@@ -45,7 +45,7 @@ $action-badge-bg-color: $default-error-color !default;
 
 	&-text {
 		display: none;
-		@media (min-width: $bp-sm) {
+		@media (min-width: $sm) {
 			display: inline-flex;
 		}
 	}
@@ -65,7 +65,7 @@ $action-badge-bg-color: $default-error-color !default;
 		height: $action-badge-height;
 		margin-left: ($action-spacing / 2);
 
-		@media (min-width: $bp-sm) {
+		@media (min-width: $sm) {
 			color: $action-badge-color;
 			display: inline-flex;
 			width: auto;

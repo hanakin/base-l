@@ -2,7 +2,7 @@
 // @base: Tables
 //------------------------------------------------------------------------------
 // @author: hanakin -- midaym
-// @version: 0.22.0
+// @version: 0.23.0
 // @description:
 //
 //------------------------------------------------------------------------------
@@ -87,7 +87,7 @@ table {
 		border-left: $default-border-size solid $table-border-color;
 		padding-bottom: $table-header-padding-bottom;
 	}
-	@media (min-width: $bp-md) {
+	@media (min-width: $md) {
 		display: table;
 		width: auto;
 	}
