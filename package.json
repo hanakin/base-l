@@ -1,6 +1,6 @@
 {
 	"name": "@hanakin/base-l",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "A well structured top down base css framework meant for web apps",
 	"main": "gulpfile.js",
 	"eslintConfig": {
