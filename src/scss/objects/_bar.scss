@@ -166,10 +166,11 @@ $bar-badge-color: $default-error-item-color !default;
 		}
 
 		&-form {
-			@include parent();
-			justify-content: flex-start;
+			display: grid;
 			width: 100%;
 			margin: 0;
+			grid-column: span 2;
+			grid-template-columns: 56px auto 56px;
 		}
 
 		&-toggle {
