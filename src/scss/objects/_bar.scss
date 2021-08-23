@@ -2,7 +2,7 @@
 // @object: Bar
 //------------------------------------------------------------------------------
 // @author: hanakin -- midaym
-// @version: 1.0.2
+// @version: 1.0.3
 // @description
 //
 //------------------------------------------------------------------------------
@@ -84,6 +84,7 @@ $bar-badge-color: $default-error-item-color !default;
 	grid-template-columns: 1fr 1fr;
 
 	&-right {
+		position: relative;
 		display: flex;
 		flex-direction: row;
 		align-self: flex-end;

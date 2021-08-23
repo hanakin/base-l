@@ -2,7 +2,7 @@
 
 ![logo](_media/logo.svg)
 
-# 1.0.2
+# 1.0.3
 [![Build Status](https://travis-ci.org/hanakin/base-l.svg?branch=master)](https://travis-ci.org/hanakin/base-l)
 
 > A well structured top down base css framework.
