@@ -83,7 +83,7 @@ empty-line-delimited blocks of markup.
 
 Naming conventions aren’t necessarily all that useful in your CSS. Where naming
 conventions’ power really lies is in your markup. Take the following,
-non-naming-conventioned HTML:
+non-naming-convention HTML:
 
 ```html
 <div class="box profile pro-user">

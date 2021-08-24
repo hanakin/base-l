@@ -43,7 +43,7 @@ At a very high-level, our architecture should help you
 - promote reuse and efficiency;
 - increased productivity.
 
-Typically, this will mean a class-based and componentised architecture, split
+Typically, this will mean a class-based and component driven architecture, split
 up into manageable modules, probably using a preprocessor. Of course, there is
 far more to an architecture than that, so let’s look at some principles…
 

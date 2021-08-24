@@ -2,7 +2,7 @@
 // @object: Container
 //------------------------------------------------------------------------------
 // @author: hanakin -- midaym
-// @version: 1.0.2
+// @version: 1.0.3
 // @description
 //
 // The container sizes are based on defaults & breakpoints that were developed
@@ -13,7 +13,7 @@
 // This is based on a default minimum viewport size of 360px. All smaller
 // devices are not supported. This includes iPhones 6 and up & near all Androids.
 //
-// All brekpoints are using viewport exact sizes while containers are
+// All breakpoints are using viewport exact sizes while containers are
 // the same however there are 12px padding on mobile sizes and a 16 px padding
 // on all others
 //
@@ -92,6 +92,6 @@ $grid-gutter-sm: $default-grid-gutter-sm !default;
 	}
 }
 
-.o-continer-centered {
+.o-container-centered {
 	text-align: center;
 }

@@ -2,7 +2,7 @@
 // @generic: Forms
 //------------------------------------------------------------------------------
 // @author: hanakin -- midaym
-// @version: 1.0.2
+// @version: 1.0.3
 // @description:
 //
 //------------------------------------------------------------------------------
@@ -61,7 +61,7 @@ legend {
 //    font stack.
 // 2. Change the font-size style in all browsers.
 // 3. iOS adds rounded borders by default
-// 4. Ensure all elements have same inital alignment
+// 4. Ensure all elements have same initial alignment
 //
 input,
 button,
@@ -74,7 +74,6 @@ textarea {
 	background-color: transparent;
 	background-image: none; // [3]
 	background-clip: padding-box;
-	-webkit-border-radius: 0; // [3] iOS 8+
 	border-radius: 0; // [3]
 	color: inherit;
 }
@@ -195,7 +194,7 @@ input[type='color'] {
 // Selects & Textareas
 //------------------------------------------------------------------------------
 //
-// 1. Align when inline to top for better conssistant alignments.
+// 1. Align when inline to top for better consistent alignments.
 // 2. Allow only vertical resizing of textareas.
 // 3. Specify the standard appearance of selects
 //

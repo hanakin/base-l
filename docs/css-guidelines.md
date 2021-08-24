@@ -244,7 +244,7 @@ When indenting Sass, we stick to the same four space tab indentation, and we als
 **N.B.** Nesting in Sass should be avoided in most cases. See [the Specificity section](#/codeing-guidelines?id=specificity) for more data.
 
 
-### Enforcing standardisation
+### Enforcing standardization
 
 Our project makes use of several tools to lint and to keep us to the standards.
 

@@ -2,7 +2,7 @@
 // @generic: Global
 //------------------------------------------------------------------------------
 // @author: hanakin -- midaym
-// @version: 1.0.2
+// @version: 1.0.3
 // @description:
 //
 // A thin layer on top of normalize.css that provides a starting point more
@@ -56,7 +56,7 @@ iframe {
 }
 
 //
-// Remove the gap between audio, canvas, iframes,
+// Remove the gap between audio, canvas, iframe,
 // images, videos and the bottom of their containers:
 // https://github.com/h5bp/html5-boilerplate/issues/440
 //
@@ -144,7 +144,7 @@ svg {
 }
 
 //
-// specify the unstyled cursor of disabled, not-editable, or otherwise
+// specify the un-styled cursor of disabled, not-editable, or otherwise
 // inoperable elements
 //
 [aria-disabled] {

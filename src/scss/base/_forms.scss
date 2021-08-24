@@ -2,7 +2,7 @@
 // @base: Forms
 //------------------------------------------------------------------------------
 // @author: hanakin -- midaym
-// @version: 1.0.2
+// @version: 1.0.3
 // @description:
 //
 //------------------------------------------------------------------------------
@@ -125,7 +125,7 @@ textarea {
 //
 // 1. Suppress the nested default white text on blue background highlight given
 //    to the selected option text when the (still closed) <select> receives
-//    focusin IE and (under certain conditions) Edge, as it looks bad and cannot
+//    focus in IE and (under certain conditions) Edge, as it looks bad and cannot
 //    be made to match the appearance of the native widget.
 //    See https://github.com/twbs/bootstrap/issues/19398.
 //

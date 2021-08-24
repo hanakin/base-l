@@ -115,7 +115,6 @@ $shadow-ambient-elevation: (
 //
 // @scss
 @mixin shadow($depth, $change: false) {
-	@if $mode == light {
 	$shadow-umbra-depth: map-get($shadow-umbra-elevation, $depth);
 	$shadow-penumbra-depth: map-get($shadow-penumbra-elevation, $depth);
 	$shadow-ambient-depth: map-get($shadow-ambient-elevation, $depth);
