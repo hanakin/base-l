@@ -337,9 +337,9 @@ main {
 	ul li a {
 		font-size: 14px;
 		font-weight: normal;
-		white-space: nowrap;
 		text-decoration: none;
 		text-overflow: ellipsis;
+		white-space: nowrap;
 		border-bottom: none;
 		color: $sidebar-link-color;
 		display: block;

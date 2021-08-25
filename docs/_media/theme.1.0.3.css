@@ -553,9 +553,9 @@ main {
 .sidebar ul li a {
 	font-size: 0.875rem;
 	font-weight: normal;
-	white-space: nowrap;
 	text-decoration: none;
 	text-overflow: ellipsis;
+	white-space: nowrap;
 	border-bottom: none;
 	color: #505d6b;
 	display: block;

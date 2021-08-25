@@ -1599,9 +1599,9 @@ table th {
 	font-weight: 500;
 	line-height: 1.5rem;
 	text-align: left;
+	text-overflow: ellipsis;
 	vertical-align: bottom;
 	letter-spacing: 0.03125em;
-	text-overflow: ellipsis;
 	background-color: var(--gray-100);
 	border-left: 1px solid var(--gray-500);
 	padding-bottom: 0.5rem;
@@ -1785,9 +1785,9 @@ pre code {
 
 .o-form-lead {
 	display: inline-flex;
+	flex-basis: 24px;
 	flex-grow: 0;
 	flex-shrink: 1;
-	flex-basis: 24px;
 	justify-content: center;
 	align-items: center;
 	height: 56px;
@@ -1796,9 +1796,9 @@ pre code {
 
 .o-form-prefix {
 	display: inline-flex;
+	flex-basis: auto;
 	flex-grow: 0;
 	flex-shrink: 1;
-	flex-basis: auto;
 	justify-content: center;
 	align-items: center;
 	height: 56px;
@@ -1810,9 +1810,9 @@ pre code {
 	background-color: transparent;
 	border: none;
 	display: inline-flex;
+	flex-basis: 1;
 	flex-grow: 1;
 	flex-shrink: 1;
-	flex-basis: 1;
 	justify-content: center;
 	align-items: center;
 	height: 48px;
@@ -1840,9 +1840,9 @@ pre code {
 	bottom: inherit;
 	left: 16px;
 	display: inline-flex;
+	flex-basis: auto;
 	flex-grow: 0;
 	flex-shrink: 1;
-	flex-basis: auto;
 	justify-content: center;
 	align-items: center;
 	height: 56px;
@@ -1870,9 +1870,9 @@ textarea + .o-form-floating-label {
 
 .o-form-suffix {
 	display: inline-flex;
+	flex-basis: auto;
 	flex-grow: 0;
 	flex-shrink: 1;
-	flex-basis: auto;
 	justify-content: center;
 	align-items: center;
 	height: 56px;
@@ -1881,9 +1881,9 @@ textarea + .o-form-floating-label {
 
 .o-form-trail {
 	display: inline-flex;
+	flex-basis: 24px;
 	flex-grow: 0;
 	flex-shrink: 1;
-	flex-basis: 24px;
 	justify-content: center;
 	align-items: center;
 	height: 56px;
@@ -1981,8 +1981,8 @@ textarea + .o-form-floating-label {
 	font-weight: 700;
 	line-height: 1.5;
 	text-align: center;
-	vertical-align: middle;
 	text-decoration: none;
+	vertical-align: middle;
 	letter-spacing: 0.009375em;
 	background-color: var(--gray-100);
 	border: none;
@@ -2266,10 +2266,10 @@ textarea + .o-form-floating-label {
 
 .o-bar-search-form {
 	display: grid;
-	width: 100%;
-	margin: 0;
 	grid-column: span 2;
 	grid-template-columns: 56px auto 56px;
+	width: 100%;
+	margin: 0;
 }
 
 .o-bar-search-toggle {
