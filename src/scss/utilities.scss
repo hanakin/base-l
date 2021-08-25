@@ -26,13 +26,13 @@
 
 // 1. Global Settings
 //-------------------------
-@import 'settings/settings';
+@import 'settings/color';
+@import 'settings/default';
 
 
 // 2. Tools
 //-------------------------
-@import 'tools/function/functions';
-@import 'tools/mixin/mixins';
+@import 'tools/mixin/clearfix';
 
 
 // 8. Utilities
