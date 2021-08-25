@@ -2,7 +2,7 @@
 // @object: Button
 //------------------------------------------------------------------------------
 // @author: hanakin -- midaym
-// @version: 1.0.2
+// @version: 1.0.3
 // @description
 //
 //------------------------------------------------------------------------------
@@ -42,8 +42,8 @@ $btn-text-hover-color: $default-action-color-hover !default;
 	@include shadow(2); // google material design
 	@include center($btn-height);  // [1]
 	text-align: center; // [4]
-	vertical-align: middle; // [2]
 	text-decoration: none; // [4]
+	vertical-align: middle; // [2]
 	background-color: $btn-background-color;
 	border: none; // google material design
 	border-radius: $btn-border-radius;
