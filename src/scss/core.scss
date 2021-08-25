@@ -92,7 +92,6 @@
 
 // 3. Generic
 //-------------------------
-/* stylelint-disable no-duplicate-selectors */
 @import 'generic/normalize';
 @import 'generic/box-sizing';
 
@@ -113,7 +112,6 @@
 @import 'base/forms';
 @import 'base/table';
 @import 'base/code';
-/* stylelint-enable no-duplicate-selectors */
 
 // 5. Objects
 //-------------------------
