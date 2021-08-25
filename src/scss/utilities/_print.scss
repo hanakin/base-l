@@ -2,7 +2,7 @@
 // @utilities: Print
 //------------------------------------------------------------------------------
 // @author: hanakin -- midaym
-// @version: 1.0.2
+// @version: 1.0.3
 // @description
 //
 // Inlined to avoid the additional HTTP request:
@@ -23,7 +23,7 @@
 		background: transparent !important;
 		box-shadow: none !important;
 		text-shadow: none !important;
-		color: $black !important; // [1]
+		color: $default-black !important; // [1]
 	}
 
 	a,
