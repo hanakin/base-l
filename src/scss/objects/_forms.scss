@@ -59,6 +59,10 @@ $form-invalid-border-color: $default-error-color !default;
 			outline: none;
 			box-shadow: none;
 			transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+
+			.o-form-floating-label {
+				margin: -($form-spacing * 3.5) 0 0;
+			}
 		}
 
 		&.is-disabled,
@@ -169,7 +173,7 @@ $form-invalid-border-color: $default-error-color !default;
 		flex-basis: auto;
 		flex-grow: 0;
 		flex-shrink: 1;
-		margin: -($form-spacing * 2) 0 0;
+		margin: 0;
 		padding: 0;
 
 		.has-icon & {
