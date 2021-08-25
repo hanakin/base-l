@@ -2,7 +2,7 @@
 // @generic: Type
 //------------------------------------------------------------------------------
 // @author: hanakin -- midaym
-// @version: 1.0.2
+// @version: 1.0.3
 // @description:
 //
 //------------------------------------------------------------------------------
@@ -96,9 +96,7 @@ dt {
 // 1. Hang the opening quote of the blockquote.
 //
 blockquote {
-	/* stylelint-disable declaration-property-unit-disallowed-list, declaration-property-unit-allowed-list */
 	text-indent: -0.41em; // [1]
-	/* stylelint-enable declaration-property-unit-disallowed-list, declaration-property-unit-allowed-list */
 	@include vertical-rhythm();
 }
 
@@ -125,9 +123,7 @@ q {
 	// If an element opens with an inline quote, let’s hang that.
 	//
 	&:first-child {
-		/* stylelint-disable declaration-property-unit-disallowed-list, declaration-property-unit-allowed-list */
 		text-indent: -0.22em;
-		/* stylelint-enable declaration-property-unit-disallowed-list, declaration-property-unit-allowed-list */
 		display: inline-block;
 	}
 }
