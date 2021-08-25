@@ -81,7 +81,11 @@ $bar-badge-color: $default-error-item-color !default;
 .o-bar {
 	background-color: $bar-bg-color;
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: auto auto;
+
+	&-left {
+		position: relative;
+	}
 
 	&-right {
 		position: relative;
@@ -168,10 +172,10 @@ $bar-badge-color: $default-error-item-color !default;
 
 		&-form {
 			display: grid;
-			width: 100%;
-			margin: 0;
 			grid-column: span 2;
 			grid-template-columns: 56px auto 56px;
+			width: 100%;
+			margin: 0;
 		}
 
 		&-toggle {
