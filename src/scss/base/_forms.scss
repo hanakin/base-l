@@ -17,8 +17,8 @@ $input-border-radius: $default-border-radius;
 
 // Theme Variables
 $input-color: $default-action-color !default;
-$input-background-color: $default-action-bg !default;
-$input-border-color: $default-action-bg !default;
+$input-background-color: $default-background-color !default;
+$input-border-color: $input-background-color !default;
 $input-border-alt-color: $default-action-bg-hover !default;
 $input-border-hover-color: $default-action-bg-hover !default;
 $input-hover-color: $default-action-color-hover !default;
