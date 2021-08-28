@@ -2196,6 +2196,7 @@ textarea + .o-form-floating-label {
 
 .o-bar-item {
 	position: relative;
+	display: inline-block;
 }
 
 .o-bar-item-text {

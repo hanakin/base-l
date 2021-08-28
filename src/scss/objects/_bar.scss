@@ -115,6 +115,7 @@ $bar-badge-color: $default-error-item-color !default;
 
 	&-item {
 		position: relative;
+		display: inline-block;
 
 		&-text {
 			padding-left: $bar-spacing;
