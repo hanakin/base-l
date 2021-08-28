@@ -2194,6 +2194,10 @@ textarea + .o-form-floating-label {
 	padding-left: 1rem;
 }
 
+.o-bar-item {
+	position: relative;
+}
+
 .o-bar-item-text {
 	padding-left: 0.5rem;
 }

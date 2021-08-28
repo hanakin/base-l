@@ -113,8 +113,12 @@ $bar-badge-color: $default-error-item-color !default;
 		}
 	}
 
-	&-item-text {
-		padding-left: $bar-spacing;
+	&-item {
+		position: relative;
+
+		&-text {
+			padding-left: $bar-spacing;
+		}
 	}
 
 	&-avatar {
