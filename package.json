@@ -85,7 +85,7 @@
 		"gulp-sass": "^4.1.0",
 		"gulp-sourcemaps": "^3.0.0",
 		"htmlhint": "^0.14.2",
-		"node-sass": "^4.14.1",
+		"node-sass": "^7.0.0",
 		"postcss-pxtorem": "^6.0.0",
 		"postcss-sorting": "^6.0.0",
 		"stylefmt": "^6.0.3",
