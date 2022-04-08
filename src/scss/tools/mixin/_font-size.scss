@@ -2,7 +2,7 @@
 // @tool: Font-size
 //------------------------------------------------------------------------------
 // @author: hanakin -- midaym
-// @version: 1.0.3
+// @version: 1.1.0
 // @description
 //
 //
@@ -13,11 +13,13 @@
 //
 //------------------------------------------------------------------------------
 
+@use 'sass:math';
+
 //
 // @scss
 @mixin font-size($font-size, $line-height: true) {
 	font-size: rem($font-size);
 	@if $line-height == true {
-		line-height: ceil($font-size / $default-line-height) * ($default-line-height / $font-size);
+		line-height: ceil(math.div($font-size, $default-line-height)) * math.div($default-line-height, $font-size);
 	}
 }

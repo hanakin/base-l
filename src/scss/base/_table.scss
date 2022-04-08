@@ -2,10 +2,12 @@
 // @base: Tables
 //------------------------------------------------------------------------------
 // @author: hanakin -- midaym
-// @version: 1.0.2
+// @version: 1.1.0
 // @description:
 //
 //------------------------------------------------------------------------------
+
+@use 'sass:math';
 
 //
 // #settings
@@ -16,12 +18,12 @@ $table-last-row-height: $default-height;
 $table-header-height: $table-last-row-height;
 $table-header-padding-bottom: $sp1;
 $table-column-spacing: $sp4;
-$table-column-padding: $table-column-spacing / 2;
+$table-column-padding: math.div($table-column-spacing, 2);
 $table-card-header-height: $sp8;
 $table-card-title-top: 20px;
 $table-card-padding: $sp2;
 $table-button-padding-right: $table-card-padding;
-$table-cell-top: $table-card-padding / 2;
+$table-cell-top: math.div($table-card-padding, 2);
 
 //Theme Variables
 $table-bg-color: $default-page-color;
@@ -44,7 +46,7 @@ table {
 	width: 100%;
 
 	thead {
-		padding-bottom: ($table-header-padding-bottom / 2);
+		padding-bottom: math.div($table-header-padding-bottom, 2);
 	}
 
 	tbody {

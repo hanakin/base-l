@@ -2,10 +2,12 @@
 // @base: Forms
 //------------------------------------------------------------------------------
 // @author: hanakin -- midaym
-// @version: 1.0.3
+// @version: 1.1.0
 // @description:
 //
 //------------------------------------------------------------------------------
+
+@use 'sass:math';
 
 //
 // #settings
@@ -96,7 +98,6 @@ textarea {
 		&::placeholder {
 			color: $white;
 		}
-
 	}
 
 	&:disabled {
@@ -108,7 +109,7 @@ textarea {
 	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 99%, $input-hover-color 1%);
 	background-repeat: no-repeat;
 	background-size: 0 100%;
-	border-bottom: solid ($input-border-width / 2) $input-border-color;
+	border-bottom: solid math.div($input-border-width, 2) $input-border-color;
 	height: auto;
 	padding-top: $sp3;
 	transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);

@@ -2,10 +2,12 @@
 // @base: Code
 //------------------------------------------------------------------------------
 // @author: hanakin -- midaym
-// @version: 1.0.2
+// @version: 1.1.0
 // @description:
 //
 //------------------------------------------------------------------------------
+
+@use 'sass:math';
 
 //
 // #settings
@@ -47,7 +49,7 @@ kbd {
 	background-color: $code-bg;
 	border-radius: $code-border-radius;
 	color: $code-color;
-	padding: ($kbd-padding / 2) $kbd-padding;
+	padding: math.div($kbd-padding, 2) $kbd-padding;
 }
 
 // User input typically entered via keyboard

@@ -2,10 +2,12 @@
 // @object: Form
 //------------------------------------------------------------------------------
 // @author: hanakin -- midaym
-// @version: 1.0.2
+// @version: 1.1.0
 // @description
 //
 //------------------------------------------------------------------------------
+
+@use 'sass:math';
 
 //
 // #settings
@@ -83,7 +85,6 @@ $form-invalid-border-color: $default-error-color !default;
 				background-size: 0% 0%;
 				border-color: $form-disabled-bg-color;
 			}
-
 		}
 
 		&.is-disabled {
@@ -138,7 +139,7 @@ $form-invalid-border-color: $default-error-color !default;
 		flex-basis: auto;
 		flex-grow: 0;
 		flex-shrink: 1;
-		margin: $form-spacing ($form-spacing / 2) 0 0;
+		margin: $form-spacing math.div($form-spacing, 2) 0 0;
 	}
 
 	&-input {

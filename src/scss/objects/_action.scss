@@ -2,10 +2,12 @@
 // @object: Action
 //------------------------------------------------------------------------------
 // @author: hanakin -- midaym
-// @version: 1.0.2
+// @version: 1.1.0
 // @description
 //
 //------------------------------------------------------------------------------
+
+@use 'sass:math';
 
 //
 // #settings
@@ -45,6 +47,7 @@ $action-badge-bg-color: $default-error-color !default;
 
 	&-text {
 		display: none;
+
 		@media (min-width: $sm) {
 			display: inline-flex;
 		}
@@ -63,7 +66,7 @@ $action-badge-bg-color: $default-error-color !default;
 		align-self: center;
 		width: $action-badge-width;
 		height: $action-badge-height;
-		margin-left: ($action-spacing / 2);
+		margin-left: math.div($action-spacing, 2);
 
 		@media (min-width: $sm) {
 			color: $action-badge-color;

@@ -1,4 +1,5 @@
 {
+	"extends": "stylelint-config-standard-scss",
 	"plugins": [
 		"stylelint-scss",
 		"stylelint-order"
@@ -11,17 +12,48 @@
 		"./docs/documentation/*.html"
 	],
 	"rules": {
+		"scss/comment-no-empty": null,
+		"scss/double-slash-comment-whitespace-inside": null,
+		"scss/dollar-variable-empty-line-before": null,
+		"scss/no-global-function-names": null,
+		"scss/at-rule-conditional-no-parentheses": null,
+
+		"no-empty-first-line": null,
+		"no-descending-specificity": null,
+		"property-no-vendor-prefix": null,
+		"selector-no-vendor-prefix": null,
+		"alpha-value-notation": null,
+		"declaration-block-no-redundant-longhand-properties": null,
+
+
 		"scss/at-extend-no-missing-placeholder": true,
 		"scss/at-else-empty-line-before": "never",
 		"scss/at-if-closing-brace-newline-after": "always-last-in-chain",
 		"scss/dollar-variable-colon-space-before": "never",
 		"scss/selector-no-redundant-nesting-selector": true,
+		"scss/at-mixin-argumentless-call-parentheses": "always",
+
 
 		"at-rule-name-case": "lower",
 		"at-rule-name-newline-after": "always-multi-line",
 		"at-rule-name-space-after": "always-single-line",
 		"at-rule-no-vendor-prefix": true,
 		"at-rule-semicolon-newline-after": "always",
+		"at-rule-empty-line-before": [
+			"always",
+			{
+				"except": [
+					"blockless-after-blockless",
+					"first-nested"
+				],
+				"ignore": ["after-comment"],
+				"ignoreAtRules": [
+					"if",
+					"else",
+					"include"
+				]
+			}
+		],
 
 		"block-closing-brace-newline-after": [
 			"always", {
@@ -41,6 +73,7 @@
 		"color-hex-length": "long",
 		"color-named": "never",
 		"color-no-invalid-hex": true,
+		"color-function-notation": "legacy",
 
 		"comment-empty-line-before": [
 			"always", {
