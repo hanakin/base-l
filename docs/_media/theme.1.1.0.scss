@@ -43,8 +43,6 @@ $sidebar-width: 300px;
 
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono|Source+Sans+Pro:300,400,600');
 
-/* stylelint-disable font-family-no-missing-generic-family-keyword */
-
 * {
 	-webkit-font-smoothing: antialiased;
 	-webkit-text-size-adjust: none;
@@ -2185,5 +2183,3 @@ pre:after {
 .brown-1400 {
 	background-color: #1a120f;
 }
-
-/* stylelint-enable font-family-no-missing-generic-family-keyword */

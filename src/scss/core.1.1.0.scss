@@ -100,6 +100,7 @@
 /* stylelint-disable declaration-property-unit-disallowed-list */
 /* stylelint-disable max-line-length */
 /* stylelint-disable no-duplicate-selectors */
+/* stylelint-disable font-family-no-duplicate-names */
 @import 'generic/normalize';
 @import 'generic/box-sizing';
 /* stylelint-enable declaration-property-unit-allowed-list */
@@ -107,6 +108,7 @@
 /* stylelint-enable declaration-block-no-duplicate-properties */
 /* stylelint-enable declaration-property-unit-disallowed-list */
 /* stylelint-enable max-line-length */
+/* stylelint-enable font-family-no-duplicate-names */
 
 // Resets
 @import 'generic/reset/global';

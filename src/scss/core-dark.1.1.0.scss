@@ -97,10 +97,14 @@
 /* stylelint-disable declaration-property-unit-allowed-list */
 /* stylelint-disable declaration-block-no-duplicate-properties */
 /* stylelint-disable no-duplicate-selectors */
+/* stylelint-disable font-family-no-duplicate-names */
+/* stylelint-disable order/properties-order */
 @import 'generic/normalize';
 @import 'generic/box-sizing';
 /* stylelint-enable declaration-property-unit-allowed-list */
 /* stylelint-enable declaration-block-no-duplicate-properties */
+/* stylelint-enable font-family-no-duplicate-names */
+/* stylelint-enable order/properties-order */
 
 // Resets
 @import 'generic/reset/global';
