@@ -1,9 +1,9 @@
 
 /* -----------------------------------------------------------------------------
- * Base-L: Core - Light
+ * Base-L: Core - Dark
  * -----------------------------------------------------------------------------
  * @author: hanakin -- midaym
- * @version: 1.0.3
+ * @version: 1.1.0
 
  * --------------------------------------------------------------------------- */
 
@@ -83,7 +83,7 @@
 //-------------------------
 @import 'settings/color';
 @import 'settings/default';
-@import 'settings/light';
+@import 'settings/dark';
 
 
 // 2. Tools
@@ -94,8 +94,13 @@
 
 // 3. Generic
 //-------------------------
+/* stylelint-disable declaration-property-unit-allowed-list */
+/* stylelint-disable declaration-block-no-duplicate-properties */
+/* stylelint-disable no-duplicate-selectors */
 @import 'generic/normalize';
 @import 'generic/box-sizing';
+/* stylelint-enable declaration-property-unit-allowed-list */
+/* stylelint-enable declaration-block-no-duplicate-properties */
 
 // Resets
 @import 'generic/reset/global';

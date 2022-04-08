@@ -133,6 +133,7 @@ img {
 
 
 /* navbar */
+/* stylelint-disable selector-no-qualifying-type */
 .app-nav {
 	text-align: right;
 	position: absolute;
@@ -168,13 +169,11 @@ img {
 		color: $primary-color;
 		transition: color 0.3s;
 
-		/* stylelint-disable selector-no-qualifying-type */
 		&:hover,
 		&.active {
 			border-bottom: 2px solid lighten($primary-color, 15%);
 			color: lighten($primary-color, 15%);
 		}
-		/* stylelint-enable selector-no-qualifying-type */
 	}
 
 	/* navbar dropdown */
@@ -228,7 +227,7 @@ img {
 		}
 	}
 }
-
+/* stylelint-enable selector-no-qualifying-type */
 
 
 
@@ -284,6 +283,7 @@ main {
 
 
 /* sidebar */
+/* stylelint-disable selector-no-qualifying-type */
 .sidebar {
 	background-color: $docs-bg-color;
 	border-right: 1px solid rgba(0, 0, 0, 0.07);
@@ -402,6 +402,7 @@ main {
 		}
 	}
 }
+/* stylelint-enable selector-no-qualifying-type */
 
 .sticky {
 	.sidebar,
