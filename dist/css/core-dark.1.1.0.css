@@ -1099,7 +1099,7 @@ h6 small {
 	font-size: 3.75rem;
 	font-size: 60%;
 	font-weight: 300;
-	line-height: 0.234375;
+	line-height: 1;
 	letter-spacing: -0.0083333333em;
 	display: block;
 }
@@ -1107,49 +1107,49 @@ h6 small {
 h1 {
 	font-size: 3.75rem;
 	font-weight: 300;
-	line-height: 0.234375;
+	line-height: 1;
 	letter-spacing: -0.0083333333em;
 }
 
 h2 {
 	font-size: 3rem;
 	font-weight: 400;
-	line-height: 0.1953125;
+	line-height: 1.0416666667;
 	letter-spacing: normal;
 }
 
 h3 {
 	font-size: 2.125rem;
 	font-weight: 400;
-	line-height: 0.15625;
+	line-height: 1.1764705882;
 	letter-spacing: 0.0073529412em;
 }
 
 h4 {
 	font-size: 1.5rem;
 	font-weight: 400;
-	line-height: 0.125;
+	line-height: 1.3333333333;
 	letter-spacing: normal;
 }
 
 h5 {
 	font-size: 1.25rem;
 	font-weight: 500;
-	line-height: 0.125;
+	line-height: 1.6;
 	letter-spacing: 0.0125em;
 }
 
 h6 {
 	font-size: 1rem;
 	font-weight: 300;
-	line-height: 0.109375;
+	line-height: 1.75;
 	letter-spacing: 0.009375em;
 }
 
 p {
 	font-size: 1rem;
 	font-weight: 500;
-	line-height: 0.09375;
+	line-height: 1.5;
 	letter-spacing: 0.03125em;
 }
 
@@ -1157,7 +1157,7 @@ blockquote {
 	font-size: 1.5rem;
 	font-weight: 400;
 	font-style: italic;
-	line-height: 0.125;
+	line-height: 1.3333333333;
 	letter-spacing: normal;
 	position: relative;
 	margin-left: 3rem;
@@ -1188,14 +1188,14 @@ mark {
 cite {
 	font-size: 0.75rem;
 	font-weight: 400;
-	line-height: 0.078125;
+	line-height: 1.6666666667;
 	letter-spacing: 0.0333333333em;
 }
 
 address {
 	font-size: 0.875rem;
 	font-weight: 400;
-	line-height: 0.078125;
+	line-height: 1.4285714286;
 	letter-spacing: 0.0178571429em;
 }
 
@@ -1203,7 +1203,7 @@ ul,
 ol {
 	font-size: 0.875rem;
 	font-weight: 400;
-	line-height: 0.078125;
+	line-height: 1.4285714286;
 	letter-spacing: 0.0178571429em;
 }
 
@@ -1620,7 +1620,7 @@ input:-webkit-autofill:active {
 table {
 	font-size: 1rem;
 	font-weight: 500;
-	line-height: 0.09375;
+	line-height: 1.5;
 	white-space: nowrap;
 	letter-spacing: 0.03125em;
 	background-color: var(--gray-1400);
@@ -1668,7 +1668,7 @@ table th:last-of-type {
 table th {
 	font-size: 1rem;
 	font-weight: 500;
-	line-height: 0.09375;
+	line-height: 1.5;
 	text-align: left;
 	text-overflow: ellipsis;
 	vertical-align: bottom;
@@ -2331,7 +2331,7 @@ textarea + .o-form-floating-label {
 .o-bar-user-title {
 	font-size: 0.75rem;
 	font-weight: 400;
-	line-height: 0.078125;
+	line-height: 1.6666666667;
 	letter-spacing: 0.0333333333em;
 	color: var(--gray-50);
 	opacity: 0.54;
@@ -2518,7 +2518,7 @@ textarea + .o-form-floating-label {
 .o-modal-header-title {
 	font-size: 1.25rem;
 	font-weight: 500;
-	line-height: 0.125;
+	line-height: 1.6;
 	letter-spacing: 0.0125em;
 	flex: 1;
 	margin: 0;
@@ -2527,7 +2527,7 @@ textarea + .o-form-floating-label {
 .o-modal-body {
 	font-size: 1rem;
 	font-weight: 500;
-	line-height: 0.09375;
+	line-height: 1.5;
 	letter-spacing: 0.03125em;
 	color: var(--gray-900);
 	margin-top: 1.5rem 0 0;
