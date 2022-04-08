@@ -63,7 +63,7 @@
 		"css-fix": "stylelint --fix \"dist/css/*.css\" \"!dist/css/*.min.css\" \"!dist/css/*.css.map\" --cache --cache-location .cache/.stylelintcsscache",
 		"css-minify": "cleancss -O1 --format breakWith=lf --with-rebase --source-map --source-map-inline-sources --output dist/css/ --batch --batch-suffix \".min\" \"dist/css/*.css\" \"!dist/css/*.min.css\" \"!dist/css/*.css.map\"",
 		"clean": "node build/clean.js",
-		"docs-compile": "sass --style expanded --source-map --embed-sources --no-error-css docs/_media/:docs/_media",
+		"docs-compile": "sass --style expanded --source-map --embed-sources --no-error-css  docs/_media/theme.1.1.0.scss docs/_media/theme.1.1.0.css",
 		"docs-postcss": "postcss --config build/postcss.config.js --replace \"docs/_media/*.css\" \"!docs/_media/*.min*\" \"!docs/_media/*.css.map\"",
 		"docs-fix": "stylelint --fix \"docs/_media/*.css\" \"!docs/_media/*.min.css\" \"!docs/_media/*.css.map\" --cache --cache-location .cache/.stylelintdocscache",
 		"docs-minify": "cleancss -O1 --format breakWith=lf --with-rebase --source-map --source-map-inline-sources --output docs/_media --batch --batch-suffix \".min\" \"docs/_media/*.css\" \"!docs/_media/*.min.css\" \"!docs/_media/*.css.map\"",
@@ -74,7 +74,7 @@
 		"build": "npm-run-all --parallel css docs",
 		"watch": "npm-run-all --parallel watch-*",
 		"watch-css": "nodemon --watch src/scss/ --ext scss --exec \"npm-run-all css-compile css-postcss css-fix css-minify\"",
-		"watch-docs": "nodemon --watch docs/_media/ --ext scss --exec \"npm-run-all docs-compile docs-postcss docs-fix docs-minify\""
+		"watch-docs": "nodemon --watch docs/_media --ext scss --exec \"npm-run-all docs-compile docs-postcss docs-fix docs-minify\""
 	},
 	"repository": {
 		"type": "git",
