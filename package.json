@@ -103,7 +103,6 @@
 		"postcss-cli": "^9.1.0",
 		"postcss-pxtorem": "^6.0.0",
 		"postcss-sorting": "^7.0.1",
-		"prettier": "^2.6.2",
 		"sass": "^1.50.0",
 		"stylelint": "^14.6.1",
 		"stylelint-config-standard-scss": "^3.0.0",
