@@ -76,8 +76,8 @@
 		"lint": "npm-run-all --parallel lint-*",
 		"build": "npm-run-all --parallel css docs",
 		"watch": "npm-run-all --parallel watch-*",
-		"watch-css": "nodemon --watch src/scss/ --ext scss --exec \"npm-run-all css-compile css-postcss css-fix css-minify\"",
-		"watch-docs": "nodemon --watch docs/_media --ext scss --exec \"npm-run-all docs-compile docs-postcss docs-fix docs-minify\""
+		"watch-css": "nodemon --watch src/scss/ --ext scss --exec \"npm-run-all --continue-on-error css-compile css-postcss css-fix css-minify\"",
+		"watch-docs": "nodemon --watch docs/_media --ext scss --exec \"npm-run-all --continue-on-error docs-compile docs-postcss docs-fix docs-minify\""
 	},
 	"repository": {
 		"type": "git",
