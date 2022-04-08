@@ -398,7 +398,8 @@ img {
   transition: color 0.3s;
 }
 
-.app-nav a:hover, .app-nav a.active {
+.app-nav a:hover,
+.app-nav a.active {
   border-bottom: 2px solid #9189c2;
   color: #9189c2;
 }
@@ -553,9 +554,9 @@ main {
 .sidebar ul li a {
   font-size: 0.875rem;
   font-weight: normal;
-  white-space: nowrap;
   text-decoration: none;
   text-overflow: ellipsis;
+  white-space: nowrap;
   border-bottom: none;
   color: #505d6b;
   display: block;
@@ -778,7 +779,8 @@ main {
   padding: 0.1875rem 0.3125rem;
 }
 
-.markdown-section code:after, .markdown-section code:before {
+.markdown-section code:after,
+.markdown-section code:before {
   letter-spacing: 0.053em;
 }
 
@@ -2366,7 +2368,6 @@ pre:after {
   background-color: #1a120f;
 }
 
-/*# sourceMappingURL=theme.1.0.1.css.map */
 /*# sourceMappingURL=theme.1.0.0.css.map */
 /*# sourceMappingURL=theme.1.0.0.css.map */
 /*# sourceMappingURL=theme.1.0.0.css.map */

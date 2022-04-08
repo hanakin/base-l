@@ -125,6 +125,11 @@
 		},
 
 		"font-family-name-quotes": "always-where-recommended",
+		"font-family-no-missing-generic-family-keyword": [
+			true, {
+				"ignoreFontFamilies": ["Mono"]
+			}
+		],
 		"function-calc-no-unspaced-operator": true,
 
 		"function-comma-newline-after": "never-multi-line",

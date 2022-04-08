@@ -113,7 +113,8 @@ img {
   /* stylelint-enable selector-no-qualifying-type */
 }
 
-.app-nav a:hover, .app-nav a.active {
+.app-nav a:hover,
+.app-nav a.active {
   border-bottom: 2px solid #9189c2;
   color: #9189c2;
 }
@@ -273,9 +274,9 @@ main {
 .sidebar ul li a {
   font-size: 0.875rem;
   font-weight: normal;
-  white-space: nowrap;
   text-decoration: none;
   text-overflow: ellipsis;
+  white-space: nowrap;
   border-bottom: none;
   color: #505d6b;
   display: block;
@@ -410,7 +411,7 @@ main {
 
 .markdown-section h6 {
   font-size: 0.9375rem;
-  color: #5F6972;
+  color: #5f6972;
 }
 
 .markdown-section figure,
@@ -498,7 +499,8 @@ main {
   padding: 0.1875rem 0.3125rem;
 }
 
-.markdown-section code:after, .markdown-section code:before {
+.markdown-section code:after,
+.markdown-section code:before {
   letter-spacing: 0.053em;
 }
 
@@ -967,7 +969,7 @@ pre:after {
 }
 
 .grey-600 {
-  background-color: #5F6972;
+  background-color: #5f6972;
 }
 
 .grey-700 {
@@ -1926,7 +1928,6 @@ pre:after {
   background-color: #311f10;
 }
 
-/*# sourceMappingURL=theme.0.21.0.css.map */
 /*# sourceMappingURL=theme.0.21.0.css.map */
 /*# sourceMappingURL=theme.0.21.0.css.map */
 /*# sourceMappingURL=theme.0.21.0.css.map */
