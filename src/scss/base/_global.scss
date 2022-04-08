@@ -2,7 +2,7 @@
 // @base: Global
 //------------------------------------------------------------------------------
 // @author: hanakin -- midaym
-// @version: 1.0.2
+// @version: 1.1.0
 // @description:
 //
 // High-level, page-level styling.
@@ -22,7 +22,7 @@ body {
 	font-family: $default-font;
 	font-size: $default-font-size; // [1]
 	font-weight: 400;
-	line-height: unitless($default-line-height); // [1]
+	line-height: unit-less($default-line-height); // [1]
 	background-color: $default-page-bg;
 	color: $default-background-item-color;
 }

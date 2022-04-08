@@ -13,6 +13,6 @@
 
 //
 // @scss
-@function unitless($line-height, $font-size: $default-font-size) {
+@function unit-less($line-height, $font-size: $default-font-size) {
 	@return strip-units(math.div($line-height, $font-size));
 }

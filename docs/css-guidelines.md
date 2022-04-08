@@ -194,7 +194,7 @@ The ‘em’ unit. This is a very problematic unit which wreaks havoc on countle
 
 #### Line-heights
 
-All line-heights are to be specified as ``unitless`` in order to prevent improper inheritance. By nature when using units with line-heights the children inherit by default. This can lead to unwanted effects and bloated code. A ``sass`` function called ``unitless`` is provided which will convert px values for convenience, but for clarity the math is simply
+All line-heights are to be specified as ``unitless`` in order to prevent improper inheritance. By nature when using units with line-heights the children inherit by default. This can lead to unwanted effects and bloated code. A ``sass`` function called ``unit-less`` is provided which will convert px values for convenience, but for clarity the math is simply
 
 ```css
 	line-height: (desired px value) / (current elements font-size)

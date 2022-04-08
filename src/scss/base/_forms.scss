@@ -39,7 +39,7 @@ fieldset {
 
 legend {
 	@include vertical-rhythm();
-	line-height: unitless($default-line-height);
+	line-height: unit-less($default-line-height);
 }
 
 //

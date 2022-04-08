@@ -196,7 +196,7 @@ Oftentimes we want to comment on specific declarations (i.e. lines) in a ruleset
 .o-btn {
 	@include type(button);
 	@include shadow(2);
-	line-height: unitless($btn-height, map-get(map-get($type-styles, button), font-size));
+	line-height: unit-less($btn-height, map-get(map-get($type-styles, button), font-size));
 	text-align: center; // [4]
 	vertical-align: middle; // [2]
 	white-space: nowrap;
