@@ -58,6 +58,7 @@ dfn[title] {
 address {
 	font-style: normal;
 	line-height: inherit;
+
 	@include vertical-rhythm();
 }
 
@@ -85,6 +86,7 @@ nav ul {
 nav > ol,
 nav > ul {
 	padding: 0;
+
 	@include vertical-rhythm();
 }
 
@@ -97,6 +99,7 @@ dt {
 //
 blockquote {
 	text-indent: -0.41em; // [1]
+
 	@include vertical-rhythm();
 }
 

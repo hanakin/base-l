@@ -2,7 +2,7 @@
 // @base: Type
 //------------------------------------------------------------------------------
 // @author: hanakin -- midaym
-// @version: 1.0.2
+// @version: 1.1.0
 // @description:
 //
 //------------------------------------------------------------------------------
@@ -22,7 +22,7 @@ h3 small,
 h4 small,
 h5 small,
 h6 small {
-	@include type(headline2, true);
+	@include type(headline2);
 	font-size: 60%;
 	display: block;
 }
@@ -77,6 +77,7 @@ blockquote {
 			content: '”';
 		}
 	}
+
 	@include space(margin-left);
 }
 

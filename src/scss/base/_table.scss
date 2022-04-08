@@ -83,12 +83,13 @@ table {
 	th {
 		@include type(body1);
 		text-align: left;
-		vertical-align: bottom;
 		text-overflow: ellipsis;
+		vertical-align: bottom;
 		background-color: $table-header-color;
 		border-left: $default-border-size solid $table-border-color;
 		padding-bottom: $table-header-padding-bottom;
 	}
+
 	@media (min-width: $md) {
 		display: table;
 		width: auto;

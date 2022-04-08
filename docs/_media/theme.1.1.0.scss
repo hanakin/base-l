@@ -43,6 +43,7 @@ $sidebar-width: 300px;
 
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono|Source+Sans+Pro:300,400,600');
 
+/* stylelint-disable font-family-no-missing-generic-family-keyword */
 
 * {
 	-webkit-font-smoothing: antialiased;
@@ -214,11 +215,9 @@ img {
 				margin: 0;
 				padding: 0;
 
-				/* stylelint-disable selector-no-qualifying-type */
 				&.active {
 					border-bottom: 0;
 				}
-				/* stylelint-enable selector-no-qualifying-type */
 			}
 		}
 
@@ -325,13 +324,12 @@ main {
 	ul,
 	ul li {
 		list-style: none;
-		/* stylelint-disable selector-no-qualifying-type */
+
 		&.active > a {
 			font-weight: 600;
 			border-right: 2px solid;
 			color: $primary-color;
 		}
-		/* stylelint-enable selector-no-qualifying-type */
 	}
 
 	ul li a {
@@ -2187,3 +2185,5 @@ pre:after {
 .brown-1400 {
 	background-color: #1a120f;
 }
+
+/* stylelint-enable font-family-no-missing-generic-family-keyword */

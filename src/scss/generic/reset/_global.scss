@@ -2,7 +2,7 @@
 // @generic: Global
 //------------------------------------------------------------------------------
 // @author: hanakin -- midaym
-// @version: 1.0.3
+// @version: 1.1.0
 // @description:
 //
 // A thin layer on top of normalize.css that provides a starting point more
@@ -25,17 +25,15 @@
 // 6. Make html take up the entire screen
 //
 html {
+	-moz-osx-font-smoothing: grayscale;  // [3]
 	-webkit-font-smoothing: antialiased;
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0); // [4]
 	overflow-y: scroll; // [1]
 	width: 100%; // [6]
 	height: 100%; // [6]
-	min-height: 100%; // [2]
+	min-height: 100%;  // [2]
 	-ms-touch-action: manipulation; // [5]
 	touch-action: manipulation;
-	/* stylelint-disable order/properties-order */
-	-moz-osx-font-smoothing: grayscale;  // [3]
-	/* stylelint-enable order/properties-order */
 	-ms-overflow-style: -ms-autohiding-scrollbar; // [1] Edge 12+, IE 11
 }
 
@@ -126,7 +124,7 @@ summary {
 // use current current as the default fill of svg elements
 //
 svg {
-	fill: currentColor;
+	fill: currentcolor;
 }
 
 //

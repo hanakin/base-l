@@ -2,7 +2,7 @@
 // @base: Links
 //------------------------------------------------------------------------------
 // @author: hanakin -- midaym
-// @version: 1.0.2
+// @version: 1.1.0
 // @description:
 //
 // Establish the default link look
@@ -45,6 +45,7 @@ a {
 	&:focus {
 		// Default
 		outline: thin dotted;
+
 		// WebKit
 		outline: 4px auto -webkit-focus-ring-color;
 		outline-offset: -1px;

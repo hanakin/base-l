@@ -2,7 +2,7 @@
 // @generic: Forms
 //------------------------------------------------------------------------------
 // @author: hanakin -- midaym
-// @version: 1.0.3
+// @version: 1.1.0
 // @description:
 //
 //------------------------------------------------------------------------------
@@ -223,6 +223,6 @@ select {
 	}
 
 	&::-ms-value {
-		color: currentColor; // Edge 12+, IE 11-
+		color: currentcolor; // Edge 12+, IE 11-
 	}
 }
