@@ -6,16 +6,14 @@ const cssnano = require('cssnano');
 const gulp = require('gulp');
 const sass = require('gulp-sass');
 const sourcemaps = require('gulp-sourcemaps');
-const chromatic = require('chromatic-sass');
 const rename = require('gulp-rename');
 const postcss = require('gulp-postcss');
 const sorting = require('postcss-sorting');
 const torem = require('postcss-pxtorem');
-// const stylefmt = require('stylefmt');
 const sortOrder = require('./.postcss-sorting.json');
 const pkg = require('./package.json');
 
-sass.compiler = require('node-sass');
+sass.compiler = require('sass');
 
 // Config
 const paths = {
@@ -48,7 +46,6 @@ function scss() {
 			indentWidth: 1,
 			outputStyle: 'expanded',
 			precision: 10,
-			functions: chromatic,
 		}).on('error', sass.logError))
 		.pipe(
 			postcss([
@@ -76,7 +73,6 @@ function scss() {
 					mediaQuery: false,
 					minPixelValue: 0,
 				}),
-				// stylefmt(),
 			]),
 		)
 		.pipe(rename({
@@ -111,7 +107,6 @@ function docs() {
 			indentWidth: 1,
 			outputStyle: 'expanded',
 			precision: 10,
-			functions: chromatic,
 		}).on('error', sass.logError))
 		.pipe(
 			postcss([
