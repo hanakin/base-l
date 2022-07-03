@@ -4,7 +4,7 @@
  * Base-L: Core - Light
  * -----------------------------------------------------------------------------
  * @author: hanakin -- midaym
- * @version: 1.1.1
+ * @version: 1.1.3
 
  * --------------------------------------------------------------------------- */
 :root {
@@ -1192,7 +1192,7 @@ mark {
 cite {
 	font-size: 0.75rem;
 	font-weight: 400;
-	line-height: 1.6666666667;
+	line-height: 1;
 	letter-spacing: 0.0333333333em;
 }
 
@@ -1301,6 +1301,111 @@ textarea[readonly] {
 	background-color: var(--gray-700);
 	color: #ffffff;
 	opacity: 1;
+}
+
+[type='date']:disabled::-ms-input-placeholder,
+[type='date'][readonly]::-ms-input-placeholder,
+[type='datetime']:disabled::-ms-input-placeholder,
+[type='datetime'][readonly]::-ms-input-placeholder,
+[type='datetime-local']:disabled::-ms-input-placeholder,
+[type='datetime-local'][readonly]::-ms-input-placeholder,
+[type='email']:disabled::-ms-input-placeholder,
+[type='email'][readonly]::-ms-input-placeholder,
+[type='month']:disabled::-ms-input-placeholder,
+[type='month'][readonly]::-ms-input-placeholder,
+[type='number']:disabled::-ms-input-placeholder,
+[type='number'][readonly]::-ms-input-placeholder,
+[type='password']:disabled::-ms-input-placeholder,
+[type='password'][readonly]::-ms-input-placeholder,
+[type='search']:disabled::-ms-input-placeholder,
+[type='search'][readonly]::-ms-input-placeholder,
+[type='tel']:disabled::-ms-input-placeholder,
+[type='tel'][readonly]::-ms-input-placeholder,
+[type='text']:disabled::-ms-input-placeholder,
+[type='text'][readonly]::-ms-input-placeholder,
+[type='time']:disabled::-ms-input-placeholder,
+[type='time'][readonly]::-ms-input-placeholder,
+[type='url']:disabled::-ms-input-placeholder,
+[type='url'][readonly]::-ms-input-placeholder,
+[type='week']:disabled::-ms-input-placeholder,
+[type='week'][readonly]::-ms-input-placeholder,
+[type='color']:disabled::-ms-input-placeholder,
+[type='color'][readonly]::-ms-input-placeholder,
+select:disabled::-ms-input-placeholder,
+select[readonly]::-ms-input-placeholder,
+textarea:disabled::-ms-input-placeholder,
+textarea[readonly]::-ms-input-placeholder {
+	color: #ffffff;
+}
+
+[type='date']:disabled::-ms-input-placeholder,
+[type='date'][readonly]::-ms-input-placeholder,
+[type='datetime']:disabled::-ms-input-placeholder,
+[type='datetime'][readonly]::-ms-input-placeholder,
+[type='datetime-local']:disabled::-ms-input-placeholder,
+[type='datetime-local'][readonly]::-ms-input-placeholder,
+[type='email']:disabled::-ms-input-placeholder,
+[type='email'][readonly]::-ms-input-placeholder,
+[type='month']:disabled::-ms-input-placeholder,
+[type='month'][readonly]::-ms-input-placeholder,
+[type='number']:disabled::-ms-input-placeholder,
+[type='number'][readonly]::-ms-input-placeholder,
+[type='password']:disabled::-ms-input-placeholder,
+[type='password'][readonly]::-ms-input-placeholder,
+[type='search']:disabled::-ms-input-placeholder,
+[type='search'][readonly]::-ms-input-placeholder,
+[type='tel']:disabled::-ms-input-placeholder,
+[type='tel'][readonly]::-ms-input-placeholder,
+[type='text']:disabled::-ms-input-placeholder,
+[type='text'][readonly]::-ms-input-placeholder,
+[type='time']:disabled::-ms-input-placeholder,
+[type='time'][readonly]::-ms-input-placeholder,
+[type='url']:disabled::-ms-input-placeholder,
+[type='url'][readonly]::-ms-input-placeholder,
+[type='week']:disabled::-ms-input-placeholder,
+[type='week'][readonly]::-ms-input-placeholder,
+[type='color']:disabled::-ms-input-placeholder,
+[type='color'][readonly]::-ms-input-placeholder,
+select:disabled::-ms-input-placeholder,
+select[readonly]::-ms-input-placeholder,
+textarea:disabled::-ms-input-placeholder,
+textarea[readonly]::-ms-input-placeholder {
+	color: #ffffff;
+}
+
+[type='date']:disabled::-ms-input-placeholder,
+[type='date'][readonly]::-ms-input-placeholder,
+[type='datetime']:disabled::-ms-input-placeholder,
+[type='datetime'][readonly]::-ms-input-placeholder,
+[type='datetime-local']:disabled::-ms-input-placeholder,
+[type='datetime-local'][readonly]::-ms-input-placeholder,
+[type='email']:disabled::-ms-input-placeholder,
+[type='email'][readonly]::-ms-input-placeholder,
+[type='month']:disabled::-ms-input-placeholder,
+[type='month'][readonly]::-ms-input-placeholder,
+[type='number']:disabled::-ms-input-placeholder,
+[type='number'][readonly]::-ms-input-placeholder,
+[type='password']:disabled::-ms-input-placeholder,
+[type='password'][readonly]::-ms-input-placeholder,
+[type='search']:disabled::-ms-input-placeholder,
+[type='search'][readonly]::-ms-input-placeholder,
+[type='tel']:disabled::-ms-input-placeholder,
+[type='tel'][readonly]::-ms-input-placeholder,
+[type='text']:disabled::-ms-input-placeholder,
+[type='text'][readonly]::-ms-input-placeholder,
+[type='time']:disabled::-ms-input-placeholder,
+[type='time'][readonly]::-ms-input-placeholder,
+[type='url']:disabled::-ms-input-placeholder,
+[type='url'][readonly]::-ms-input-placeholder,
+[type='week']:disabled::-ms-input-placeholder,
+[type='week'][readonly]::-ms-input-placeholder,
+[type='color']:disabled::-ms-input-placeholder,
+[type='color'][readonly]::-ms-input-placeholder,
+select:disabled::-ms-input-placeholder,
+select[readonly]::-ms-input-placeholder,
+textarea:disabled::-ms-input-placeholder,
+textarea[readonly]::-ms-input-placeholder {
+	color: #ffffff;
 }
 
 [type='date']:disabled::-ms-input-placeholder,
@@ -1773,15 +1878,12 @@ pre code {
 	color: var(--gray-400);
 	position: relative;
 	display: flex;
-	display: inline-flex;
 	flex-direction: row;
-	flex-wrap: nowrap;
 	justify-content: center;
-	align-items: center;
+	align-items: flex-start;
 	width: 100%;
-	height: 56px;
 	margin: 0 0 2rem;
-	padding: 0 1rem;
+	padding: 0 0.75rem 0 1rem;
 	transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
 }
 
@@ -1794,7 +1896,7 @@ pre code {
 }
 
 .o-form-group:focus-within .o-form-floating-label {
-	margin: -1.75rem 0 0;
+	margin: 0 0 2rem;
 }
 
 .o-form-group.is-disabled,
@@ -1803,6 +1905,27 @@ pre code {
 	border-bottom: 1px solid var(--gray-700);
 	color: var(--gray-400);
 	opacity: 1;
+}
+
+.o-form-group.is-disabled > [type='text']:disabled::-ms-input-placeholder,
+.o-form-group.is-disabled > [type='text'][readonly]::-ms-input-placeholder,
+.o-form-group.is-readonly > [type='text']:disabled::-ms-input-placeholder,
+.o-form-group.is-readonly > [type='text'][readonly]::-ms-input-placeholder {
+	color: var(--gray-400);
+}
+
+.o-form-group.is-disabled > [type='text']:disabled::-ms-input-placeholder,
+.o-form-group.is-disabled > [type='text'][readonly]::-ms-input-placeholder,
+.o-form-group.is-readonly > [type='text']:disabled::-ms-input-placeholder,
+.o-form-group.is-readonly > [type='text'][readonly]::-ms-input-placeholder {
+	color: var(--gray-400);
+}
+
+.o-form-group.is-disabled > [type='text']:disabled::-ms-input-placeholder,
+.o-form-group.is-disabled > [type='text'][readonly]::-ms-input-placeholder,
+.o-form-group.is-readonly > [type='text']:disabled::-ms-input-placeholder,
+.o-form-group.is-readonly > [type='text'][readonly]::-ms-input-placeholder {
+	color: var(--gray-400);
 }
 
 .o-form-group.is-disabled > [type='text']:disabled::-ms-input-placeholder,
@@ -1888,17 +2011,17 @@ pre code {
 }
 
 .o-form-input {
-	line-height: 1;
+	font-size: 1rem;
+	font-weight: 500;
+	line-height: 1.5;
+	letter-spacing: 0.03125em;
 	background-color: transparent;
 	border: none;
-	display: inline-flex;
-	flex-basis: 1;
-	flex-grow: 1;
-	flex-shrink: 1;
+	display: flex;
 	justify-content: center;
-	align-items: center;
+	align-items: flex-start;
 	height: 48px;
-	margin: 0 1rem 0 0;
+	margin: 0.5rem 0 0;
 	padding: 0.5rem 0 0;
 }
 
@@ -1915,20 +2038,19 @@ pre code {
 .o-form-floating-label {
 	font-size: 0.75rem;
 	font-weight: 400;
-	line-height: 0;
+	line-height: 1;
 	letter-spacing: 0.0333333333em;
 	color: var(--blue-700);
 	position: absolute;
 	bottom: inherit;
 	left: 16px;
-	display: inline-flex;
+	display: flex;
 	flex-basis: auto;
 	flex-grow: 0;
 	flex-shrink: 1;
 	justify-content: center;
-	align-items: center;
-	height: 56px;
-	margin: 0;
+	align-items: flex-start;
+	margin: 0 0 1rem;
 	padding: 0;
 }
 
@@ -2335,7 +2457,7 @@ textarea + .o-form-floating-label {
 .o-bar-user-title {
 	font-size: 0.75rem;
 	font-weight: 400;
-	line-height: 1.6666666667;
+	line-height: 1;
 	letter-spacing: 0.0333333333em;
 	color: var(--gray-1300);
 	opacity: 0.54;
