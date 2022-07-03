@@ -45,7 +45,7 @@ samp {
 // Inline code
 code,
 kbd {
-	font-size: 90%;
+	@include type(body1);
 	background-color: $code-bg;
 	border-radius: $code-border-radius;
 	color: $code-color;
@@ -68,7 +68,7 @@ kbd {
 
 // Blocks of code
 pre {
-	font-size: 90%;
+	@include type(body1);
 	word-wrap: break-word;
 	word-break: break-all;
 	background-color: $pre-bg;

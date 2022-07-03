@@ -2,7 +2,7 @@
 // @object: Form
 //------------------------------------------------------------------------------
 // @author: hanakin -- midaym
-// @version: 1.1.0
+// @version: 1.2.0
 // @description
 //
 //------------------------------------------------------------------------------
@@ -40,7 +40,6 @@ $form-invalid-border-color: $default-error-color !default;
 .o-form {
 	&-group {
 		@include parent();
-		@include center($form-height);
 		background-color: $form-bg-color;
 		background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 97%, $form-active-color 3%);
 		background-repeat: no-repeat;
@@ -49,10 +48,11 @@ $form-invalid-border-color: $default-error-color !default;
 		border-radius: $form-border-radius;
 		color: $form-color;
 		position: relative;
-		flex-wrap: nowrap;
+		justify-content: center;
+		align-items: flex-start;
 		width: 100%;
 		margin: 0 0 ($form-spacing * 4);
-		padding: 0 ($form-spacing * 2);
+		padding: 0 ($form-spacing * 1.5) 0 ($form-spacing * 2);
 		transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
 
 		&:focus-within {
@@ -63,7 +63,7 @@ $form-invalid-border-color: $default-error-color !default;
 			transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
 
 			.o-form-floating-label {
-				margin: -($form-spacing * 3.5) 0 0;
+				margin: 0 0 ($form-spacing * 4);
 			}
 		}
 
@@ -143,14 +143,14 @@ $form-invalid-border-color: $default-error-color !default;
 	}
 
 	&-input {
-		@include center($form-height - $form-spacing);
-		line-height: 1;
+		@include type(body1);
 		background-color: transparent;
 		border: none;
-		flex-basis: 1;
-		flex-grow: 1;
-		flex-shrink: 1;
-		margin: 0 ($form-spacing * 2) 0 0;
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+		height: $form-height - $form-spacing;
+		margin: $form-spacing 0 0;
 		padding: $form-spacing 0 0;
 
 		&:focus {
@@ -165,16 +165,18 @@ $form-invalid-border-color: $default-error-color !default;
 	}
 
 	&-floating-label {
-		@include type(caption, $lh: 0);
-		@include center($form-height);
+		@include type(caption);
 		color: $form-active-color;
 		position: absolute;
 		bottom: inherit;
 		left: ($form-spacing * 2);
+		display: flex;
 		flex-basis: auto;
 		flex-grow: 0;
 		flex-shrink: 1;
-		margin: 0;
+		justify-content: center;
+		align-items: flex-start;
+		margin: 0 0 ($form-spacing * 2);
 		padding: 0;
 
 		.has-icon & {
