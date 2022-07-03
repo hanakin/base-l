@@ -2,7 +2,7 @@
 // @object: Modal
 //------------------------------------------------------------------------------
 // @author: hanakin -- midaym
-// @version: 1.0.2
+// @version: 1.2.0
 // @description
 //
 //------------------------------------------------------------------------------
@@ -68,7 +68,7 @@ $modal-btn-bg-hover-color: $default-action-color-hover !default;
 		padding: ($modal-spacing * 3) ($modal-spacing * 3) 0;
 
 		&-title {
-			@include type(title);
+			@include type(headline6);
 			flex: 1;
 			margin: 0;
 		}

@@ -2,7 +2,7 @@
 // @object: Button
 //------------------------------------------------------------------------------
 // @author: hanakin -- midaym
-// @version: 1.0.3
+// @version: 1.2.0
 // @description
 //
 //------------------------------------------------------------------------------
@@ -38,7 +38,7 @@ $btn-text-hover-color: $default-action-color-hover !default;
 // 8. Prevent deafult browser outline halo
 //
 .o-btn {
-	@include type(subtitle1, $lh: 1.5, $fw: 700);
+	@include type(subhead1, $lh: 1.5, $fw: 700);
 	@include shadow(2); // google material design
 	@include center($btn-height);  // [1]
 	text-align: center; // [4]

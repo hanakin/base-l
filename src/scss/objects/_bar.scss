@@ -2,7 +2,7 @@
 // @object: Bar
 //------------------------------------------------------------------------------
 // @author: hanakin -- midaym
-// @version: 1.0.3
+// @version: 1.2.0
 // @description
 //
 //------------------------------------------------------------------------------
@@ -96,7 +96,7 @@ $bar-badge-color: $default-error-item-color !default;
 	}
 
 	&-title {
-		@include type(title, $lh: 1);
+		@include type(headline6, $lh: 1);
 		@include center($bar-height);
 		margin-bottom: 0;
 		padding: ($bar-spacing * 2);
@@ -184,7 +184,7 @@ $bar-badge-color: $default-error-item-color !default;
 		}
 
 		&-toggle {
-			@include type(subtitle1, $lh: 1.5, $fw: 700);
+			@include type(subhead1, $lh: 1.5, $fw: 700);
 			@include center($bar-height);
 			color: $bar-hover-color;
 			flex-shrink: 0;
@@ -194,7 +194,7 @@ $bar-badge-color: $default-error-item-color !default;
 		}
 
 		&-action {
-			@include type(subtitle1, $lh: 1.5, $fw: 700);
+			@include type(subhead1, $lh: 1.5, $fw: 700);
 			@include center($bar-height);
 			color: $bar-color;
 			margin-right: 0;
@@ -208,7 +208,7 @@ $bar-badge-color: $default-error-item-color !default;
 		}
 
 		&-field {
-			@include type(subtitle1, $lh: 1.5, $fw: 700);
+			@include type(subhead1, $lh: 1.5, $fw: 700);
 			background-color: transparent;
 			background-image: none;
 			border: 0;

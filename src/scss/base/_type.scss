@@ -28,27 +28,27 @@ h6 small {
 }
 
 h1 {
-	@include type(headline2);
+	@include type(headline1);
 }
 
 h2 {
-	@include type(headline3);
+	@include type(headline2);
 }
 
 h3 {
-	@include type(headline4);
+	@include type(headline3);
 }
 
 h4 {
-	@include type(headline5);
+	@include type(headline4);
 }
 
 h5 {
-	@include type(title);
+	@include type(headline5);
 }
 
 h6 {
-	@include type(subtitle1);
+	@include type(headline6);
 }
 
 p {
@@ -56,7 +56,7 @@ p {
 }
 
 blockquote {
-	@include type(headline5);
+	@include type(subhead1);
 	font-style: italic;
 	position: relative;
 
