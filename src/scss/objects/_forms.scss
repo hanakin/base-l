@@ -2,7 +2,7 @@
 // @object: Form
 //------------------------------------------------------------------------------
 // @author: hanakin -- midaym
-// @version: 1.2.0
+// @version: 1.3.0
 // @description
 //
 //------------------------------------------------------------------------------
@@ -168,7 +168,8 @@ $form-invalid-border-color: $default-error-color !default;
 		@include type(caption);
 		color: $form-active-color;
 		position: absolute;
-		bottom: inherit;
+		bottom: 0;
+		top: $form-spacing;
 		left: ($form-spacing * 2);
 		display: flex;
 		flex-basis: auto;
@@ -176,7 +177,7 @@ $form-invalid-border-color: $default-error-color !default;
 		flex-shrink: 1;
 		justify-content: center;
 		align-items: flex-start;
-		margin: 0 0 ($form-spacing * 2);
+		margin: 0;
 		padding: 0;
 
 		.has-icon & {
@@ -190,11 +191,6 @@ $form-invalid-border-color: $default-error-color !default;
 
 		.is-invalid > & {
 			color: $form-invalid-color;
-		}
-
-		textarea + & {
-			top: 0;
-			margin-top: -($form-spacing * 2);
 		}
 	}
 

@@ -3,7 +3,7 @@
  * Base-L: Core - Dark
  * -----------------------------------------------------------------------------
  * @author: hanakin -- midaym
- * @version: 1.2.0
+ * @version: 1.3.0
 
  * --------------------------------------------------------------------------- */
 :root {
@@ -1764,7 +1764,8 @@ pre code {
   letter-spacing: 0.0333333333em;
   color: var(--blue-700);
   position: absolute;
-  bottom: inherit;
+  top: 8px;
+  bottom: 0;
   left: 16px;
   display: flex;
   flex-basis: auto;
@@ -1772,7 +1773,7 @@ pre code {
   flex-shrink: 1;
   justify-content: center;
   align-items: flex-start;
-  margin: 0 0 1rem;
+  margin: 0;
   padding: 0;
 }
 .has-icon .o-form-floating-label {
@@ -1783,10 +1784,6 @@ pre code {
 }
 .is-invalid > .o-form-floating-label {
   color: var(--red-500);
-}
-textarea + .o-form-floating-label {
-  top: 0;
-  margin-top: -1rem;
 }
 .o-form-suffix {
   display: inline-flex;
@@ -2327,4 +2324,4 @@ textarea + .o-form-floating-label {
   }
 }
 
-/*# sourceMappingURL=core-dark.1.2.0.css.map */
+/*# sourceMappingURL=core-dark.1.3.0.css.map */

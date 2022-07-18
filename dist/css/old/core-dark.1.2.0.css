@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* -----------------------------------------------------------------------------
- * Base-L: Core - Light
+ * Base-L: Core - Dark
  * -----------------------------------------------------------------------------
  * @author: hanakin -- midaym
  * @version: 1.2.0
@@ -1022,8 +1022,8 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  background-color: #ffffff;
-  color: var(--gray-1300);
+  background-color: var(--gray-1400);
+  color: var(--gray-50);
 }
 
 a {
@@ -1178,10 +1178,10 @@ legend {
 [type=color],
 select,
 textarea {
-  background-color: var(--gray-50);
+  background-color: var(--gray-1300);
   border: none;
   border-radius: 2px;
-  color: var(--gray-400);
+  color: var(--gray-900);
   display: inline-block;
   width: 100%;
   height: 56px;
@@ -1300,7 +1300,7 @@ textarea {
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 99%, var(--blue-700) 1%);
   background-repeat: no-repeat;
   background-size: 0 100%;
-  border-bottom: solid 1px var(--gray-50);
+  border-bottom: solid 1px var(--gray-1300);
   height: auto;
   padding-top: 1.5rem;
   transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
@@ -1311,7 +1311,7 @@ textarea:focus {
 }
 
 select {
-  background-color: var(--gray-50);
+  background-color: var(--gray-1300);
   display: inline-block;
   min-width: 80px;
   max-width: 100%;
@@ -1319,7 +1319,7 @@ select {
   cursor: pointer;
 }
 select:focus::-ms-value {
-  background-color: var(--gray-50);
+  background-color: var(--gray-1300);
   color: var(--blue-700);
 }
 select:focus:-moz-focusring {
@@ -1362,7 +1362,7 @@ input[type=checkbox]:focus:invalid:focus {
   transition: 0.28s ease;
 }
 [type=checkbox] + label:before {
-  border: 2px solid var(--gray-300);
+  border: 2px solid var(--gray-1000);
   border-radius: 2px;
   position: absolute;
   z-index: 0;
@@ -1406,7 +1406,7 @@ input[type=checkbox]:focus:invalid:focus {
           backface-visibility: hidden;
 }
 [type=checkbox]:hover:not(:checked) + label:before {
-  border-color: var(--gray-300);
+  border-color: var(--gray-1000);
 }
 [type=checkbox]:disabled:checked + label:before {
   border-right: 2px solid var(--gray-700);
@@ -1445,7 +1445,7 @@ input[type=checkbox]:focus:invalid:focus {
   transition: 0.28s ease;
 }
 [type=radio]:not(:checked) + label:before, [type=radio]:not(:checked) + label:after {
-  border: 2px solid var(--gray-300);
+  border: 2px solid var(--gray-1000);
 }
 [type=radio]:not(:checked) + label:after {
   opacity: 0;
@@ -1461,7 +1461,7 @@ input[type=checkbox]:focus:invalid:focus {
   transform: scale(0.5) opacity(1);
 }
 [type=radio]:hover + label:before {
-  border-color: var(--gray-300);
+  border-color: var(--gray-1000);
 }
 [type=radio]:disabled + label {
   color: var(--gray-700);
@@ -1475,19 +1475,19 @@ input[type=checkbox]:focus:invalid:focus {
 }
 
 ::-webkit-input-placeholder {
-  color: var(--gray-400);
+  color: var(--gray-900);
 }
 
 :-moz-placeholder {
-  color: var(--gray-400);
+  color: var(--gray-900);
 }
 
 ::-moz-placeholder {
-  color: var(--gray-400);
+  color: var(--gray-900);
 }
 
 :-ms-input-placeholder {
-  color: var(--gray-400);
+  color: var(--gray-900);
 }
 
 input:-webkit-autofill,
@@ -1504,8 +1504,8 @@ table {
   line-height: 1.5;
   white-space: nowrap;
   letter-spacing: 0.03125em;
-  background-color: #ffffff;
-  border: 1px solid var(--gray-500);
+  background-color: var(--gray-1400);
+  border: 1px solid var(--gray-1000);
   display: block;
   overflow-x: auto;
   width: 100%;
@@ -1519,14 +1519,14 @@ table tbody tr {
   transition: background-color 0.28s cubic-bezier(0.4, 0, 0.2, 1);
 }
 table tbody tr:hover {
-  background-color: var(--gray-100);
+  background-color: var(--gray-1200);
 }
 table td,
 table th {
   text-align: center;
   vertical-align: middle;
-  border-top: 1px solid var(--gray-500);
-  border-bottom: 1px solid var(--gray-500);
+  border-top: 1px solid var(--gray-1000);
+  border-bottom: 1px solid var(--gray-1000);
   box-sizing: border-box;
   height: 48px;
   padding: 0 1rem;
@@ -1547,8 +1547,8 @@ table th {
   text-overflow: ellipsis;
   vertical-align: bottom;
   letter-spacing: 0.03125em;
-  background-color: var(--gray-100);
-  border-left: 1px solid var(--gray-500);
+  background-color: var(--gray-1200);
+  border-left: 1px solid var(--gray-1000);
   padding-bottom: 0.5rem;
 }
 @media (min-width: 770px) {
@@ -1571,16 +1571,16 @@ kbd {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.03125em;
-  background-color: var(--gray-100);
+  background-color: var(--gray-1200);
   border-radius: 2px;
   color: var(--green-700);
   padding: 0.125rem 0.25rem;
 }
 
 kbd {
-  background-color: var(--gray-1300);
-  box-shadow: inset 0 -1px 0 var(--gray-1000);
-  color: var(--gray-50);
+  background-color: var(--gray-50);
+  box-shadow: inset 0 -1px 0 var(--gray-500);
+  color: var(--gray-1300);
 }
 kbd kbd {
   font-size: 100%;
@@ -1599,7 +1599,7 @@ pre {
   background-color: var(--gray-1200);
   border-width: 0;
   border-style: solid;
-  border-color: var(--gray-1000);
+  border-color: var(--gray-500);
   border-radius: 2px;
   color: var(--gray-300);
   display: block;
@@ -1636,13 +1636,13 @@ pre code {
 }
 
 .o-form-group {
-  background-color: var(--gray-50);
+  background-color: var(--gray-1300);
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 97%, var(--blue-700) 3%);
   background-repeat: no-repeat;
   background-size: 0 100%;
-  border-bottom: 1px solid var(--gray-50);
+  border-bottom: 1px solid var(--gray-1300);
   border-radius: 2px;
-  color: var(--gray-400);
+  color: var(--gray-900);
   position: relative;
   display: flex;
   flex-direction: row;
@@ -1697,7 +1697,7 @@ pre code {
   position: relative;
 }
 .o-form-select:before {
-  background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="36px" height="36px" viewBox="0 0 24 24"%3E%3Cpath fill-rule="evenodd" style="fill:var(--gray-400)" d="M12 16c-.297 0-.578-.133-.768-.359l-5-6A1.001 1.001 0 0 1 7 8h10a1 1 0 0 1 .767 1.64l-5 6A1 1 0 0 1 12 16zm-2.865-6L12 13.437l2.865-3.438h-5.73V10z"%3E%3C/path%3E%3C/svg%3E');
+  background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="36px" height="36px" viewBox="0 0 24 24"%3E%3Cpath fill-rule="evenodd" style="fill:var(--gray-900)" d="M12 16c-.297 0-.578-.133-.768-.359l-5-6A1.001 1.001 0 0 1 7 8h10a1 1 0 0 1 .767 1.64l-5 6A1 1 0 0 1 12 16zm-2.865-6L12 13.437l2.865-3.438h-5.73V10z"%3E%3C/path%3E%3C/svg%3E');
   background-repeat: no-repeat;
   background-position: center 12px;
   position: absolute;
@@ -1764,7 +1764,8 @@ pre code {
   letter-spacing: 0.0333333333em;
   color: var(--blue-700);
   position: absolute;
-  bottom: inherit;
+  top: 8px;
+  bottom: 0;
   left: 16px;
   display: flex;
   flex-basis: auto;
@@ -1772,21 +1773,17 @@ pre code {
   flex-shrink: 1;
   justify-content: center;
   align-items: flex-start;
-  margin: 0 0 1rem;
+  margin: 0;
   padding: 0;
 }
 .has-icon .o-form-floating-label {
   left: 56px;
 }
 .is-readonly .o-form-floating-label, .is-disabled .o-form-floating-label {
-  color: var(--gray-100);
+  color: var(--gray-1200);
 }
 .is-invalid > .o-form-floating-label {
   color: var(--red-500);
-}
-textarea + .o-form-floating-label {
-  top: 0;
-  margin-top: -1rem;
 }
 .o-form-suffix {
   display: inline-flex;
@@ -1816,7 +1813,7 @@ textarea + .o-form-floating-label {
   font-weight: 400;
   line-height: 1;
   letter-spacing: 0.0333333333em;
-  color: var(--gray-400);
+  color: var(--gray-900);
   display: block;
   width: auto;
   margin-top: -2rem;
@@ -1891,13 +1888,13 @@ textarea + .o-form-floating-label {
   text-decoration: none;
   vertical-align: middle;
   letter-spacing: 0.00625em;
-  background-color: var(--gray-100);
+  background-color: var(--gray-1200);
   border: none;
   border-radius: 2px;
   outline: none;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
-  color: var(--gray-400);
+  color: var(--gray-900);
   position: relative;
   display: inline-flex;
   overflow: hidden;
@@ -1928,7 +1925,7 @@ textarea + .o-form-floating-label {
 }
 .o-btn:hover {
   text-decoration: none;
-  background-color: var(--gray-300);
+  background-color: var(--gray-1000);
   color: var(--blue-700);
   cursor: pointer;
 }
@@ -2040,7 +2037,7 @@ textarea + .o-form-floating-label {
   }
 }
 .o-bar {
-  background-color: var(--gray-100);
+  background-color: var(--gray-1200);
   display: grid;
   grid-template-columns: auto auto;
 }
@@ -2067,7 +2064,7 @@ textarea + .o-form-floating-label {
   padding: 1rem;
 }
 .o-bar-info {
-  color: var(--gray-1300);
+  color: var(--gray-50);
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -2125,12 +2122,12 @@ textarea + .o-form-floating-label {
   font-weight: 400;
   line-height: 1.3333333333;
   letter-spacing: 0.0333333333em;
-  color: var(--gray-1300);
+  color: var(--gray-50);
   opacity: 0.54;
   display: block;
 }
 .o-bar-search {
-  background-color: var(--gray-100);
+  background-color: var(--gray-1200);
   opacity: 0;
   position: absolute;
   z-index: 999;
@@ -2170,7 +2167,7 @@ textarea + .o-form-floating-label {
   font-weight: 700;
   line-height: 1.5;
   letter-spacing: 0.00625em;
-  color: var(--gray-400);
+  color: var(--gray-900);
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -2190,7 +2187,7 @@ textarea + .o-form-floating-label {
   background-color: transparent;
   background-image: none;
   border: 0;
-  color: var(--gray-400);
+  color: var(--gray-900);
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -2203,7 +2200,7 @@ textarea + .o-form-floating-label {
 }
 
 .o-action {
-  color: var(--gray-400);
+  color: var(--gray-900);
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -2211,7 +2208,7 @@ textarea + .o-form-floating-label {
   padding: 1rem;
 }
 .o-action:hover, .o-action:focus {
-  background-color: var(--gray-300);
+  background-color: var(--gray-1000);
   outline: 0;
   color: var(--blue-700);
   transition: 0.0125s;
@@ -2247,7 +2244,7 @@ textarea + .o-form-floating-label {
 }
 
 .o-modal {
-  background-color: var(--gray-50);
+  background-color: var(--gray-1300);
   border-radius: 2px;
   box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
   opacity: 0;
@@ -2297,7 +2294,7 @@ textarea + .o-form-floating-label {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.03125em;
-  color: var(--gray-400);
+  color: var(--gray-900);
   margin-top: 1.5rem 0 0;
   padding: 0 1.5rem 1.5rem;
 }
@@ -2313,7 +2310,7 @@ textarea + .o-form-floating-label {
   padding: 0.5rem;
 }
 .o-modal-action {
-  background-color: var(--gray-400);
+  background-color: var(--gray-900);
   color: #ffffff;
   margin-right: 0.5rem;
 }
@@ -2327,4 +2324,4 @@ textarea + .o-form-floating-label {
   }
 }
 
-/*# sourceMappingURL=core.1.2.0.css.map */
+/*# sourceMappingURL=core-dark.1.2.0.css.map */

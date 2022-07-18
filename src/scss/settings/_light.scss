@@ -2,7 +2,7 @@
 // @setting: Light Mode Colors
 //------------------------------------------------------------------------------
 // @author: hanakin -- midaym
-// @version: 1.0.3
+// @version: 1.3.0
 // @description
 //
 // Include this file in build process to enable light mode
@@ -41,8 +41,6 @@ $default-border-color-inverted:				mode('border', 'dark', 'color');
 $default-border-hover-color-inverted:		mode('border', 'dark', 'color-hover');
 
 // other
-$default-page-color:					$white;
-
 $default-disabled-color: 				$gray-700 !default;
 $default-disabled-stroke:				$gray-400 !default;
 
@@ -97,7 +95,7 @@ $default-info-item-color:               $gray-50 !default;
 $default-info-item-light-color:         $gray-1300 !default;
 
 // color scheme
-$default-page-bg:                    	$default-page-color !default;
+$default-page-color:					$white !default;
 $default-link-color:                    $default-primary-color !default;
 $default-link-color-hover:              $default-primary-dark-color !default;
 
